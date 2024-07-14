@@ -1,0 +1,9 @@
+1,Thomas,blue,0.33,0,50
+2,Edward,blue,0.5,0,60
+3,Henry,green,1,0,70
+4,Gordon,blue,1,0,70
+5,James,red,0.5,0,60
+6,Percy,green,0.33,0,50
+7,Toby,brown,0.25,5,40
+8,Duck,green,0.33,0,50
+27,Harvey,brown,0.33,0,55

@@ -1,0 +1,83 @@
+0, Town Hall, 54, 415
+1, Abbey, 454, 421
+2, Arlesburgh Bridge St., 164, 280
+3, Arlesburgh North, 182, 237 
+4, Arlesburgh West, 133, 288
+5, Arlesdale, 277, 268
+6, Arlesdale Green, 258, 249
+7, Bailey, 842, 456
+8, Ballahoo, 855, 412
+9, Barrow, 964, 296
+10, Barrowdell, 830, 339
+11, Barrowdell North, 855, 271
+12, Barrowdell Road, 793, 308
+13, Bellany Way, 630, 541 
+14, Brendam, 355, 666
+15, C. C. Quarry Road, 371, 594
+16, Chiddlington, 694, 231
+17, Cronk, 441, 460
+18, Crosby, 136, 472
+19, Crosby Beach, 86, 507
+20, Crosby East, 187, 464
+21, Cros-ny-cuim, 766, 467
+22, Crovan's Gate, 803, 504
+23, Culdeefell Summit, 568, 226
+24, Devil's Back, 550, 225
+25, Dream, 59, 500
+26, Dryaw, 84, 463
+27, Eawick, 508, 65
+28, Elsbridge, 131, 406
+29, Emily Road, 361, 33
+30, Fairden, 766, 367
+31, Ffarquhar, 219, 346
+32, Ffarquhar Road, 204, 270
+33, Giunness Road, 386, 208
+34, Glennock, 679, 405
+35, Glennock South, 685, 456
+36, Hackenbeck, 195, 334
+37, Harwick, 307, 69
+38, Heartfield, 241, 182
+39, High Hill, 575, 109
+40, HST Road, 838, 526
+41, K. M. South, 458, 348
+42, Kellsthorpe Jct., 684, 587
+43, Kellsthorpe North, 745, 547
+44, Kildane-Upon-Barn, 521, 535
+45, Kildane, 477, 480
+46, Kirk Machan, 459, 279
+47, Kirk Ronan, 583, 674
+48, Knapford, 44, 460
+49, Lake Sandi, 420, 320
+50, Lakeside, 613, 314
+51, Maithwaite, 229, 254
+52, Maron, 366, 468
+53, Maron West, 320, 472
+54, Medical Institute, 780, 582
+55, Meteorological Institute, 631, 161
+56, Montegue Beach, 81, 336
+57, Norramby, 936, 464
+58, Norramby Fort, 886, 472
+59, Norramby West, 900, 447
+60, Nort, 450, 32
+61, Peel Godred, 443, 223
+62, Rheneas, 635, 317
+63, Rolf's Castle, 629, 621
+64, Rossington, 762, 262
+65, Rossington Jct., 571, 591
+66, Shiloh, 477, 247
+67, Skarloey, 616, 340
+68, Skarloey Road, 523, 244
+69, Sodor Congress Center, 263, 212
+70, Sodor Hospital, 298, 188
+71, Sodor Int. Airport, 431, 481
+72, Sodor Railway HQ, 821, 415
+73, Suddery, 340, 530
+74, Topham Road, 834, 382
+75, Toryreck, 92, 437
+76, Ulfstead South, 307, 352
+77, Vicarstown, 942, 311
+78, Vicarstown South, 924, 377
+79, Vicky Road, 905, 317
+80, Wellsworth, 237, 470
+81, Widdlington Jct., 273, 134
+82, S&R Centre, 387, 540
