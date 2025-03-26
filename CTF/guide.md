@@ -13,33 +13,30 @@ Test inputs with the string: `${{<%[%'"}}%\`. If this causes the page to have an
 If we're lucky, this spat out an error telling us which version of which templating engine is in use. If not, we can narrow it down:
 
 ```mermaid
-graph LR;
-	id1[${7 * 7}]
-	id2[${a{*comment*}b]
-	id3[{{7 * 7}}]
-	id4[Smarty]
-	id5[${"z".join("ab")}]
-	id6[{{7 * '7'}}]
-	id7[Not Vulnerable]
-	id8[Mako]
-	id9[Unknown]
-	id10[Jinja2]
-	id11[Twig]
+%%{ init: { 'flowchart': { 'curve': 'basis' } } }%%
+flowchart LR
+	root(("`${7 * 7}`"))
+	comment("`${a{\*comment\*}b`")
+	double("`{{7 * 7}}`")
+	join("`${'z'.join('ab')}`")
+	mult_str("`{{7 * '7'}}`")
+	not_vuln(Not Vulnerable)
 
-	id1 e1@--> id2
-	id1 e2@--> id3
-	id2 e3@--> id4
-	id2 e4@--> id5
-	id3 e5@--> id6
-	id3 e6@--> id7
-	id5 e7@--> id8
-	id5 e8@--> id9
-	id6 e9@-->|7777777| id10
-	id6 e10@-->|49| id11
-	id6 e11@--> id9
+	root --> comment
+	root --> double
+	comment --> Smarty
+	comment --> join
+	double --> mult_str
+	double --> not_vuln
+	join --> Mako
+	join --> Unknown
+	mult_str -->|7777777| Jinja2
+	mult_str -->|49| Twig
+	mult_str --> Unknown
+	join ~~~ Smarty
 
-	e1@ e3@ e5@ e7@ e9@ e10@ { stroke:#bfb; color: green }
-	e2@ e4@ e6@ e8@ e11@ { stroke:#fbb; color red }
+	linkStyle default stroke:#bfb,color:white;
+	linkStyle 1,3,5,7,10 stroke:#fbb,color:white;
 ```
 
 #### Case Study: Jinja2
