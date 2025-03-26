@@ -20,11 +20,10 @@ class LSB_Steganographer():
 		self.rows, self.cols = file_size.split('x')
 
 		step = input("Step size [1]:  ")
+		self.step = int(step) if step != "" else 1
+		channels = input("Channels to inspect [3]:  ")
+		self.channels = int(channels) if channels != "" else 3
 		
-		if step == "":
-			self.step = 1
-		else:
-			self.step = int(step)
 		print("-" * 15)
 		
 		self.binary = ""
@@ -37,7 +36,7 @@ class LSB_Steganographer():
 		self.bit_array = ""
 		for row in range(int(self.rows)):
 			for col in range(0, int(self.cols), self.step):
-				for i in range(4):
+				for i in range(self.channels):
 					byte_val = format((self.pixels[row,col][i]), "b")
 					self.bit_array += str(byte_val)[-1]
 		print("Processing complete\n")
