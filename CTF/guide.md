@@ -20,7 +20,7 @@ flowchart LR
 	double("`{{7 * 7}}`")
 	join("`${'z'.join('ab')}`")
 	mult_str("`{{7 * '7'}}`")
-	not_vuln(Not Vulnerable)
+	not_vuln[Not Vulnerable]
 
 	root --> comment
 	root --> double
@@ -35,8 +35,8 @@ flowchart LR
 	mult_str --> Unknown
 	join ~~~ Smarty
 
-	linkStyle default stroke:#bfb,color:white;
-	linkStyle 1,3,5,7,10 stroke:#fbb,color:white;
+	linkStyle default stroke:#9f9,stroke-width:3px;
+	linkStyle 1,3,5,7,10 stroke:#f99,stroke-width:3px;
 ```
 
 #### Case Study: Jinja2
@@ -82,3 +82,9 @@ Not meaning just LSB-type steg, but also the generic art of hiding s@@@ in image
 * steghide
 * strings
 * exiftool 
+
+# CLI and Permissions
+
+To identify which permissions you have, `whoami` followed by `sudo -l` is a good identifier. Something to hope for is to see Vi in this list!
+
+If we have sudo permission for vi, we can run it with `sudo vi <file>`. Then, we can easily escalate to a root shell with `:!/bin/bash`! It's that easy!
