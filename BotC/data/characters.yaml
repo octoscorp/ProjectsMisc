@@ -1,0 +1,666 @@
+# Character data
+# Last updated 18 Nov 2025
+# == TOWNSFOLK ==========================
+townsfolk:
+- acrobat:
+  description: >
+    Each night*, choose a player: if they are or become drunk or poisoned
+    tonight, you die.
+  source: carousel
+- alchemist:
+  description: >
+    You have a Minion ability. When using this, the Storyteller may prompt you
+    to choose differently.
+  source: carousel
+- alsaahir:
+  description: >
+    Each day, if you publicly guess which players are Minion(s) and which are
+    Demon(s), good wins.
+  source: carousel
+- amnesiac:
+  description: >
+    You do not know what your ability is. Each day, privately guess what it is:
+    you learn how accurate you are.
+  source: carousel
+- artist:
+  description: >
+    Once per game, during the day, ask the Storyteller any yes/no question.
+  source: sects and violets
+- atheist:
+  description: >
+    The Storyteller can break the game rules, and if executed, good wins, even
+    if you are dead. [No evil characters]
+  source: carousel
+- balloonist:
+  description: >
+    Each night, you learn a player of a different character type than last
+    night. [+0 or +1 Outsider]
+  source: carousel
+- banshee:
+  description: >
+    If the Demon kills you, all players learn this. From now on, you may
+    nominate twice per day and vote twice per nomination.
+  source: carousel
+- bounty hunter:
+  description: >
+    You start knowing 1 evil player. If the player you know dies, you learn
+    another evil player tonight. [1 Townsfolk is evil]
+  source: carousel
+- cannibal:
+  description: >
+    You have the ability of the recently killed executee. If they are evil, you
+    are poisoned until a good player dies by execution.
+  source: carousel
+- chambermaid:
+  description: >
+    Each night, choose 2 alive players (not yourself): you learn how many woke
+    tonight due to their ability.
+  source: bad moon rising
+- chef:
+  description: >
+    You start knowing how many pairs of evil players there are.
+  source: trouble brewing
+- choirboy:
+  description: >
+    If the Demon kills the King, you learn which player is the Demon. [+the
+    King]
+  source: carousel
+- clockmaker:
+  description: >
+    You start knowing how many steps from the Demon to its nearest Minion.
+  source: sects and violets
+- courtier:
+  description: >
+    Once per game, at night, choose a character: they are drunk for 3 nights &
+    3 days.
+  source: bad moon rising
+- cult leader:
+  description: >
+    Each night, you become the alignment of an alive neighbor. If all good
+    players choose to join your cult, your team wins.
+  source: carousel
+- dreamer:
+  description: >
+    Each night, choose a player (not yourself or Travellers): you learn 1 good
+    & 1 evil character, 1 of which is correct.
+  source: sects and violets
+- empath:
+  description: >
+    Each night, you learn how many of your 2 alive neighbors are evil.
+  source: trouble brewing
+- engineer:
+  description: >
+    Once per game, at night, choose which Minions or which Demon is in play.
+  source: carousel
+- exorcist:
+  description: >
+    Each night*, choose a player (different to last night): the Demon, if
+    chosen, learns who you are then doesn't wake tonight.
+  source: bad moon rising
+- farmer:
+  description: >
+    When you die at night, an alive good player becomes a Farmer.
+  source: carousel
+- fisherman:
+  description: >
+    Once per game, during the day, visit the Storyteller for some advice to
+    help your team win.
+  source: carousel
+- flowergirl:
+  description: >
+    Each night*, you learn if a Demon voted today.
+  source: sects and violets
+- fool:
+  description: >
+    The 1st time you die, you don't.
+  source: bad moon rising
+- fortune teller:
+  description: >
+    Each night, choose 2 players: you learn if either is a Demon. There is a
+    good player that registers as a Demon to you.
+  source: trouble brewing
+- gambler:
+  description: >
+    Each night*, choose a player & guess their character: if you guess wrong,
+    you die.
+  source: bad moon rising
+- general:
+  description: >
+    Each night, you learn which alignment the Storyteller believes is winning:
+    good, evil, or neither.
+  source: carousel
+- gossip:
+  description: >
+    Each day, you may make a public statement. Tonight, if it was true, a
+    player dies.
+  source: bad moon rising
+- grandmother:
+  description: >
+    You start knowing a good player & their character. If the Demon kills them,
+    you die too.
+  source: bad moon rising
+- high priestess:
+  description: >
+    Each night, learn which player the Storyteller believes you should talk to
+    most.
+  source: carousel
+- huntsman:
+  description: >
+    Once per game, at night, choose a living player: the Damsel, if chosen,
+    becomes a not-in-play Townsfolk. [+the Damsel]
+  source: carousel
+- innkeeper:
+  description: >
+    Each night*, choose 2 players: they can't die tonight, but 1 is drunk until
+    dusk.
+  source: bad moon rising
+- investigator:
+  description: >
+    You start knowing that 1 of 2 players is a particular Minion.
+  source: trouble brewing
+- juggler:
+  description: >
+    On your 1st day, publicly guess up to 5 players' characters. That night,
+    you learn how many you got correct.
+  source: sects and violets
+- king:
+  description: >
+    Each night, if the dead equal or outnumber the living, you learn 1 alive
+    character. The Demon knows you are the King.
+  source: carousel
+- knight:
+  description: >
+    You start knowing 2 players that are not the Demon.
+  source: carousel
+- librarian:
+  description: >
+    You start knowing that 1 of 2 players is a particular Outsider. (Or that
+    zero are in play.)
+  source: trouble brewing
+- lycanthrope:
+  description: >
+    Each night*, choose an alive player. If good, they die & the Demon doesn't
+    kill tonight. One good player registers as evil.
+  source: carousel
+- magician:
+  description: >
+    The Demon thinks you are a Minion. Minions think you are a Demon.
+  source: carousel
+- mathematician:
+  description: >
+    Each night, you learn how many players' abilities worked abnormally (since
+    dawn) due to another character's ability.
+  source: sects and violets
+- mayor:
+  description: >
+    If only 3 players live & no execution occurs, your team wins. If you die at
+    night, another player might die instead.
+  source: trouble brewing
+- minstrel:
+  description: >
+    When a Minion dies by execution, all other players (except Travellers) are
+    drunk until dusk tomorrow.
+  source: bad moon rising
+- monk:
+  description: >
+    Each night*, choose a player (not yourself): they are safe from the Demon
+    tonight.
+  source: trouble brewing
+- nightwatchman:
+  description: >
+    Once per game, at night, choose a player: they learn you are the
+    Nightwatchman.
+  source: carousel
+- noble:
+  description: >
+    You start knowing 3 players, 1 and only 1 of which is evil.
+  source: carousel
+- oracle:
+  description: >
+    Each night*, you learn how many dead players are evil.
+  source: sects and violets
+- pacifist:
+  description: >
+    Executed good players might not die.
+  source: bad moon rising
+- philosopher:
+  description: >
+    Once per game, at night, choose a good character: gain that ability. If
+    this character is in play, they are drunk.
+  source: sects and violets
+- pixie:
+  description: >
+    You start knowing 1 in-play Townsfolk. If you were mad that you were this
+    character, you gain their ability when they die.
+  source: carousel
+- poppy grower:
+  description: >
+    Minions & Demons do not know each other. If you die, they learn who each
+    other are that night.
+  source: carousel
+- preacher:
+  description: >
+    Each night, choose a player: a Minion, if chosen, learns this. All chosen
+    Minions have no ability.
+  source: carousel
+- princess:
+  description: >
+    On your 1st day, if you nominated & executed a player, the Demon doesn't
+    kill tonight.
+  source: carousel
+- professor:
+  description: >
+    Once per game, at night*, choose a dead player: if they are a Townsfolk,
+    they are resurrected.
+  source: bad moon rising
+- ravenkeeper:
+  description: >
+    If you die at night, you are woken to choose a player: you learn their
+    character.
+  source: trouble brewing
+- sage:
+  description: >
+    If the Demon kills you, you learn that it is 1 of 2 players.
+  source: sects and violets
+- sailor:
+  description: >
+    Each night, choose an alive player: either you or they are drunk until
+    dusk. You can't die.
+  source: bad moon rising
+- savant:
+  description: >
+    Each day, you may visit the Storyteller to learn 2 things in private: 1 is
+    true & 1 is false.
+  source: sects and violets
+- seamstress:
+  description: >
+    Once per game, at night, choose 2 players (not yourself): you learn if they
+    are the same alignment.
+  source: sects and violets
+- shugenja:
+  description: >
+    You start knowing if your closest evil player is clockwise or
+    anti-clockwise. If equidistant, this info is arbitrary.
+  source: carousel
+- slayer:
+  description: >
+    Once per game, during the day, publicly choose a player: if they are the
+    Demon, they die.
+  source: trouble brewing
+- snake charmer:
+  description: >
+    Each night, choose an alive player: a chosen Demon swaps characters &
+    alignments with you & is then poisoned.
+  source: sects and violets
+- soldier:
+  description: >
+    You are safe from the Demon.
+  source: trouble brewing
+- steward:
+  description: >
+    You start knowing 1 good player.
+  source: carousel
+- tea lady:
+  description: >
+    If both your alive neighbors are good, they can't die.
+  source: bad moon rising
+- town crier:
+  description: >
+    Each night*, you learn if a Minion nominated today.
+  source: sects and violets
+- undertaker:
+  description: >
+    Each night*, you learn which character died by execution today.
+  source: trouble brewing
+- village idiot:
+  description: >
+    Each night, choose a player: you learn their alignment. [+0 to +2 Village
+    Idiots. 1 of the extras is drunk]
+  source: carousel
+- virgin:
+  description: >
+    The 1st time you are nominated, if the nominator is a Townsfolk, they are
+    executed immediately.
+  source: trouble brewing
+- washerwoman:
+  description: >
+    You start knowing that 1 of 2 players is a particular Townsfolk.
+  source: trouble brewing
+# == OUTSIDERS ==========================
+outsiders:
+- barber:
+  description: >
+    If you died today or tonight, the Demon may choose 2 players (not another
+    Demon) to swap characters.
+  source: sects and violets
+- butler:
+  description: >
+    Each night, choose a player (not yourself): tomorrow, you may only vote if
+    they are voting too.
+  source: trouble brewing
+- damsel:
+  description: >
+    All Minions know a Damsel is in play. If a Minion publicly guesses you
+    (once), your team loses.
+  source: carousel
+- drunk:
+  description: >
+    You do not know you are the Drunk. You think you are a Townsfolk
+    character, but you are not.
+  source: trouble brewing
+- golem:
+  description: >
+    You may only nominate once per game. When you do, if the nominee is not the
+    Demon, they die.
+  source: carousel
+- goon:
+  description: >
+    Each night, the 1st player to choose you with their ability is drunk until
+    dusk. You become their alignment.
+  source: bad moon rising
+- hatter:
+  description: >
+    If you died today or tonight, the Minion & Demon players may choose new
+    Minion & Demon characters to be.
+  source: carousel
+- heretic:
+  description: >
+    Whoever wins, loses & whoever loses, wins, even if you are dead.
+  source: carousel
+- hermit:
+  description: >
+    You have all Outsider abilities. [-0 or -1 Outsider]
+  source: carousel
+- klutz:
+  description: >
+    When you learn that you died, publicly choose 1 alive player: if they are
+    evil, your team loses.
+  source: sects and violets
+- lunatic:
+  description: >
+    You think you are a Demon, but you are not. The Demon knows who you are &
+    who you choose at night.
+  source: bad moon rising
+- moonchild:
+  description: >
+    When you learn that you died, publicly choose 1 alive player. Tonight, if
+    it was a good player, they die.
+  source: bad moon rising
+- mutant:
+  description: >
+    If you are "mad" about being an Outsider, you might be executed.
+  source: sects and violets
+- ogre:
+  description: >
+    On your 1st night, choose a player (not yourself): you become their
+    alignment (you don't know which) even if drunk or poisoned.
+  source: carousel
+- plague doctor:
+  description: >
+    When you die, the Storyteller gains a Minion ability.
+  source: carousel
+- politician:
+  description: >
+    If you were the player most responsible for your team losing, you change
+    alignment & win.
+  source: carousel
+- puzzlemaster:
+  description: >
+    1 player is drunk, even if you die. If you guess (once) who it is, learn
+    the Demon player, but guess wrong & get false info.
+  source: carousel
+- recluse:
+  description: >
+    You might register as evil & as a Minion or Demon, even if dead.
+  source: trouble brewing
+- saint:
+  description: >
+    If you die by execution, your team loses.
+  source: trouble brewing
+- snitch:
+  description: >
+    Each Minion gets 3 bluffs.
+  source: carousel
+- sweetheart:
+  description: >
+    When you die, 1 player is drunk from now on.
+  source: sects and violets
+- tinker:
+  description: >
+    You might die at any time.
+  source: bad moon rising
+- zealot:
+  description: >
+    If there are 5 or more players alive, you must vote for every nomination.
+  source: carousel
+# == MINIONS ============================
+minions:
+- assassin:
+  description: >
+    Once per game, at night*, choose a player: they die, even if for some
+    reason they could not.
+  source: bad moon rising
+- baron:
+  description: >
+    There are extra Outsiders in play. [+2 Outsiders]
+  source: trouble brewing
+- boffin:
+  description: >
+    The Demon (even if drunk or poisoned) has a not-in-play good character's
+    ability. You both know which.
+  source: carousel
+- boomdandy:
+  description: >
+    If you are executed, all but 3 players die. After a 10 to 1 countdown, the
+    player with the most players pointing at them, dies.
+  source: carousel
+- cerenovus:
+  description: >
+    Each night, choose a player & a good character: they are "mad" they are
+    this character tomorrow, or might be executed.
+  source: sects and violets
+- devil's advocate:
+  description: >
+    Each night, choose a living player (different to last night): if executed
+    tomorrow, they don't die.
+  source: bad moon rising
+- evil twin:
+  description: >
+    You & an opposing player know each other. If the good player is executed,
+    evil wins. Good can't win if you both live.
+  source: sects and violets
+- fearmonger:
+  description: >
+    Each night, choose a player: if you nominate & execute them, their team
+    loses. All players know if you choose a new player.
+  source: carousel
+- goblin:
+  description: >
+    If you publicly claim to be the Goblin when nominated & are executed that
+    day, your team wins.
+  source: carousel
+- godfather:
+  description: >
+    You start knowing which Outsiders are in play. If 1 died today, choose a
+    player tonight: they die. [-1 or +1 Outsider]
+  source: bad moon rising
+- harpy:
+  description: >
+    Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd
+    is evil, or one or both might die.
+  source: carousel
+- marionette:
+  description: >
+    You think you are a good character, but you are not. The Demon knows who
+    you are. [You neighbor the Demon]
+  source: carousel
+- mastermind:
+  description: >
+    If the Demon dies by execution (ending the game), play for 1 more day. If a
+    player is then executed, their team loses.
+  source: bad moon rising
+- mezepheles:
+  description: >
+    You start knowing a secret word. The 1st good player to say this word
+    becomes evil that night.
+  source: carousel
+- organ grinder:
+  description: >
+    All players keep their eyes closed when voting and the vote tally is
+    secret. Each night, choose if you are drunk until dusk.
+  source: carousel
+- pit-hag:
+  description: >
+    Each night*, choose a player & a character they become (if not in play). If
+    a Demon is made, deaths tonight are arbitrary.
+  source: sects and violets
+- poisoner:
+  description: >
+    Each night, choose a player: they are poisoned tonight and tomorrow day.
+  source: trouble brewing
+- psychopath:
+  description: >
+    Each day, before nominations, you may publicly choose a player: they die.
+    If executed, you only die if you lose roshambo.
+  source: carousel
+- scarlet woman:
+  description: >
+    If there are 5 or more players alive & the Demon dies, you become the
+    Demon. (Travellers don't count.)
+  source: trouble brewing
+- spy:
+  description: >
+    Each night, you see the Grimoire. You might register as good & as a
+    Townsfolk or Outsider, even if dead.
+  source: trouble brewing
+- summoner:
+  description: >
+    You get 3 bluffs. On the 3rd night, choose a player: they become an evil
+    Demon of your choice. [No Demon]
+  source: carousel
+- vizier:
+  description: >
+    All players know you are the Vizier. You cannot die during the day. If good
+    voted, you may choose to execute immediately.
+  source: carousel
+- widow:
+  description: >
+    On your 1st night, look at the Grimoire & choose a player: they are
+    poisoned. 1 good player knows a Widow is in play.
+  source: carousel
+- witch:
+  description: >
+    Each night, choose a player: if they nominate tomorrow, they die. If just 3
+    players live, you lose this ability.
+  source: sects and violets
+- wizard:
+  description: >
+    Once per game, choose to make a wish. If granted, it might have a price &
+    leave a clue as to its nature.
+  source: carousel
+- wraith:
+  description: >
+    You may choose to open your eyes at night. You wake when other evil players
+    do.
+  source: carousel
+- xaan:
+  description: >
+    On night X, all Townsfolk are poisoned until dusk. [X Outsiders]
+  source: carousel
+# == DEMONS =============================
+demons:
+- al-hadikhia:
+  description: >
+    Each night*, you may choose 3 players (all players learn who): each
+    silently chooses to live or die, but if all live, all die.
+  source: carousel
+- fang gu:
+  description: >
+    Each night*, choose a player: they die. The 1st Outsider this kills becomes
+    an evil Fang Gu & you die instead. [+1 Outsider]
+  source: sects and violets
+- imp:
+  description: >
+    Each night*, choose a player: they die. If you kill yourself this way, a
+    Minion becomes the Imp.
+  source: trouble brewing
+- kazali:
+  description: >
+    Each night*, choose a player: they die. [You choose which players are which
+    Minions. -? to +? Outsiders]
+  source: carousel
+- legion:
+  description: >
+    Each night*, a player might die. Executions fail if only evil voted. You
+    register as a Minion too. [Most players are Legion]
+  source: carousel
+- leviathan:
+  description: >
+    If more than 1 good player is executed, evil wins. All players know you are
+    in play. After day 5, evil wins.
+  source: carousel
+- lil' monsta:
+  description: >
+    Each night, Minions choose who babysits Lil' Monsta & "is the Demon". Each
+    night*, a player might die. [+1 Minion]
+  source: carousel
+- lleech:
+  description: >
+    Each night*, choose a player, they die. You start by choosing a player:
+    they are poisoned. You die if & only if they are dead.
+  source: carousel
+- lord of typhon:
+  description: >
+    Each night*, choose a player: they die. [Evil characters are in a line. You
+    are in the middle. +1 Minion. -? to +? Outsiders]
+  source: carousel
+- no dashii:
+  description: >
+    Each night*, choose a player: they die. Your 2 Townsfolk neighbors are
+    poisoned.
+  source: sects and violets
+- ojo:
+  description: >
+    Each night*, choose a character: they die. If they are not in play, the
+    Storyteller chooses who dies.
+  source: carousel
+- po:
+  description: >
+    Each night*, you may choose a player: they die. If your last choice was
+    no-one, choose 3 players tonight.
+  source: bad moon rising
+- pukka:
+  description: >
+    Each night, choose a player: they are poisoned. The previously poisoned
+    player dies then becomes healthy.
+  source: bad moon rising
+- riot:
+  description: >
+    On day 3, Minions become Riot & nominees die but nominate an alive player
+    immediately. This must happen.
+  source: carousel
+- shabaloth:
+  description: >
+    Each night*, choose 2 players: they die. A dead player you chose last night
+    might be regurgitated.
+  source: bad moon rising
+- vigormortis:
+  description: >
+    Each night*, choose a player: they die. Minions you kill keep their ability
+    & poison 1 Townsfolk neighbor. [-1 Outsider]
+  source: sects and violets
+- vortox:
+  description: >
+    Each night*, choose a player: they die. Townsfolk abilities yield false
+    info. Each day, if no-one is executed, evil wins.
+  source: sects and violets
+- yaggababble:
+  description: >
+    You start knowing a secret phrase. For each time you said it publicly
+    today, a player might die.
+  source: carousel
+- zombuul:
+  description: >
+    Each night*, if no-one died today, choose a player: they die. The 1st time
+    you die, you live but register as dead.
+  source: bad moon rising
