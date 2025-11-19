@@ -1,9 +1,10 @@
 """
 Parser to process the YAML data stored in the ./data directory.
+Also has facility to write
 
 Grab as needed i.e.:
 
-from parser import characters
+from data import characters
 """
 
 import yaml
@@ -19,6 +20,10 @@ def load_yaml(filename):
         print(f"Error parsing yaml from {filename}: {e}")
     return None
 
+def write_yaml(filename, contents):
+    with open(filename, 'w') as file:
+        yaml.dump(contents, file, default_flow_style=False)
+
 # === Exports ===
 characters = load_yaml('./data/characters.yaml')
 jinxes = load_yaml('./data/jinxes.yaml')
@@ -26,7 +31,7 @@ jinxes = load_yaml('./data/jinxes.yaml')
 def test_characters():
     assert characters != None
     assert isinstance(characters, dict)
-    
+
     # Check all characters have loaded
     expected = {
         "townsfolk": 69,
