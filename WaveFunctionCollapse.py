@@ -1,5 +1,3 @@
-"""This needs to be removed from the Sodor folder when I have time"""
-
 from abc import ABC, abstractmethod     # Abstract classes
 
 class WaveFunctionCollapsible:
