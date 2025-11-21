@@ -16,6 +16,7 @@ rules:
     ignored-keys:
     # Workflows
     - jobs
+    - defaults
   line-length:
     max: 80
   # Require
