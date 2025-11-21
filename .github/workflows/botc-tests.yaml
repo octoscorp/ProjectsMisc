@@ -5,7 +5,7 @@ on:
     branches:
     - master
     paths:
-    - 'BotC/*'
+    - BotC/*
 
 permissions:
   contents: read
@@ -24,7 +24,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        if [ -f BotC/requirements.txt ]; then pip install -r BotC/requirements.txt; fi
+        if [ -f BotC/requirements.txt ]; then
+        pip install -r BotC/requirements.txt
+        fi
 
     # Run tests
     # Should be replaced with dedicated pytest module if scope expands

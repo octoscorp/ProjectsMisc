@@ -5,9 +5,9 @@ on:
     branches:
     - master
     paths:
-    - '*.yaml'
-    - '*.yml'
-    - '.yamllint'
+    - "*.yaml"
+    - "*.yml"
+    - .yamllint
 
 permissions:
   contents: read

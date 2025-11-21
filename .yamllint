@@ -12,7 +12,10 @@ rules:
     check-multi-line-strings: true
     indent-sequences: false
   # Require alphabetical (unicode) key ordering
-  key-ordering: {}
+  key-ordering:
+    ignored-keys:
+    # Workflows
+    - jobs
   line-length:
     max: 80
   # Require
@@ -22,3 +25,6 @@ rules:
     required: only-when-needed
   # Disallow
   trailing-spaces: {}
+  # Need to be allowed "on" in workflows
+  truthy:
+    check-keys: false
