@@ -1,0 +1,24 @@
+extends: default
+rules:
+  comments:
+    min-spaces-from-content: 4
+    require-starting-space: true
+  # Require comment indentation to match
+  comments-indentation: {}
+  # Do not require --- at start
+  document-start:
+    present: false
+  indentation:
+    check-multi-line-strings: true
+    indent-sequences: false
+  # Require alphabetical (unicode) key ordering
+  key-ordering: {}
+  line-length:
+    max: 80
+  # Require
+  new-line-at-end-of-file: {}
+  quoted-strings:
+    quote-type: double
+    required: only-when-needed
+  # Disallow
+  trailing-spaces: {}
