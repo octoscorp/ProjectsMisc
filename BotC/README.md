@@ -15,3 +15,5 @@ The only use cases I currently have are trivial.
 2. Determine night order ranking for all characters. For this:
   * Output in YAML format to save in this repository
   * Parse character names
+  * And now we've scope crept into parsing character nighttime reminder tokens.
+  * One particular challenge of this is that the first night has a different night order to other nights.
