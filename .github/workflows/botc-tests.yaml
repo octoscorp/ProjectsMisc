@@ -11,10 +11,11 @@ permissions:
   contents: read
 
 jobs:
-  setup-environment:
+  test:
     runs-on: ubuntu-latest
 
     steps:
+    # Set up environment
     - uses: actions/checkout@v4
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
@@ -25,11 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f BotC/requirements.txt ]; then pip install -r BotC/requirements.txt; fi
 
-  basic-tests:
-    needs: setup-environment
-    runs-on: ubuntu-latest
-
+    # Run tests
     # Should be replaced with dedicated pytest module if scope expands
-    steps:
     - run: cd BotC
     - run: python ./data.py
