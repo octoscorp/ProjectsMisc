@@ -6,6 +6,7 @@ on:
     - master
     paths:
     - BotC/**
+    - .github/workflows/botc-tests.yaml
 
 permissions:
   contents: read
@@ -30,5 +31,4 @@ jobs:
 
     # Run tests
     # Should be replaced with dedicated pytest module if scope expands
-    - run: cd BotC
-    - run: python ./data.py
+    - run: python ./BotC/data.py
