@@ -9,41 +9,52 @@ from data import characters, write_yaml
 _NIGHT_ORDER_FILE = './data/night-order.yaml'
 
 
-class _OrderableCharacter:
+class _Orderable:
     """Defines a less-than function to allow sorting"""
-    def __init__(self, name):
+    def __init__(self, name, reminder_text):
         self.name = name
+        self.reminder_text = reminder_text
 
     def __lt__(self, other):
         """Compare with another character"""
-        return input(f"Should {self.name} go before {other.name}? [y/N] ").lower().strip() == 'y'
+        return input(f"Should {self.name} go before {other.name}? [y/N] ") \
+               .lower().strip() == 'y'
+
+    def output(self):
+        """YAML-compatible output format"""
+        return {self.name: self.reminder_text}
 
 
 def generate_order():
+    # Define dawn/dusk for consistency
+    _DUSK = _Orderable("dusk", "Start the Night Phase.")
+    _DAWN = _Orderable("dawn", \
+                                "Wait for a few seconds. End the Night Phase.")
+
     # Load all characters
-    all_chars = characters["townsfolk"] | characters["outsiders"] | characters["minions"] | characters["demons"]
+    all_chars = characters["townsfolk"] | characters["outsiders"] | \
+                characters["minions"] | characters["demons"]
     order = {
-        "night 1": [],
-        "other nights": [],
+        "first night": [_DAWN],
+        "other nights": [_DAWN],
     }
 
     for char_name in all_chars.keys():
         # Determine whether character wakes at night
-        wakes_1 = input(f"Does {char_name} wake night 1? [y/N] ").lower().strip() == 'y'
-        wakes_other = input(f"Does {char_name} wake on other nights? [y/N] ").lower().strip() == 'y'
-        if wakes_1:
-            order["night 1"].append(_OrderableCharacter(char_name))
-        if wakes_other:
-            order["other nights"].append(_OrderableCharacter(char_name))
+        if "reminders" not in all_chars[char_name].keys():
+            continue
+        reminders = all_chars[char_name]["reminders"]
+        for night in order.keys():
+            if night in reminders.keys():
+                orderable = _Orderable(char_name, reminders[night])
+                order[night].append(orderable)
 
-    print("== Night 1 ============")
-    # Sort into correct order (where each comparison asks the user), then simplify
-    order["night 1"].sort()
-    order["night 1"] = [char.name for char in order["night 1"]]
-
-    print("== Other Nights =======")
-    order["other nights"].sort()
-    order["other nights"] = [char.name for char in order["other nights"]]
+    # Sort into correct order (where each comparison asks the user)
+    for night in order.keys():
+        print(f"== {night} ============")
+        order[night].sort()
+        order[night] = [_DUSK.output()] + \
+                       [char.output() for char in order[night]]
 
     # Write to file
     write_yaml(_NIGHT_ORDER_FILE, order)

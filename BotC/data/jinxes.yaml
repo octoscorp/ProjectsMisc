@@ -29,7 +29,7 @@ alchemist:
     If the Alchemist has the Spy ability, they do not, and a Spy is in play.
     Each day, after the execution phase, the living Alchemist may publicly
     guess a living player as the Spy. If correct, the Demon must choose the
-    Spy tonight. 
+    Spy tonight.
   summoner: >
     The Alchemist-Summoner does not get bluffs, and chooses which Demon but
     not which player. If they die before this happens, evil wins. [No Demon]
