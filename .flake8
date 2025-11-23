@@ -1,0 +1,5 @@
+[flake8]
+# This is applied in the workflow (but not locally), left here as a reminder
+# disable-noqa = True
+# 80 is quite restrictive in an indented language
+max-line-length = 100
