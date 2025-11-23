@@ -1,571 +1,425 @@
 first night:
-- dusk: Start the Night Phase.
-- wraith: 'Wake the Wraith whenever other evil players wake.
-
-    '
-- lord of typhon: 'Replace neighbors of the Lord of Typhon with Minions, wake them,
-    tell them their new alignment and character, then do minion info.
-
-    '
-- kazali: 'Wake the Kazali, allow them to choose Minions.
-
-    '
-- boffin: 'Wake the Boffin and the Demon. Show the not-in-play good character token.
+- dusk: >
+    Start the Night Phase.
+- wraith: >
+    Wake the Wraith whenever other evil players wake.
+- lord of typhon: >
+    Replace neighbors of the Lord of Typhon with Minions, wake them, tell them
+    their new alignment and character, then do minion info.
+- kazali: >
+    Wake the Kazali, allow them to choose Minions.
+- boffin: >
+    Wake the Boffin and the Demon. Show the not-in-play good character token.
     Put the Boffin and the Demon to sleep.
-
-    '
-- philosopher: 'The Philosopher might choose a character. If necessary, swap their
-    character token.
-
-    '
-- alchemist: 'Show the {YOU ARE} token and the character token of a Minion.
-
-    '
-- poppy grower: 'Do not do the Minion Info and Demon Info steps. Wake the Demon, show
-    the {THESE CHARACTERS ARE NOT IN PLAY} info token and any three good character
+- philosopher: >
+    The Philosopher might choose a character. If necessary, swap their character
+    token.
+- alchemist: >
+    'Show the {YOU ARE} token and the character token of a Minion.
+- poppy grower: >
+    Do not do the Minion Info and Demon Info steps. Wake the Demon, show the
+    {THESE CHARACTERS ARE NOT IN PLAY} info token and any three good character
     tokens that are not in play.
-
-    '
-- yaggababble: 'Choose a secret phrase. Wake the Yaggababble and let them know their
-    secret phrase.
-
-    '
-- magician: 'Include the Magician in the Minion and Demon Info steps.
-
-    '
-- snitch: 'Wake each Minion. Show the {THESE CHARACTERS ARE NOT IN PLAY} token and
+- yaggababble: >
+    Choose a secret phrase. Wake the Yaggababble and let them know their secret
+    phrase.
+- magician: >
+    Include the Magician in the Minion and Demon Info steps.
+- snitch: >
+    Wake each Minion. Show the {THESE CHARACTERS ARE NOT IN PLAY} token and
     three not-in-play character tokens. Put each Minion to sleep.
-
-    '
-- lunatic: 'If there are 7 or more players, wake the Lunatic: Show the {THESE ARE
-    YOUR MINIONS} token. Point to any players. Show the {THESE CHARACTERS ARE NOT
-    IN PLAY} token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the
-    Demon. Show the {YOU ARE} info token and the Demon token. Show the {THIS PLAYER
-    IS} info token and the Lunatic token, then point to the Lunatic.
-
-    '
-- summoner: 'Show the {THESE CHARACTERS ARE NOT IN PLAY} token. Show 3 not-in-play
-    good character tokens.
-
-    '
-- king: 'Wake the Demon. Show the {THIS PLAYER IS} token and the King token, then
+- lunatic: >
+    If there are 7 or more players, wake the Lunatic: Show the {THESE ARE YOUR
+    MINIONS} token. Point to any players. Show the {THESE CHARACTERS ARE NOT IN
+    PLAY} token. Show 3 good character tokens. Put the Lunatic to sleep. Wake
+    the Demon. Show the {YOU ARE} info token and the Demon token. Show the {THIS
+    PLAYER IS} info token and the Lunatic token, then point to the Lunatic.
+- summoner: >
+    Show the {THESE CHARACTERS ARE NOT IN PLAY} token. Show 3 not-in-play good
+    character tokens.
+- king: >
+    Wake the Demon. Show the {THIS PLAYER IS} token and the King token, then
     point to the King.
-
-    '
-- sailor: 'The Sailor chooses a living player.
-
-    '
-- marionette: 'Wake the Demon. Point to the player marked {IS THE MARIONETTE} and
-    show the {THIS PLAYER IS} token and the Marionette character token.
-
-    '
-- engineer: 'The Engineer might choose Minions or Demons. If they do: Put the Engineer
-    to sleep. Wake a target, show them the {YOU ARE} token and their new character
-    token, then put that target to sleep. Repeat for all players that changed characters.
-
-    '
-- preacher: 'The Preacher chooses a player. If they chose a Minion: Put the Preacher
-    to sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token and the
+- sailor: >
+    The Sailor chooses a living player.
+- marionette: >
+    Wake the Demon. Point to the player marked {IS THE MARIONETTE} and show the
+    {THIS PLAYER IS} token and the Marionette character token.
+- engineer: >
+    The Engineer might choose Minions or Demons. If they do: Put the Engineer to
+    sleep. Wake a target, show them the {YOU ARE} token and their new character
+    token, then put that target to sleep. Repeat for all players that changed
+    characters.
+- preacher: >
+    The Preacher chooses a player. If they chose a Minion: Put the Preacher to
+    sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token and the
     Preacher token.
-
-    '
-- lil' monsta: 'Wake all Minions, allow them to choose a babysitter.
-
-    '
-- lleech: 'The Lleech chooses a player.
-
-    '
-- xaan: 'Mark the Xaan with the {NIGHT 1} reminder. If X is 1, mark the Xaan with
-    the {X} reminder token.
-
-    '
-- poisoner: 'The Poisoner chooses a player.
-
-    '
-- widow: 'Show the Grimoire for as long as the Widow needs. The Widow chooses a player.
-
-    '
-- courtier: 'The Courtier might choose a character.
-
-    '
-- wizard: 'Run the Wizard''s ability, if applicable.
-
-    '
-- snake charmer: 'The Snake Charmer chooses a player. If they chose the Demon: Show
-    the {YOU ARE} & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon
-    tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the {YOU
-    ARE} and Snake Charmer tokens & give a thumbs up.
-
-    '
-- godfather: 'Show the character tokens of all in-play Outsiders.
-
-    '
-- organ grinder: 'The Organ Grinder either nods their head yes to be drunk, or shakes
-    their head no to be sober.
-
-    '
-- devil's advocate: 'The Devil''s Advocate chooses a living player.
-
-    '
-- evil twin: 'Wake both twins. Allow eye contact. Show the good twin''s character
-    token to the Evil Twin & vice versa.
-
-    '
-- witch: 'The Witch chooses a player.
-
-    '
-- cerenovus: 'The Cerenovus chooses a player & a character. Put the Cerenovus to sleep.
-    Wake the target. Show the {THIS CHARACTER SELECTED YOU} token, the Cerenovus token,
-    then the madness-character token.
-
-    '
-- fearmonger: 'The Fearmonger chooses a player. Declare that "the Fearmonger has chosen
-    a player."
-
-    '
-- harpy: 'The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st target.
-    Show the {THIS CHARACTER SELECTED YOU} token, the Harpy token, then point to the
-    2nd target.
-
-    '
-- mezepheles: 'Show the written word.
-
-    '
-- pukka: 'The Pukka chooses a player.
-
-    '
-- pixie: 'Show the Townsfolk character token marked MAD.
-
-    '
-- huntsman: 'The Huntsman might choose a player. If that player was the Damsel: Put
-    the Huntsman to sleep. Wake the Damsel and show them the {YOU ARE} info token
-    and their new character token.
-
-    '
-- damsel: 'If the Damsel was chosen by the Huntsman, show them the {YOU ARE} info
-    token and their new character token.
-
-    '
-- amnesiac: 'Run the Amnesiac''s ability, if applicable.
-
-    '
-- washerwoman: 'Show the Townsfolk character token. Point to both the {TOWNSFOLK}
-    and {WRONG} players.
-
-    '
-- librarian: 'Show the Outsider character token. Point to both the {OUTSIDER} and
-    {WRONG} players.
-
-    '
-- investigator: 'Show the Minion character token. Point to both the {MINION} and {WRONG}
-    players.
-
-    '
-- chef: 'Give a finger signal.
-
-    '
-- empath: 'Give a finger signal.
-
-    '
-- fortune teller: 'The Fortune Teller chooses 2 players. Nod if either is the Demon
-    (or the {RED HERRING}).
-
-    '
-- butler: 'The Butler chooses a player.
-
-    '
-- grandmother: 'Point to the grandchild player & show their character token.
-
-    '
-- clockmaker: 'Give a finger signal.
-
-    '
-- dreamer: 'The Dreamer points to a player. Show 1 good & 1 evil character token,
-    1 of which is their character.
-
-    '
-- seamstress: 'The Seamstress might choose 2 players. Nod or shake your head.
-
-    '
-- steward: 'Point to the good player marked {KNOW}.
-
-    '
-- knight: 'Point to the two non-Demon players marked {KNOW}.
-
-    '
-- noble: 'Point to all three players marked {KNOW}.
-
-    '
-- balloonist: 'Show any player.
-
-    '
-- shugenja: 'Point clockwise or anticlockwise around the circle.
-
-    '
-- village idiot: 'Choose a Village Idiot to be drunk. Wake the Village Idiots one
-    at a time, they choose a player, show either good or evil thumbs according to
-    the alignment of that player.
-
-    '
-- bounty hunter: 'Point to the {KNOWN} player.
-
-    '
-- nightwatchman: 'The Nightwatchman might choose a player. Put the Nightwatchman to
-    sleep. Wake the target and show the {THIS PLAYER IS} and Nightwatchman tokens
-    and point to the Nightwatchman.
-
-    '
-- cult leader: 'The Cult Leader might change alignment. If so, show the {YOU ARE}
-    info token and a thumbs up or down for their new alignment.
-
-    '
-- spy: 'Show the Grimoire for as long as the Spy needs.
-
-    '
-- ogre: 'The Ogre points to a player.
-
-    '
-- high priestess: 'Point to a player.
-
-    '
-- general: 'Give a thumb signal.
-
-    '
-- chambermaid: 'The Chambermaid chooses 2 living players. Give a finger signal.
-
-    '
-- mathematician: 'Give a finger signal.
-
-    '
-- dawn: Wait for a few seconds. End the Night Phase.
-- leviathan: 'Declare that "The Leviathan is in play." Mark the Leviathan with the
-    {DAY 1} reminder.
-
-    '
-- vizier: 'Announce the Vizier player to the group.
-
-    '
-other nights:
-- dusk: Start the Night Phase.
-- wraith: 'Wake the Wraith whenever other evil players wake.
-
-    '
-- philosopher: 'The Philosopher might choose a character. If necessary, swap their
-    character token.
-
-    '
-- poppy grower: 'If the Poppy Grower died today or tonight, wake the Minions, show
-    the {THIS IS THE DEMON} info token and point to the Demon. Put them to sleep.
-    Wake the Demon, show the {THESE ARE YOUR MINIONS} info token and point to the
-    Minions. Put the Demon to sleep.
-
-    '
-- sailor: 'The Sailor chooses a living player.
-
-    '
-- engineer: 'The Engineer might choose Minions or Demons. If the do: Put the Engineer
-    to sleep. Wake a target, show them the {YOU ARE} token and their new character
-    token, then put that target to sleep. Repeat for all players that changed characters.
-
-    '
-- preacher: 'The Preacher chooses a player. If they chose a Minion: Put the Preacher
-    to sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token and the
-    Preacher token.
-
-    '
-- xaan: 'Change the Xaan reminder token to the relevant night. If it is night X, mark
-    the Xaan with the {X} reminder token.
-
-    '
-- poisoner: 'The Poisoner chooses a player.
-
-    '
-- courtier: 'The Courtier might choose a character.
-
-    '
-- innkeeper: 'The Innkeeper chooses 2 players.
-
-    '
-- wizard: 'Run the Wizard''s ability, if applicable.
-
-    '
-- gambler: 'The Gambler chooses a player & a character.
-
-    '
-- acrobat: 'The Acrobat chooses a player.
-
-    '
-- snake charmer: 'The Snake Charmer chooses a player. If they chose the Demon: Show
-    the {YOU ARE} & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon
-    tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the {YOU
-    ARE} and Snake Charmer tokens & give a thumbs up.
-
-    '
-- monk: 'The Monk chooses a player.
-
-    '
-- organ grinder: 'The Organ Grinder either nods their head yes to be drunk, or shakes
-    their head no to be sober.
-
-    '
-- devil's advocate: 'The Devil''s Advocate chooses a living player.
-
-    '
-- witch: 'The Witch chooses a player.
-
-    '
-- cerenovus: 'The Cerenovus chooses a player & a character. Put the Cerenovus to sleep.
-    Wake the target. Show the {THIS CHARACTER SELECTED YOU} token, the Cerenovus token,
-    then the madness-character token.
-
-    '
-- pit-hag: 'The Pit-Hag chooses a player & a character. If they chose a character
-    that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the {YOU
-    ARE} token & their new character token.
-
-    '
-- fearmonger: 'The Fearmonger chooses a player. If the player wasn''t already marked
-    with the {FEAR} reminder, declare that "the Fearmonger has chosen a player."
-
-    '
-- harpy: 'The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st target.
-    Show the {THIS CHARACTER SELECTED YOU} token, the Harpy token, then point to the
-    2nd target.
-
-    '
-- mezepheles: 'If a player is marked with the {TURNS EVIL} reminder, wake them. Show
-    the {YOU ARE} info token and a thumbs down. The Mezepheles loses their ability.
-
-    '
-- scarlet woman: 'If the Scarlet Woman became the Demon today, show them the {YOU
-    ARE} token, then the Demon token.
-
-    '
-- summoner: 'Change the Summoner reminder token to the relevant night. If it is night
-    3, the Summoner chooses a player and a Demon. Put the Summoner to sleep. Wake
-    the chosen player. Show the {YOU ARE} token, a thumbs down and the chosen Demon
-    token.
-
-    '
-- lunatic: 'Do whatever needs to be done to simulate the Demon acting. Put the Lunatic
-    to sleep. Wake the Demon. Show the Lunatic token & point to them, then their target(s).
-
-    '
-- exorcist: 'The Exorcist chooses a player. Put the Exorcist to sleep. If the Exorcist
-    chose the Demon: Wake the Demon. Show the {THIS CHARACTER SELECTED YOU} & Exorcist
-    tokens. Point to the Exorcist.
-
-    '
-- lycanthrope: 'The Lycanthrope chooses a player.
-
-    '
-- princess: 'If the Princess nominated the player who was executed today, the Demon
-    wakes as normal, but no one dies to the Demon''s ability.
-
-    '
-- legion: 'A player might die.
-
-    '
-- imp: 'The Imp chooses a player. If the Imp chose themselves: Replace 1 alive Minion
-    token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show
-    the {YOU ARE} token, then show the Imp token.
-
-    '
-- zombuul: 'If no one died today, the Zombuul chooses a player.
-
-    '
-- pukka: 'The Pukka chooses a player. The previously poisoned player dies then becomes
-    healthy.
-
-    '
-- shabaloth: 'A previously chosen player might be resurrected. The Shabaloth chooses
-    2 players.
-
-    '
-- po: 'The Po may choose a player OR chooses 3 players if they chose no-one last night.
-
-    '
-- fang gu: 'The Fang Gu chooses a palyer. If they chose an Outsider (once only): Replace
-    the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake
-    the target. Show the {YOU ARE} and Fang Gu tokens & give a thumbs-down.
-
-    '
-- no dashii: 'The No Dashii chooses a player.
-
-    '
-- vortox: 'The Vortox chooses a player.
-
-    '
-- lord of typhon: 'The Lord of Typhon chooses a player.
-
-    '
-- vigormortis: 'The Vigormortis chooses a player. If that player is a Minion, poison
-    a neighboring Townsfolk.
-
-    '
-- ojo: 'The Ojo chooses a character.
-
-    '
-- al-hadikhia: 'The Al-Hadikhia chooses three players. Wake the player marked {1}
-    and say "the Al-Hadikhia has chosen" then the player''s name, then "Do you choose
-    to live?" They either nod or shake their head. Put them to sleep and add or remove
-    shrouds accordingly. Repeat for players marked {2} and {3}. If all three players
-    are now alive, add a shroud to all three.
-
-    '
-- lleech: 'The Lleech chooses a player.
-
-    '
-- lil' monsta: 'Wake all Minions, allow them to choose a babysitter. A player might
-    die.
-
-    '
-- yaggababble: 'For each time the Yaggababble said the phrase today, you may choose
-    a player. They die.
-
-    '
-- kazali: 'The Kazali chooses a player.
-
-    '
-- assassin: 'The Assassin might choose a player.
-
-    '
-- godfather: 'If an Outsider died today, the Godfather chooses a player.
-
-    '
-- gossip: 'If the Gossip is due to kill a player, they die.
-
-    '
-- hatter: 'If the Hatter died today or tonight, wake Minions and Demons, allow them
-    to choose new characters.
-
-    '
-- barber: 'If the Barber died today or tonight, show the Demon the {THIS CHARACTER
-    SELECTED YOU} & Barber tokens. If the Demon chose 2 players, wake one at a time.
-    Show the {YOU ARE} token & their new character token.
-
-    '
-- sweetheart: 'If the Sweetheart died, a player became drunk immediately. If you haven''t
-    done this yet, do so now.
-
-    '
-- plague doctor: 'If the Plague Doctor died, the Storyteller gained a Minion ability.
-    If you haven''t done this yet, do so now.
-
-    '
-- sage: 'If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of
-    which is the Demon.
-
-    '
-- banshee: 'If the Banshee was killed by the Demon tonight, announce to all players
-    that the Banshee has died.
-
-    '
-- professor: 'The Professor might choose a dead player.
-
-    '
-- choirboy: 'If the Demon killed the King, point to the Demon player.
-
-    '
-- huntsman: 'The Huntsman might choose a player. If that player was the Damsel: Put
-    the Huntsman to sleep. Wake the Damsel and show them the {YOU ARE} info token
-    and their new character token.
-
-    '
-- amnesiac: 'Run the Amnesiac''s ability, if applicable.
-
-    '
-- farmer: 'If the Farmer died tonight, wake an alive good player. Show them the {YOU
-    ARE} info token and a Farmer character token. Replace their previous token with
-    the Farmer token.
-
-    '
-- tinker: 'The Tinker might die.
-
-    '
-- moonchild: 'If the Moonchild is due to kill a good player, they die.
-
-    '
-- grandmother: 'If the grandchild was killed by the Demon, the Grandmother dies too.
-
-    '
-- ravenkeeper: 'If the Ravenkeeper died tonight, the Ravenkeeper chooses a player.
-    Show that player''s character token.
-
-    '
-- empath: 'Give a finger signal.
-
-    '
-- fortune teller: 'The Fortune Teller chooses 2 players. Nod if either is the Demon
-    (or the {RED HERRING}).
-
-    '
-- undertaker: 'If a player was executed today, show their character token.
-
-    '
-- dreamer: 'The Dreamer points to a player. Show 1 good & 1 evil character token,
-    1 of which is their character.
-
-    '
-- flowergirl: 'Either nod or shake your head.
-
-    '
-- town crier: 'Either nod or shake your head.
-
-    '
-- oracle: 'Give a finger signal.
-
-    '
-- seamstress: 'The Seamstress might choose 2 players. Nod or shake your head.
-
-    '
-- juggler: 'Give a finger signal.
-
-    '
-- balloonist: 'Show a player with a different character type to previously.
-
-    '
-- village idiot: 'Wake the Village Idiots one at a time, they choose a player, show
-    either good or evil thumbs according to the alignment of that player.
-
-    '
-- king: 'If the dead equal or outnumber the living, show the character token of an
-    alive player.
-
-    '
-- bounty hunter: 'If the {KNOWN} player died today or tonight, point to a new {KNOWN}
+- lil' monsta: >
+    Wake all Minions, allow them to choose a babysitter.
+- lleech: >
+    The Lleech chooses a player.
+- xaan: >
+    Mark the Xaan with the {NIGHT 1} reminder. If X is 1, mark the Xaan with the
+    {X} reminder token.
+- poisoner: >
+    The Poisoner chooses a player.
+- widow: >
+    Show the Grimoire for as long as the Widow needs. The Widow chooses a
     player.
-
-    '
-- nightwatchman: 'The Nightwatchman might choose a player. Put the Nightwatchman to
-    sleep. Wake the target and show the {THIS PLAYER IS} and Nightwatchman tokens
-    and point to the Nightwatchman.
-
-    '
-- cult leader: 'The Cult Leader might change alignment. If so, show the {YOU ARE}
-    info token and a thumbs up or down for their new alignment.
-
-    '
-- butler: 'The Butler chooses a player.
-
-    '
-- spy: 'Show the Grimoire for as long as the Spy needs.
-
-    '
-- high priestess: 'Point to a player.
-
-    '
-- general: 'Give a thumb signal.
-
-    '
-- chambermaid: 'The Chambermaid chooses 2 living players. Give a finger signal.
-
-    '
-- mathematician: 'Give a finger signal.
-
-    '
-- dawn: Wait for a few seconds. End the Night Phase.
-- leviathan: 'Optionally, declare that "The Leviathan is in play." Replace the reminder
+- courtier: >
+    The Courtier might choose a character.
+- wizard: >
+    Run the Wizard's ability, if applicable.
+- snake charmer: >
+    The Snake Charmer chooses a player. If they chose the Demon: Show the {YOU
+    ARE} & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon
+    tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the
+    {YOU ARE} and Snake Charmer tokens & give a thumbs up.
+- godfather: >
+    Show the character tokens of all in-play Outsiders.
+- organ grinder: >
+    The Organ Grinder either nods their head yes to be drunk, or shakes their
+    head no to be sober.
+- devil's advocate: >
+    The Devil's Advocate chooses a living player.
+- evil twin: >
+    Wake both twins. Allow eye contact. Show the good twin's character token to
+    the Evil Twin & vice versa.
+- witch: >
+    The Witch chooses a player.
+- cerenovus: >
+    The Cerenovus chooses a player & a character. Put the Cerenovus to sleep.
+    Wake the target. Show the {THIS CHARACTER SELECTED YOU} token, the Cerenovus
+    token, then the madness-character token.
+- fearmonger: >
+    The Fearmonger chooses a player. Declare that "the Fearmonger has chosen a
+    player."
+- harpy: >
+    The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st target.
+    Show the {THIS CHARACTER SELECTED YOU} token, the Harpy token, then point to
+    the 2nd target.
+- mezepheles: >
+    Show the written word.
+- pukka: >
+    The Pukka chooses a player.
+- pixie: >
+    Show the Townsfolk character token marked MAD.
+- huntsman: >
+    The Huntsman might choose a player. If that player was the Damsel: Put the
+    Huntsman to sleep. Wake the Damsel and show them the {YOU ARE} info token
+    and their new character token.
+- damsel: >
+    If the Damsel was chosen by the Huntsman, show them the {YOU ARE} info token
+    and their new character token.
+- amnesiac: >
+    Run the Amnesiac's ability, if applicable.
+- washerwoman: >
+    Show the Townsfolk character token. Point to both the {TOWNSFOLK} and
+    {WRONG} players.
+- librarian: >
+    Show the Outsider character token. Point to both the {OUTSIDER} and {WRONG}
+    players.
+- investigator: >
+    Show the Minion character token. Point to both the {MINION} and {WRONG}
+    players.
+- chef: >
+    Give a finger signal.
+- empath: >
+    Give a finger signal.
+- fortune teller: >
+    The Fortune Teller chooses 2 players. Nod if either is the Demon (or the
+    {RED HERRING}).
+- butler: >
+    The Butler chooses a player.
+- grandmother: >
+    Point to the grandchild player & show their character token.
+- clockmaker: >
+    Give a finger signal.
+- dreamer: >
+    The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of
+    which is their character.
+- seamstress: >
+    The Seamstress might choose 2 players. Nod or shake your head.
+- steward: >
+    Point to the good player marked {KNOW}.
+- knight: >
+    Point to the two non-Demon players marked {KNOW}.
+- noble: >
+    Point to all three players marked {KNOW}.
+- balloonist: >
+    Show any player.
+- shugenja: >
+    Point clockwise or anticlockwise around the circle.
+- village idiot: >
+    Choose a Village Idiot to be drunk. Wake the Village Idiots one at a time,
+    they choose a player, show either good or evil thumbs according to the
+    alignment of that player.
+- bounty hunter: >
+    Point to the {KNOWN} player.
+- nightwatchman: >
+    The Nightwatchman might choose a player. Put the Nightwatchman to sleep.
+    Wake the target and show the {THIS PLAYER IS} and Nightwatchman tokens and
+    point to the Nightwatchman.
+- cult leader: >
+    The Cult Leader might change alignment. If so, show the {YOU ARE} info token
+    and a thumbs up or down for their new alignment.
+- spy: >
+    Show the Grimoire for as long as the Spy needs.
+- ogre: >
+    The Ogre points to a player.
+- high priestess: >
+    Point to a player.
+- general: >
+    Give a thumb signal.
+- chambermaid: >
+    The Chambermaid chooses 2 living players. Give a finger signal.
+- mathematician: >
+    Give a finger signal.
+- dawn: >
+    Wait for a few seconds. End the Night Phase.
+- leviathan: >
+    Declare that "The Leviathan is in play." Mark the Leviathan with the {DAY 1}
+    reminder.
+- vizier: >
+    Announce the Vizier player to the group.
+other nights:
+- dusk: >
+    Start the Night Phase.
+- wraith: >
+    Wake the Wraith whenever other evil players wake.
+- philosopher: >
+    The Philosopher might choose a character. If necessary, swap their character
     token.
-
-    '
+- poppy grower: >
+    If the Poppy Grower died today or tonight, wake the Minions, show the {THIS
+    IS THE DEMON} info token and point to the Demon. Put them to sleep. Wake the
+    Demon, show the {THESE ARE YOUR MINIONS} info token and point to the
+    Minions. Put the Demon to sleep.
+- sailor: >
+    The Sailor chooses a living player.
+- engineer: >
+    The Engineer might choose Minions or Demons. If the do: Put the Engineer to
+    sleep. Wake a target, show them the {YOU ARE} token and their new character
+    token, then put that target to sleep. Repeat for all players that changed
+    characters.
+- preacher: >
+    The Preacher chooses a player. If they chose a Minion: Put the Preacher to
+    sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token and the
+    Preacher token.
+- xaan: >
+    Change the Xaan reminder token to the relevant night. If it is night X, mark
+    the Xaan with the {X} reminder token.
+- poisoner: >
+    The Poisoner chooses a player.
+- courtier: >
+    The Courtier might choose a character.
+- innkeeper: >
+    The Innkeeper chooses 2 players.
+- wizard: >
+    Run the Wizard's ability, if applicable.
+- gambler: >
+    The Gambler chooses a player & a character.
+- acrobat: >
+    The Acrobat chooses a player.
+- snake charmer: >
+    The Snake Charmer chooses a player. If they chose the Demon: Show the {YOU
+    ARE} & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon
+    tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the
+    {YOU ARE} and Snake Charmer tokens & give a thumbs up.
+- monk: >
+    The Monk chooses a player.
+- organ grinder: >
+    The Organ Grinder either nods their head yes to be drunk, or shakes their
+    head no to be sober.
+- devil's advocate: >
+    The Devil's Advocate chooses a living player.
+- witch: >
+    The Witch chooses a player.
+- cerenovus: >
+    The Cerenovus chooses a player & a character. Put the Cerenovus to sleep.
+    Wake the target. Show the {THIS CHARACTER SELECTED YOU} token, the Cerenovus
+    token, then the madness-character token.
+- pit-hag: >
+    The Pit-Hag chooses a player & a character. If they chose a character that
+    is not in play: Put the Pit-Hag to sleep. Wake the target. Show the {YOU
+    ARE} token & their new character token.
+- fearmonger: >
+    The Fearmonger chooses a player. If the player wasn't already marked with
+    the {FEAR} reminder, declare that "the Fearmonger has chosen a player."
+- harpy: >
+    The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st target.
+    Show the {THIS CHARACTER SELECTED YOU} token, the Harpy token, then point to
+    the 2nd target.
+- mezepheles: >
+    If a player is marked with the {TURNS EVIL} reminder, wake them. Show the
+    {YOU ARE} info token and a thumbs down. The Mezepheles loses their ability.
+- scarlet woman: >
+    If the Scarlet Woman became the Demon today, show them the {YOU ARE} token,
+    then the Demon token.
+- summoner: >
+    Change the Summoner reminder token to the relevant night. If it is night 3,
+    the Summoner chooses a player and a Demon. Put the Summoner to sleep. Wake
+    the chosen player. Show the {YOU ARE} token, a thumbs down and the chosen
+    Demon token.
+- lunatic: >
+    Do whatever needs to be done to simulate the Demon acting. Put the Lunatic
+    to sleep. Wake the Demon. Show the Lunatic token & point to them, then their
+    target(s).
+- exorcist: >
+    The Exorcist chooses a player. Put the Exorcist to sleep. If the Exorcist
+    chose the Demon: Wake the Demon. Show the {THIS CHARACTER SELECTED YOU} &
+    Exorcist tokens. Point to the Exorcist.
+- lycanthrope: >
+    The Lycanthrope chooses a player.
+- princess: >
+    If the Princess nominated the player who was executed today, the Demon wakes
+    as normal, but no one dies to the Demon's ability.
+- legion: >
+    A player might die.
+- imp: >
+    The Imp chooses a player. If the Imp chose themselves: Replace 1 alive
+    Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new
+    Imp. Show the {YOU ARE} token, then show the Imp token.
+- zombuul: >
+    If no one died today, the Zombuul chooses a player.
+- pukka: >
+    The Pukka chooses a player. The previously poisoned player dies then becomes
+    healthy.
+- shabaloth: >
+    A previously chosen player might be resurrected. The Shabaloth chooses 2
+    players.
+- po: >
+    The Po may choose a player OR chooses 3 players if they chose no-one last
+    night.
+- fang gu: >
+    The Fang Gu chooses a player. If they chose an Outsider (once only): Replace
+    the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep.
+    Wake the target. Show the {YOU ARE} and Fang Gu tokens & give a thumbs-down.
+- no dashii: >
+    The No Dashii chooses a player.
+- vortox: >
+    The Vortox chooses a player.
+- lord of typhon: >
+    The Lord of Typhon chooses a player.
+- vigormortis: >
+    The Vigormortis chooses a player. If that player is a Minion, poison a
+    neighboring Townsfolk.
+- ojo: >
+    The Ojo chooses a character.
+- al-hadikhia: >
+    The Al-Hadikhia chooses three players. Wake the player marked {1} and say
+    "the Al-Hadikhia has chosen" then the player's name, then "Do you choose to
+    live?" They either nod or shake their head. Put them to sleep and add or
+    remove shrouds accordingly. Repeat for players marked {2} and {3}. If all
+    three players are now alive, add a shroud to all three.
+- lleech: >
+    The Lleech chooses a player.
+- lil' monsta: >
+    Wake all Minions, allow them to choose a babysitter. A player might die.
+- yaggababble: >
+    For each time the Yaggababble said the phrase today, you may choose a
+    player. They die.
+- kazali: >
+    The Kazali chooses a player.
+- assassin: >
+    The Assassin might choose a player.
+- godfather: >
+    If an Outsider died today, the Godfather chooses a player.
+- gossip: >
+    If the Gossip is due to kill a player, they die.
+- hatter: >
+    If the Hatter died today or tonight, wake Minions and Demons, allow them to
+    choose new characters.
+- barber: >
+    If the Barber died today or tonight, show the Demon the {THIS CHARACTER
+    SELECTED YOU} & Barber tokens. If the Demon chose 2 players, wake one at a
+    time. Show the {YOU ARE} token & their new character token.
+- sweetheart: >
+    If the Sweetheart died, a player became drunk immediately. If you haven't
+    done this yet, do so now.
+- plague doctor: >
+    If the Plague Doctor died, the Storyteller gained a Minion ability. If you
+    haven't done this yet, do so now.
+- sage: >
+    If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of
+    which is the Demon.
+- banshee: >
+    If the Banshee was killed by the Demon tonight, announce to all players that
+    the Banshee has died.
+- professor: >
+    The Professor might choose a dead player.
+- choirboy: >
+    If the Demon killed the King, point to the Demon player.
+- huntsman: >
+    The Huntsman might choose a player. If that player was the Damsel: Put the
+    Huntsman to sleep. Wake the Damsel and show them the {YOU ARE} info token
+    and their new character token.
+- amnesiac: >
+    Run the Amnesiac's ability, if applicable.
+- farmer: >
+    If the Farmer died tonight, wake an alive good player. Show them the {YOU
+    ARE} info token and a Farmer character token. Replace their previous token
+    with the Farmer token.
+- tinker: >
+    The Tinker might die.
+- moonchild: >
+    If the Moonchild is due to kill a good player, they die.
+- grandmother: >
+    If the grandchild was killed by the Demon, the Grandmother dies too.
+- ravenkeeper: >
+    If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that
+    player's character token.
+- empath: >
+    Give a finger signal.
+- fortune teller: >
+    The Fortune Teller chooses 2 players. Nod if either is the Demon (or the
+    {RED HERRING}).
+- undertaker: >
+    If a player was executed today, show their character token.
+- dreamer: >
+    The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of
+    which is their character.
+- flowergirl: >
+    Either nod or shake your head.
+- town crier: >
+    Either nod or shake your head.
+- oracle: >
+    Give a finger signal.
+- seamstress: >
+    The Seamstress might choose 2 players. Nod or shake your head.
+- juggler: >
+    Give a finger signal.
+- balloonist: >
+    Show a player with a different character type to previously.
+- village idiot: >
+    Wake the Village Idiots one at a time, they choose a player, show either
+    good or evil thumbs according to the alignment of that player.
+- king: >
+    If the dead equal or outnumber the living, show the character token of an
+    alive player.
+- bounty hunter: >
+    If the {KNOWN} player died today or tonight, point to a new {KNOWN} player.
+- nightwatchman: >
+    The Nightwatchman might choose a player. Put the Nightwatchman to sleep.
+    Wake the target and show the {THIS PLAYER IS} and Nightwatchman tokens and
+    point to the Nightwatchman.
+- cult leader: >
+    The Cult Leader might change alignment. If so, show the {YOU ARE} info token
+    and a thumbs up or down for their new alignment.
+- butler: >
+    The Butler chooses a player.
+- spy: >
+    Show the Grimoire for as long as the Spy needs.
+- high priestess: >
+    Point to a player.
+- general: >
+    Give a thumb signal.
+- chambermaid: >
+    The Chambermaid chooses 2 living players. Give a finger signal.
+- mathematician: >
+    Give a finger signal.
+- dawn: >
+    Wait for a few seconds. End the Night Phase.
+- leviathan: >
+    Optionally, declare that "The Leviathan is in play." Replace the reminder
+    token.
