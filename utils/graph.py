@@ -11,12 +11,14 @@ import heapq
 from collections import deque
 from math import inf
 
+
 # Abstract class!
 class BaseAdjacencyStorage(ABC):
     """Implements basics for adjacency list and adjacency matrix to return"""
     def __init__(self):
-        raise NotImplementedError("This is an abstract class, please instantiate a child class instead.")
-    
+        raise NotImplementedError("This is an abstract class, please instantiate a child class \
+                                  instead.")
+
     @abstractmethod
     def get_adjacent_nodes(self, node):
         pass
@@ -24,6 +26,7 @@ class BaseAdjacencyStorage(ABC):
     @abstractmethod
     def are_adjacent(self, node1, node2):
         pass
+
 
 class AdjacencyList(BaseAdjacencyStorage):
     def __init__(self, adjacencies):
@@ -34,14 +37,15 @@ class AdjacencyList(BaseAdjacencyStorage):
         }
         """
         self.adjacency = adjacencies
-    
+
     def get_adjacent_nodes(self, node):
         # O(1) to fetch the list
         return self.adjacency[node]
-    
+
     def are_adjacent(self, node_1, node_2):
         # O(d) where d is degree of node_1
         return node_2 in self.adjacency[node_1]
+
 
 class AdjacencyMatrix(BaseAdjacencyStorage):
     def __init__(self, adjacency_list):
@@ -64,11 +68,13 @@ class AdjacencyMatrix(BaseAdjacencyStorage):
 
     def get_adjacent_nodes(self, node):
         # O(n) where n is number of nodes
-        return [neighbour for neighbour in self.adjacency[node].keys() if self.adjacency[node][neighbour]]
-    
+        return [neighbour for neighbour in self.adjacency[node].keys()
+                if self.adjacency[node][neighbour]]
+
     def are_adjacent(self, node_1, node_2):
         # O(1)
         return [node_1][node_2]
+
 
 class BaseGraph():
     def __init__(self, adjacency_list, weights):
@@ -107,7 +113,8 @@ class BaseGraph():
 
     def get_edge_cost(self, node, neighbour):
         """
-        Cost of moving from `node` to `neighbour`. Return `inf` if there is no edge connecting them and no cost cached.
+        Cost of moving from `node` to `neighbour`. Return `inf` if there is no edge connecting them
+        and no cost cached.
         """
         if neighbour not in self.adj[node]:
             if node in self._dijkstra_cache.keys():
@@ -118,8 +125,10 @@ class BaseGraph():
     def breadth_first_traversal(self, start):
         """
         Performs a breadth-first traversal from `start` and returns the order traversed.
+
+        Slightly modified from
+          https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
         """
-        # Slight modification from https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
         queue = deque()
         visited = [False] * len(self.adj)
         order = []
@@ -164,7 +173,7 @@ class BaseGraph():
             distance, current = heapq.heappop(queue)
             for neighbour in self.adj[current]:
                 route_through_current = distance[current] + self.get_edge_cost(current, neighbour)
-                # Check if the current node provides a shorter path than currently found for the neighbour
+                # Check if current node provides a shorter path than currently found for neighbour
                 if distance[neighbour] > route_through_current:
                     distance[neighbour] = route_through_current
                     heapq.heappush(queue, (distance[neighbour], neighbour))
@@ -179,6 +188,7 @@ class BaseGraph():
 
     def kruskal(self):
         pass
+
 
 class UnweightedGraph(BaseGraph):
     """

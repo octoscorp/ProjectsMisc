@@ -10,6 +10,7 @@ from math import inf
 from collections import namedtuple, deque
 from heapq import heappush, heappop
 
+
 Position = namedtuple('Position', 'x y')
 
 AVERAGE_TRACK_LENGTH = 5.05
@@ -19,6 +20,7 @@ COLOURS = {
     'red': '#e8462a',
     'brown': '#9c6e4b',
 }
+
 
 class Node:
     def __init__(self, id, name, position):
@@ -30,26 +32,29 @@ class Node:
     def __str__(self):
         return self.name
 
+
 class PriorityQueue:
     def __init__(self):
         """ This one starts off empty. Sorry, nothing fancy here """
         self.contents = []
         self.count = 0
-    
+
     def push(self, task, priority=0):
         """ I really don't need to explain this """
         entry = (priority, self.count, task)
         heappush(self.contents, entry)
         self.count += 1
-    
+
     def pop(self):
         priority, _, task = heappop(self.contents)
         if self.empty():
-            self.count = 0  # Not that I'm overly worried about overflowing number counters, but better safe than sorry
+            # Not that I'm overly worried about overflow here, but better safe than sorry
+            self.count = 0
         return (task, priority)
 
     def empty(self):
         return len(self.contents) == 0
+
 
 class Model:
     def __init__(self, node_file, edge_file):
@@ -60,7 +65,7 @@ class Model:
 
     def create_nodes(self, filename):
         """ Create nodes from a given file. This expects the file to have each
-         node on its own line, in the format <id>, <name>, <x>, <y> 
+         node on its own line, in the format <id>, <name>, <x>, <y>
          where id is an integer starting at 0 and listed in increasing order
          within the file"""
         # Load lines in
@@ -93,19 +98,19 @@ class Model:
             self.adj_list[node_1].append((node_2, weight))
             self.adj_list[node_2].append((node_1, weight))
             self.track_thicknesses[(node_1, node_2)] = num_tracks
-    
+
     def add_edge(self, n_1, n_2, weight):
         node_1 = self.nodes.index(n_1)
         node_2 = self.nodes.index(n_2)
         self.adj_list[node_1].append((node_2, weight))
         self.adj_list[node_2].append((node_1, weight))
-    
+
     def remove_edge(self, n_1, n_2, weight):
         node_1 = self.nodes.index(n_1)
         node_2 = self.nodes.index(n_2)
         self.adj_list[node_1].remove((node_2, weight))
         self.adj_list[node_2].remove((node_1, weight))
-    
+
     def get_all_edges(self):
         """ Don't do this repeatedly, it's not that necessary """
         edges = []
@@ -149,10 +154,12 @@ class Model:
             return paths[start_node]
         except KeyError:
             return []
-    
+
     def shortest_path_between(self, node_1, node_2):
-        """ An implementation of djikstra's algorithm using heapq to create a priority queue.
-         It sounds more impressive than it is, I've just done this a bunch in class (this is at least my third time doing it) """
+        """
+        An implementation of djikstra's algorithm using heapq to create a priority queue.
+        Sounds more impressive than it is, I've just done this a bunch in class
+        """
         D = [inf] * len(self.nodes)
         D[node_2] = 0
         visited = []
@@ -184,12 +191,13 @@ class Model:
             if node == node_2:
                 return weight
         return inf
-    
+
     def passing_possible(self, node_1, node_2):
         """ Returns a boolean value of whether trains can pass each other on the specified track """
         if (node_1, node_2) in self.track_thicknesses.keys():
             return self.track_thicknesses[(node_1, node_2)] > 1
         return self.track_thicknesses[(node_2, node_1)] > 1
+
 
 class Train:
     def __init__(self, init_list, out_of_range):
@@ -207,13 +215,13 @@ class Train:
         self.played = False
 
         self.out_of_range = out_of_range
-    
+
     def get_usual_distance(self):
         return self.speed * AVERAGE_TRACK_LENGTH
 
     def move(self, stuck_behind=[]):
         """
-         Move the train in the direction it is facing according to its speed 
+         Move the train in the direction it is facing according to its speed
          :param stuck_behind: a list of tuples of (distance, top_speed)
          :param callback: a function to update the distances
         """
@@ -240,7 +248,7 @@ class Train:
                     break
         if time_stuck < 1:
             duration = 1 - time_stuck
-            
+
             distance_travelled += duration * (self.speed * AVERAGE_TRACK_LENGTH)
 
         # Add the distance travelled
@@ -252,7 +260,7 @@ class Train:
         self.distance_from_last_station = 0
         self.facing = None
         self.remaining_range -= distance
-    
+
     def pass_station(self, station_id, distance):
         """ Set the train's last station passed to this (removes its facing) """
         self.last_station = station_id
@@ -260,12 +268,14 @@ class Train:
         self.facing = None
         self.remaining_range -= distance
 
+
 def get_lines_of_file(filename):
     """ A utility function which returns a list of the file's lines """
     src_file = open(filename, "r")
     lines = [line.rstrip() for line in src_file.readlines()]
     src_file.close()
     return lines
+
 
 def test():
     """ Test the graph's construction """
@@ -292,6 +302,7 @@ def test():
 
     # Let user know of our success!
     print("All tests passed with flying scotsman!")
+
 
 # Only run tests if this is not imported
 if __name__ == "__main__":

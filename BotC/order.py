@@ -17,8 +17,8 @@ class _Orderable:
 
     def __lt__(self, other):
         """Compare with another character"""
-        return input(f"Should {self.name} go before {other.name}? [y/N] ") \
-               .lower().strip() == 'y'
+        decision = input(f"Should {self.name} go before {other.name}? [y/N] ")
+        return "y" == decision.lower().strip()
 
     def output(self):
         """YAML-compatible output format"""
@@ -28,8 +28,7 @@ class _Orderable:
 def generate_order():
     # Define dawn/dusk for consistency
     _DUSK = _Orderable("dusk", "Start the Night Phase.")
-    _DAWN = _Orderable("dawn", \
-                                "Wait for a few seconds. End the Night Phase.")
+    _DAWN = _Orderable("dawn", "Wait for a few seconds. End the Night Phase.")
 
     # Load all characters
     all_chars = characters["townsfolk"] | characters["outsiders"] | \

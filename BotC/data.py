@@ -6,8 +6,8 @@ Grab as needed i.e.:
 
 from data import characters
 """
-
 import yaml
+
 
 def load_yaml(filename):
     try:
@@ -20,16 +20,19 @@ def load_yaml(filename):
         print(f"Error parsing yaml from {filename}: {e}")
     return None
 
+
 def write_yaml(filename, contents):
     with open(filename, 'w') as file:
         yaml.dump(contents, file, default_flow_style=False)
+
 
 # === Exports ===
 characters = load_yaml('./data/characters.yaml')
 jinxes = load_yaml('./data/jinxes.yaml')
 
+
 def test_characters():
-    assert characters != None
+    assert characters is not None
     assert isinstance(characters, dict)
 
     # Check all characters have loaded
@@ -48,7 +51,8 @@ def test_characters():
     expected = {
         "townsfolk": {
             "acrobat": {
-                "description": "Each night*, choose a player: if they are or become drunk or poisoned tonight, you die.\n",
+                "description": "Each night*, choose a player: if they are or become drunk or \
+                                poisoned tonight, you die.\n",
                 "source": "carousel",
             },
         },
@@ -56,13 +60,16 @@ def test_characters():
 
     for category in expected.keys():
         for char_name in expected[category].keys():
-            assert char_name in characters[category],keys()
-            for attr in expected[category][char_name].keys():
-                assert characters[category][char_name][attr] == expected[category][char_name][attr], f"{characters[category][char_name][attr]} does not match (expected) {expected[category][char_name][attr]}"
+            assert char_name in characters[category].keys()
+            found_char = characters[category][char_name]
+            expected_char = expected[category][char_name]
+            for attr in expected_char.keys():
+                assert found_char[attr] == expected_char[attr], \
+                       f"{attr}: {found_char[attr]} does not match (expected) {expected_char[attr]}"
 
 
 def test_jinxes():
-    assert jinxes != None
+    assert jinxes is not None
     assert isinstance(jinxes, dict)
 
     # Check all jinxes have loaded
@@ -71,9 +78,13 @@ def test_jinxes():
     # Check structure
     expected = {
         'al-hadikhia': {
-            'mastermind': 'If the Al-Hadikhia dies by execution, and the Mastermind is alive, the Al-Hadikhia chooses 3 good players tonight: if all 3 choose to live, evil wins. Otherwise, good wins.\n',
-            'princess': 'If the Princess nominated & executed a player on their 1st day, no one dies to the Al-Hadikhia ability tonight.\n',
-            'scarlet woman': 'If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again.\n',
+            'mastermind': 'If the Al-Hadikhia dies by execution, and the Mastermind is alive, the \
+                           Al-Hadikhia chooses 3 good players tonight: if all 3 choose to live, \
+                           evil wins. Otherwise, good wins.\n',
+            'princess': 'If the Princess nominated & executed a player on their 1st day, no one \
+                         dies to the Al-Hadikhia ability tonight.\n',
+            'scarlet woman': 'If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia \
+                              becomes the Scarlet Woman again.\n',
         },
     }
 

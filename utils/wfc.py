@@ -1,7 +1,11 @@
-from abc import ABC, abstractmethod     # Abstract classes
+"""
+A stub of a Wave Function Collapse algorithm util
+"""
+# from abc import ABC, abstractmethod     # Abstract classes
+
 
 class WaveFunctionCollapsible:
-    """To be turned into An abstract class, which all objects using WaveFunctionCollapseManager should extend"""
+    """To be turned into An abstract class, which all objects using WFCManager should extend"""
     # Example also defined add_neighbour, getNeighbour, getDirections, getPossibilities
 
     def __init__(self):
@@ -9,7 +13,7 @@ class WaveFunctionCollapsible:
         # Entropy = len(possibilities)
         # Neighbours = dict()
         pass
-    
+
     def collapse(self):
         # Get weights of possibilities (ex: defined in a dictionary)
         # Choose a possibility (ex: random.choices(self.possibilities, weights=weights, k=1))
@@ -20,21 +24,23 @@ class WaveFunctionCollapsible:
         # if entropy > 0:
         # Create empty list
         # Add all edges (relevant) edges of possibilities of the tile which has called this.
-        # Grab the opposite of the direction (ex did this with 4 if statements, a lookup would be faster)
+        # Grab the opposite of the direction (example did this with 4 if statements, lookup would be
+        #  faster)
 
         # Loop over the possibilities for this tile
-        # If the opposite side of this possibility cannot connect to any, we remove it and set a flag
+        # If the opposite side of this possibility cannot connect to any, remove it and set a flag
         # EOL
 
         # Update entropy
         # Return boolean of whether any were removed
         pass
 
+
 class WFCManager:
     """A class for applying the wave function collapse algorithm to a set of objects"""
     def __init__(self):
         pass
-    
+
     def wave_function_collapse(self):
         # Get list of tiles with lowest entropy
         # If list is empty, return 0
