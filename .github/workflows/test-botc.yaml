@@ -33,6 +33,5 @@ jobs:
         pip install -r requirements.txt
         fi
 
-    # Run tests
-    # Should be replaced with dedicated pytest module if scope expands
-    - run: python ./data.py
+    # Test
+    - run: pytest .

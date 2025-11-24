@@ -2,7 +2,7 @@
 Script to generate/fetch a night ordering of characters. Can be run independently to generate the
 night order with user input, or imported to use the data.
 """
-from data import characters, write_yaml
+from data import characters, write_yaml, load_yaml
 
 
 _DEFAULT_NIGHT_ORDER_FILE = './data/night-order.yaml'
@@ -88,6 +88,43 @@ def generate_order(char_set, filename=None):
     if filename is not None:
         write_yaml(filename, order)
     return order
+
+
+def pick_from_order(character_names, filename=_DEFAULT_NIGHT_ORDER_FILE):
+    """
+    Assign characters a night order from the specified file.
+    @param character_names list of character names to include in the order
+    @param filename save file to source order from (defaults to ./data/night-order.yaml)
+    @return order dict of night order in the below format. This includes dusk and dawn
+    {
+        "first night": [
+            {<name>: <first night reminder>},
+            ...
+        ],
+        "other nights": [
+            {<name>: <other nights reminder>},
+            ...
+        ]
+    }
+    """
+    order = load_yaml(filename)
+
+    names_to_keep = character_names + ["dusk", "dawn", "minion info", "demon info"]
+
+    try:
+        for night in order.keys():
+            to_remove = []
+            for i in range(len(order[night])):
+                char_object = order[night][i]
+                char_name = list(char_object.keys())[0]
+                if char_name not in names_to_keep:
+                    to_remove.append(i)
+            # Remove later because list traversal funtimes
+            for i in reversed(to_remove):
+                del order[night][i]
+        return order
+    except ValueError as e:
+        raise ValueError(f"Issue while processing data from {filename}: {e.msg}")
 
 
 # If run directly, generate ./data/night-order.yaml
