@@ -25,6 +25,10 @@ first night:
     phrase.
 - magician: >
     Include the Magician in the Minion and Demon Info steps.
+- minion info: >
+    If there are 7 or more players, wake all Minions: Show the {THIS IS THE
+    DEMON} token. Point to the Demon. Show the {THESE ARE YOUR MINIONS} token.
+    Point to the other Minions.
 - snitch: >
     Wake each Minion. Show the {THESE CHARACTERS ARE NOT IN PLAY} token and
     three not-in-play character tokens. Put each Minion to sleep.
@@ -37,6 +41,10 @@ first night:
 - summoner: >
     Show the {THESE CHARACTERS ARE NOT IN PLAY} token. Show 3 not-in-play good
     character tokens.
+- demon info: >
+    If there are 7 or more players, wake the Demon: Show the {THESE ARE YOUR
+    MINIONS} token. Point to all Minions. Show the {THESE CHARACTERS ARE NOT IN
+    PLAY} token. Show 3 not-in-play good character tokens.
 - king: >
     Wake the Demon. Show the {THIS PLAYER IS} token and the King token, then
     point to the King.

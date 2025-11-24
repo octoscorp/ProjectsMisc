@@ -1,12 +1,11 @@
 """
-Script to generate/fetch a night ordering of all characters. Can be run
-independently to generate the night order with user input, or imported to use
-the data.
+Script to generate/fetch a night ordering of characters. Can be run independently to generate the
+night order with user input, or imported to use the data.
 """
 from data import characters, write_yaml
 
 
-_NIGHT_ORDER_FILE = './data/night-order.yaml'
+_DEFAULT_NIGHT_ORDER_FILE = './data/night-order.yaml'
 
 
 class _Orderable:
@@ -22,27 +21,57 @@ class _Orderable:
 
     def output(self):
         """YAML-compatible output format"""
-        return {self.name: self.reminder_text}
+        return {self.name: self.reminder_text.strip()}
 
 
-def generate_order():
+def generate_order(char_set, filename=None):
+    """
+    Generate night order for characters specified in char_set. If filename is not None, write output
+    in YAML format to the specified file.
+    @param char_set dict of characters in the following format:
+    {
+        <name>: {
+            ["reminders": {
+                ["first night": <first night reminder>,]
+                ["other nights": <other nights reminder>]
+            }]
+        }, ...
+    }
+    @param filename the file to write results to when done. Will silently overwrite if this exists!
+    @return order dict of night order in the below format. This includes dusk and dawn
+    {
+        "first night": [
+            {<name>: <first night reminder>},
+            ...
+        ],
+        "other nights": [
+            {<name>: <other nights reminder>},
+            ...
+        ]
+    }
+    """
     # Define dawn/dusk for consistency
     _DUSK = _Orderable("dusk", "Start the Night Phase.")
     _DAWN = _Orderable("dawn", "Wait for a few seconds. End the Night Phase.")
-
-    # Load all characters
-    all_chars = characters["townsfolk"] | characters["outsiders"] | \
-                characters["minions"] | characters["demons"]
+    _MINION_INFO = _Orderable("minion info",
+                              "If there are 7 or more players, wake all Minions: Show the {THIS " +
+                              "IS THE DEMON} token. Point to the Demon. Show the {THESE ARE YOUR " +
+                              "MINIONS} token. Point to the other Minions.")
+    _DEMON_INFO = _Orderable("demon info",
+                             "If there are 7 or more players, wake the Demon: Show the {THESE " +
+                             "ARE YOUR MINIONS} token. Point to all Minions. Show the {THESE " +
+                             "CHARACTERS ARE NOT IN PLAY} token. Show 3 not-in-play good " +
+                             "character tokens.")
     order = {
-        "first night": [_DAWN],
+        "first night": [_DAWN, _MINION_INFO, _DEMON_INFO],
         "other nights": [_DAWN],
     }
 
-    for char_name in all_chars.keys():
+    for char_name in char_set.keys():
         # Determine whether character wakes at night
-        if "reminders" not in all_chars[char_name].keys():
+        if "reminders" not in char_set[char_name].keys():
             continue
-        reminders = all_chars[char_name]["reminders"]
+        reminders = char_set[char_name]["reminders"]
         for night in order.keys():
             if night in reminders.keys():
                 orderable = _Orderable(char_name, reminders[night])
@@ -56,8 +85,14 @@ def generate_order():
                        [char.output() for char in order[night]]
 
     # Write to file
-    write_yaml(_NIGHT_ORDER_FILE, order)
+    if filename is not None:
+        write_yaml(filename, order)
+    return order
 
 
+# If run directly, generate ./data/night-order.yaml
 if __name__ == '__main__':
-    generate_order()
+    # Load all characters
+    all_chars = characters["townsfolk"] | characters["outsiders"] | \
+                characters["minions"] | characters["demons"]
+    generate_order(all_chars, _DEFAULT_NIGHT_ORDER_FILE)
