@@ -60,9 +60,9 @@ if __name__ == "__main__":
     parser.add_argument('--entry-type', '-et', default="manual", choices=[
         'manual',
         'int-range',
-    ], help="Manner of cookie entry. One of: \
-        - manual:  ask for input and request after each given input \
-        - int-range: ask for an int start, end, and step; try for each integer"
+    ], help="Manner of cookie entry. One of:\n" +
+        "- manual:  ask for input and request after each given input\n" +
+        "- int-range: ask for an int start, end, and step; try for each integer"
     )
     arguments = parser.parse_args()
     cc = CookieCustomiser()

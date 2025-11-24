@@ -351,8 +351,8 @@ class View:
         new_window = Toplevel(self.root)
         new_window.title(timestamp)
 
-        message = f'{self.controller.trains[train].name} is going through \
-                    {self.stations[station].name}. Would you like to stop?'
+        message = f'{self.controller.trains[train].name} is going through ' + \
+                  f'{self.stations[station].name}. Would you like to stop?'
         Label(new_window, text=message).pack()
         Button(new_window, text="No", command=lambda:
                self.pass_station(train, station, new_window)).pack()
@@ -367,8 +367,8 @@ class View:
         new_window = Toplevel(self.root)
         new_window.title(timestamp)
 
-        message = f'{self.controller.trains[train].name} and {self.controller.trains[item].name} \
-                    have a chance to talk as they pass.'
+        message = f'{self.controller.trains[train].name} & {self.controller.trains[item].name}' + \
+                   'have a chance to talk as they pass.'
         Label(new_window, text=message).pack()
 
         sleep(10)

@@ -30,4 +30,4 @@ jobs:
 
     # Run linting
     # Config specified in .yamllint
-    - run: yamllint --disable-noqa .
+    - run: flake8 --disable-noqa .

@@ -16,8 +16,8 @@ from math import inf
 class BaseAdjacencyStorage(ABC):
     """Implements basics for adjacency list and adjacency matrix to return"""
     def __init__(self):
-        raise NotImplementedError("This is an abstract class, please instantiate a child class \
-                                  instead.")
+        raise NotImplementedError("This is an abstract class, please instantiate a child class" +
+                                  "instead.")
 
     @abstractmethod
     def get_adjacent_nodes(self, node):

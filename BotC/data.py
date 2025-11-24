@@ -51,8 +51,8 @@ def test_characters():
     expected = {
         "townsfolk": {
             "acrobat": {
-                "description": "Each night*, choose a player: if they are or become drunk or \
-                                poisoned tonight, you die.\n",
+                "description": "Each night*, choose a player: if they are or become drunk or " +
+                               "poisoned tonight, you die.\n",
                 "source": "carousel",
             },
         },
@@ -78,13 +78,13 @@ def test_jinxes():
     # Check structure
     expected = {
         'al-hadikhia': {
-            'mastermind': 'If the Al-Hadikhia dies by execution, and the Mastermind is alive, the \
-                           Al-Hadikhia chooses 3 good players tonight: if all 3 choose to live, \
-                           evil wins. Otherwise, good wins.\n',
-            'princess': 'If the Princess nominated & executed a player on their 1st day, no one \
-                         dies to the Al-Hadikhia ability tonight.\n',
-            'scarlet woman': 'If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia \
-                              becomes the Scarlet Woman again.\n',
+            'mastermind': 'If the Al-Hadikhia dies by execution, and the Mastermind is alive, ' +
+                          'the Al-Hadikhia chooses 3 good players tonight: if all 3 choose to ' +
+                          'live, evil wins. Otherwise, good wins.\n',
+            'princess': 'If the Princess nominated & executed a player on their 1st day, no one ' +
+                        'dies to the Al-Hadikhia ability tonight.\n',
+            'scarlet woman': 'If there are two living Al-Hadikhias, the Scarlet Woman ' +
+                             'Al-Hadikhia becomes the Scarlet Woman again.\n',
         },
     }
 

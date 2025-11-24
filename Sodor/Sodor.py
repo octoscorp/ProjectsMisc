@@ -165,9 +165,9 @@ class Controller:
         steps_right = abs(steps_right)
         goal %= 360
 
-        description = f'Starting at {start_point}, reaching {goal} requires {steps_left} step(s) \
-                        of {rotation_left} degrees anti-clockwise and {steps_right} step(s) of \
-                        {rotation_right} degrees clockwise.'
+        description = f'Starting at {start_point}, reaching {goal} requires {steps_left} ' + \
+                      f'step(s) of {rotation_left} degrees anti-clockwise and {steps_right} ' + \
+                      f'step(s) of {rotation_right} degrees clockwise.'
         callback(description)
 
 
