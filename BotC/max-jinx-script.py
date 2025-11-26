@@ -117,9 +117,9 @@ class Search:
         search_func = None
         match self.search_type:
             case Search.EXHAUSTION_REDUCED:
-                search_func = self.reduced_space_exhaustion_search
+                search_func = self._reduced_space_exhaustion_search
             case Search.EXHAUSTION:
-                search_func = self.exhaustion_search
+                search_func = self._exhaustion_search
             case _:
                 search_func = self.search_type
 
@@ -130,7 +130,16 @@ class Search:
 
         self.output_scripts(solutions)
 
-    def exhaustion_search(self, graph):
+    def _get_reduced_search_space(self, graph):
+        """Remove non-jinxed characters"""
+        return {
+            "townsfolk": [c for c in characters["townfolk"].keys() if graph.is_jinxed_char(c)],
+            "outiders": [c for c in characters["outsiders"].keys() if graph.is_jinxed_char(c)],
+            "minions": [c for c in characters["minions"].keys() if graph.is_jinxed_char(c)],
+            "demons": [c for c in characters["demons"].keys() if graph.is_jinxed_char(c)],
+        }
+
+    def _exhaustion_search(self, graph):
         """
         Naively check all combinations of characters.
         - Search space: 2.3281309e25 [69C13*23C4*27C4*19C4]
@@ -141,14 +150,15 @@ class Search:
 
         max_jinxes = 0
         optimal_solutions = []
+        search_space = characters
         # Try every combination!
-        for townsfolk in combinations(characters["townsfolk"].keys(),
+        for townsfolk in combinations(search_space["townsfolk"].keys(),
                                         TOWN_DISTRIBUTION["townsfolk"]):
-            for outsiders in combinations(characters["outsiders"].keys(),
+            for outsiders in combinations(search_space["outsiders"].keys(),
                                             TOWN_DISTRIBUTION["outsiders"]):
-                for minions in combinations(characters["minions"].keys(),
+                for minions in combinations(search_space["minions"].keys(),
                                                 TOWN_DISTRIBUTION["minions"]):
-                    for demons in combinations(characters["demons"].keys(),
+                    for demons in combinations(search_space["demons"].keys(),
                                                     TOWN_DISTRIBUTION["demons"]):
                         chars = list(townsfolk + outsiders + minions + demons)
                         # The magic check
@@ -164,7 +174,7 @@ class Search:
                         last_soln = chars
         return optimal_solutions
 
-    def reduced_space_exhaustion_search(self, graph):
+    def _reduced_space_exhaustion_search(self, graph):
         """
         Exhaustion search with non-jinxed characters removed
         - Search space: 2.032366e18 [34C13*13C4*18C4*14C4]
@@ -177,16 +187,13 @@ class Search:
         optimal_solutions = []
 
         # Remove non-jinxed characters
-        town = [char for char in characters["townfolk"].keys() if graph.is_jinxed_char(char)]
-        outs = [char for char in characters["outsiders"].keys() if graph.is_jinxed_char(char)]
-        mins = [char for char in characters["minions"].keys() if graph.is_jinxed_char(char)]
-        dems = [char for char in characters["demons"].keys() if graph.is_jinxed_char(char)]
+        space = self._get_reduced_search_space(graph)
 
         # Try every remaining combination
-        for townsfolk in combinations(town, TOWN_DISTRIBUTION["townsfolk"]):
-            for outsiders in combinations(outs, TOWN_DISTRIBUTION["outsiders"]):
-                for minions in combinations(mins, TOWN_DISTRIBUTION["minions"]):
-                    for demons in combinations(dems, TOWN_DISTRIBUTION["demons"]):
+        for townsfolk in combinations(space["townsfolk"], TOWN_DISTRIBUTION["townsfolk"]):
+            for outsiders in combinations(space["outsiders"], TOWN_DISTRIBUTION["outsiders"]):
+                for minions in combinations(space["minions"], TOWN_DISTRIBUTION["minions"]):
+                    for demons in combinations(space["demons"], TOWN_DISTRIBUTION["demons"]):
                         chars = list(townsfolk + outsiders + minions + demons)
                         # The magic check
                         num_jinxes = graph.get_num_jinxes(chars)
