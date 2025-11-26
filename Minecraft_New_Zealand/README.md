@@ -34,3 +34,7 @@ To accomplish this, patterns of valid ordering are specified:
 - Solid block -> Glass -> Partial block
 - Solid block -> Partial block
 - Solid block -> Partial block -> Glass
+
+# Licensing and Attribution
+The outcome of this project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0), more detail on which can be found at https://creativecommons.org/licenses/by-nc-sa/4.0/ or in the [LICENSE](../LICENSE) file.
+Attribution and licenses for data used can be found in the [attribution](../attribution) directory.
