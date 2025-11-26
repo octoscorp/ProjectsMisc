@@ -30,6 +30,21 @@ def dict_member_append(dictionary, key, value):
     dictionary[key].append(value)
 
 
+def transpose_dict(dictionary):
+    output = {}
+    for key, val in dictionary.items():
+        dict_member_append(output, val, key)
+    return output
+
+
+def concat_lists(categorised):
+    """Concatenate lists from categorised dict"""
+    output = []
+    for category in categorised.keys():
+        output += categorised[category]
+    return output
+
+
 def sigint_handler(_signum, _frame):
     """Update on status. Should be SIGINFO, but no library support"""
     global last_interrupt
@@ -55,17 +70,40 @@ class _JinxGraph():
         NOTE: It is assumed that jinx_dict stores jinxes such that <char_name> is alphabetically
           before <jinxed_char_name>. Otherwise, get_num_jinxes will not work. This is because the
           adjacency list does not currently create reverse adjacencies. (The other order is allowed
-          to be present, but will not be used.)
+          to be present, but may not be the only ordering.)
         """
         # Create adjacency list
         self.adj_list = {}
+        self.total_edges = 0
+
         for char_name in jinx_dict.keys():
             for jinxed_char_name in jinx_dict[char_name].keys():
                 dict_member_append(self.adj_list, char_name, jinxed_char_name)
+                dict_member_append(self.adj_list, jinxed_char_name, char_name)
+                self.total_edges += 1
+
+        self.total_nodes = len(list(self.adj_list.keys()))
 
     def is_jinxed_char(self, char_name):
         """Return bool of whether a jinx exists for char_name"""
         return self.adj_list.get(char_name) is not None
+
+    def get_total_num_jinxes(self):
+        return self._total_edges
+
+    def get_num_jinxed_chars(self):
+        return self.total_nodes
+
+    def get_highest_num_jinxes(self):
+        best = 0
+        for char_name in self.adj_list.keys():
+            current = len(self.adj_list[char_name])
+            if current > best:
+                best = current
+        return best
+
+    def get_degree(self, char_name):
+        return len(self.adj_list[char_name])
 
     def get_num_jinxes(self, char_list):
         """
@@ -79,7 +117,7 @@ class _JinxGraph():
             if self.adj_list.get(search_space[i]) is None:
                 del search_space[i]
 
-        # Sort alphabetically (half adjacency list)
+        # Sort alphabetically (expects that half of the adjacency list)
         search_space = sorted(search_space)
 
         # For each remaining character, only check the characters after it in the list
@@ -91,14 +129,40 @@ class _JinxGraph():
                     count += 1
         return count
 
+    def get_num_jinxes_per_character(self, char_list):
+        """
+        Returns a dict of the count of jinxes which apply to the character when chars are
+        limited to what is in char_list
+        """
+        counts = {char_name: 0 for char_name in char_list}
+        search_space = char_list[:]
+        # Remove unjinxed characters
+        for i in range(len(search_space) - 1, -1, -1):
+            if self.adj_list.get(search_space[i]) is None:
+                del search_space[i]
+
+        # Expects bidirectional adjacency list
+        for char_name in search_space:
+            for jinxed_char_name in self.adj_list[char_name]:
+                if jinxed_char_name in search_space:
+                    counts[char_name] += 1
+
+        return counts
+
 
 class Search:
     EXHAUSTION = 1
     EXHAUSTION_REDUCED = 2
+    PEELING_GREEDY = 3
 
     def __init__(self, search_type=EXHAUSTION):
         """Search type: One of Search.* enum, or a callable search func"""
         self.search_type = search_type
+
+        self.types = {}
+        for category in characters.keys():
+            for char_name in characters[category].keys():
+                self.types[char_name] = category
 
     def output_scripts(self, solutions):
         """
@@ -116,6 +180,8 @@ class Search:
         # Determine which search to run
         search_func = None
         match self.search_type:
+            case Search.PEELING_GREEDY:
+                search_func = self._greedy_peeling
             case Search.EXHAUSTION_REDUCED:
                 search_func = self._reduced_space_exhaustion_search
             case Search.EXHAUSTION:
@@ -133,11 +199,20 @@ class Search:
     def _get_reduced_search_space(self, graph):
         """Remove non-jinxed characters"""
         return {
-            "townsfolk": [c for c in characters["townfolk"].keys() if graph.is_jinxed_char(c)],
-            "outiders": [c for c in characters["outsiders"].keys() if graph.is_jinxed_char(c)],
+            "townsfolk": [c for c in characters["townsfolk"].keys() if graph.is_jinxed_char(c)],
+            "outsiders": [c for c in characters["outsiders"].keys() if graph.is_jinxed_char(c)],
             "minions": [c for c in characters["minions"].keys() if graph.is_jinxed_char(c)],
             "demons": [c for c in characters["demons"].keys() if graph.is_jinxed_char(c)],
         }
+
+    def _get_reduced_counts(self, counts, char_name):
+        """Remove char_name's contribution to categorised counts"""
+        output = counts.copy()
+        problem = False
+        output[self.types[char_name]] -= 1
+        if output[self.types[char_name]] < TOWN_DISTRIBUTION[self.types[char_name]]:
+            problem = True
+        return output, problem
 
     def _exhaustion_search(self, graph):
         """
@@ -208,9 +283,64 @@ class Search:
                         last_soln = chars
         return optimal_solutions
 
+    def _greedy_peeling(self, graph):
+        """
+        Attempts to construct an optimal solution by removing the least-connected node at each
+        chance.
+        Complexity: O(n^2*d) [Getting jinxes per character, recursing on n-1]
+        """
+        max_jinxes = 0
+        optimal_solutions = []
+
+        # Remove non-jinxed characters
+        space = self._get_reduced_search_space(graph)
+        counts = {key: len(vals) for key, vals in space.items()}
+        # Collapse to list
+        space = concat_lists(space)
+
+        def _greedy_peeling_recursive(graph, counts, space, depth):
+            global checked_solns, last_soln
+            # Base case
+            correct_size = True
+            for category in TOWN_DISTRIBUTION.keys():
+                if counts[category] > TOWN_DISTRIBUTION[category]:
+                    correct_size = False
+            if correct_size:
+                checked_solns += 1
+                last_soln = space
+                return [space]
+            # Find lowest degree to remove
+            jinx_counts = transpose_dict(graph.get_num_jinxes_per_character(space))
+
+            # Try each character with lowest degree
+            solutions = []
+            for count in sorted(list(jinx_counts)):
+                for removed_char in jinx_counts[count]:
+                    altered_counts, count_invalid = self._get_reduced_counts(counts, removed_char)
+                    if count_invalid:
+                        continue
+                    # Remove/append likely inefficient
+                    space.remove(removed_char)
+                    solutions += _greedy_peeling_recursive(graph, altered_counts, space, depth + 1)
+                    space.append(removed_char)
+                if len(solutions) > 0:
+                    break
+            return solutions
+
+        solutions = _greedy_peeling_recursive(graph, counts, space, 0)
+        for soln in solutions:
+            num_jinxes = graph.get_num_jinxes(soln)
+            if num_jinxes > max_jinxes:
+                max_jinxes = num_jinxes
+                optimal_solutions = []
+            if num_jinxes == max_jinxes:
+                optimal_solutions.append(soln)
+
+        return optimal_solutions
+
 
 def main():
-    search = Search(Search.EXHAUSTION_REDUCED)
+    search = Search(Search.PEELING_GREEDY)
     search.run()
 
 
