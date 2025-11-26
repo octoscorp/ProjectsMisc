@@ -132,7 +132,10 @@ class Search:
 
     def exhaustion_search(self, graph):
         """
-        Cleverer search solutions exist, however I want to be sure I haven't missed anything
+        Naively check all combinations of characters.
+        - Search space: 2.3281309e25 [69C13*23C4*27C4*19C4]
+        - Complexity: O(n!) [of some complicated flavour]
+        - Time estimate: 8,858,945,580,000 years [at 5 million checks/min]
         """
         global checked_solns, last_soln
 
@@ -162,7 +165,12 @@ class Search:
         return optimal_solutions
 
     def reduced_space_exhaustion_search(self, graph):
-        """Exhaustion search with non-jinxed characters removed"""
+        """
+        Exhaustion search with non-jinxed characters removed
+        - Search space: 2.032366e18 [34C13*13C4*18C4*14C4]
+        - Complexity: O(n!)
+        - Time estimate: 773,350 years [at 5 million checks/min]
+        """
         global checked_solns, last_soln
 
         max_jinxes = 0
