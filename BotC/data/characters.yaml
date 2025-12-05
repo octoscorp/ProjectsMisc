@@ -3,9 +3,10 @@
 # == DEMONS =============================
 demons:
   al-hadikhia:
-    description: >
+    ability: >
       Each night*, you may choose 3 players (all players learn who): each
       silently chooses to live or die, but if all live, all die.
+    otherNight: 43
     reminders:
       other nights: >
         The Al-Hadikhia chooses three players. Wake the player marked {1} and
@@ -13,50 +14,57 @@ demons:
         choose to live?" They either nod or shake their head. Put them to sleep
         and add or remove shrouds accordingly. Repeat for players marked {2} and
         {3}. If all three players are now alive, add a shroud to all three.
-    source: carousel
+    edition: carousel
   fang gu:
-    description: >
+    ability: >
       Each night*, choose a player: they die. The 1st Outsider this kills
       becomes an evil Fang Gu & you die instead. [+1 Outsider]
+    otherNight: 37
     reminders:
       other nights: >
         The Fang Gu chooses a player. If they chose an Outsider (once only):
         Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu
         to sleep. Wake the target. Show the {YOU ARE} and Fang Gu tokens & give
         a thumbs-down.
-    source: sects and violets
+    edition: sects and violets
   imp:
-    description: >
+    ability: >
       Each night*, choose a player: they die. If you kill yourself this way, a
       Minion becomes the Imp.
+    otherNight: 32
     reminders:
       other nights: >
         The Imp chooses a player. If the Imp chose themselves: Replace 1 alive
         Minion token with a spare Imp token. Put the old Imp to sleep. Wake the
         new Imp. Show the {YOU ARE} token, then show the Imp token.
-    source: trouble brewing
+    edition: trouble brewing
   kazali:
-    description: >
+    ability: >
       Each night*, choose a player: they die. [You choose which players are
       which Minions. -? to +? Outsiders]
+    firstNight: 4
+    otherNight: 47
     reminders:
       first night: >
         Wake the Kazali, allow them to choose Minions.
       other nights: >
         The Kazali chooses a player.
-    source: carousel
+    edition: carousel
   legion:
-    description: >
+    ability: >
       Each night*, a player might die. Executions fail if only evil voted. You
       register as a Minion too. [Most players are Legion]
+    otherNight: 31
     reminders:
       other nights: >
         A player might die.
-    source: carousel
+    edition: carousel
   leviathan:
-    description: >
+    ability: >
       If more than 1 good player is executed, evil wins. All players know you
       are in play. After day 5, evil wins.
+    firstNight: 70
+    otherNight: 88
     reminders:
       first night: >
         Declare that "The Leviathan is in play." Mark the Leviathan with the
@@ -64,109 +72,125 @@ demons:
       other nights: >
         Optionally, declare that "The Leviathan is in play." Replace the
         reminder token.
-    source: carousel
+    edition: carousel
   lil' monsta:
-    description: >
+    ability: >
       Each night, Minions choose who babysits Lil' Monsta & "is the Demon". Each
       night*, a player might die. [+1 Minion]
+    firstNight: 21
+    otherNight: 45
     reminders:
       first night: >
         Wake all Minions, allow them to choose a babysitter.
       other nights: >
         Wake all Minions, allow them to choose a babysitter. A player might die.
-    source: carousel
+    edition: carousel
   lleech:
-    description: >
+    ability: >
       Each night*, choose a player, they die. You start by choosing a player:
       they are poisoned. You die if & only if they are dead.
+    firstNight: 22
+    otherNight: 44
     reminders:
       first night: >
         The Lleech chooses a player.
       other nights: >
         The Lleech chooses a player.
-    source: carousel
+    edition: carousel
   lord of typhon:
-    description: >
+    ability: >
       Each night*, choose a player: they die. [Evil characters are in a line.
       You are in the middle. +1 Minion. -? to +? Outsiders]
+    firstNight: 3
+    otherNight: 40
     reminders:
       first night: >
         Replace neighbors of the Lord of Typhon with Minions, wake them, tell
         them their new alignment and character, then do minion info.
       other nights: >
         The Lord of Typhon chooses a player.
-    source: carousel
+    edition: carousel
   no dashii:
-    description: >
+    ability: >
       Each night*, choose a player: they die. Your 2 Townsfolk neighbors are
       poisoned.
+    otherNight: 38
     reminders:
       other nights: >
         The No Dashii chooses a player.
-    source: sects and violets
+    edition: sects and violets
   ojo:
-    description: >
+    ability: >
       Each night*, choose a character: they die. If they are not in play, the
       Storyteller chooses who dies.
+    otherNight: 42
     reminders:
       other nights: >
         The Ojo chooses a character.
-    source: carousel
+    edition: carousel
   po:
-    description: >
+    ability: >
       Each night*, you may choose a player: they die. If your last choice was
       no-one, choose 3 players tonight.
+    otherNight: 36
     reminders:
       other nights: >
         The Po may choose a player OR chooses 3 players if they chose no-one
         last night.
-    source: bad moon rising
+    edition: bad moon rising
   pukka:
-    description: >
+    ability: >
       Each night, choose a player: they are poisoned. The previously poisoned
       player dies then becomes healthy.
+    firstNight: 38
+    otherNight: 34
     reminders:
       first night: >
         The Pukka chooses a player.
       other nights: >
         The Pukka chooses a player. The previously poisoned player dies then
         becomes healthy.
-    source: bad moon rising
+    edition: bad moon rising
   riot:
-    description: >
+    ability: >
       On day 3, Minions become Riot & nominees die but nominate an alive player
       immediately. This must happen.
-    source: carousel
+    edition: carousel
   shabaloth:
-    description: >
+    ability: >
       Each night*, choose 2 players: they die. A dead player you chose last
       night might be regurgitated.
+    otherNight: 35
     reminders:
       other nights: >
         A previously chosen player might be resurrected. The Shabaloth chooses 2
         players.
-    source: bad moon rising
+    edition: bad moon rising
   vigormortis:
-    description: >
+    ability: >
       Each night*, choose a player: they die. Minions you kill keep their
       ability & poison 1 Townsfolk neighbor. [-1 Outsider]
+    otherNight: 41
     reminders:
       other nights: >
         The Vigormortis chooses a player. If that player is a Minion, poison a
         neighboring Townsfolk.
-    source: sects and violets
+    edition: sects and violets
   vortox:
-    description: >
+    ability: >
       Each night*, choose a player: they die. Townsfolk abilities yield false
       info. Each day, if no-one is executed, evil wins.
+    otherNight: 39
     reminders:
       other nights: >
         The Vortox chooses a player.
-    source: sects and violets
+    edition: sects and violets
   yaggababble:
-    description: >
+    ability: >
       You start knowing a secret phrase. For each time you said it publicly
       today, a player might die.
+    firstNight: 9
+    otherNight: 46
     reminders:
       first night: >
         Choose a secret phrase. Wake the Yaggababble and let them know their
@@ -174,47 +198,52 @@ demons:
       other nights: >
         For each time the Yaggababble said the phrase today, you may choose a
         player. They die.
-    source: carousel
+    edition: carousel
   zombuul:
-    description: >
+    ability: >
       Each night*, if no-one died today, choose a player: they die. The 1st time
       you die, you live but register as dead.
+    otherNight: 33
     reminders:
       other nights: >
         If no one died today, the Zombuul chooses a player.
-    source: bad moon rising
+    edition: bad moon rising
 # == MINIONS ============================
 minions:
   assassin:
-    description: >
+    ability: >
       Once per game, at night*, choose a player: they die, even if for some
       reason they could not.
+    otherNight: 48
     reminders:
       other nights: >
         The Assassin might choose a player.
-    source: bad moon rising
+    edition: bad moon rising
   baron:
-    description: >
+    ability: >
       There are extra Outsiders in play. [+2 Outsiders]
-    source: trouble brewing
+    edition: trouble brewing
   boffin:
-    description: >
+    ability: >
       The Demon (even if drunk or poisoned) has a not-in-play good character's
       ability. You both know which.
+    firstNight: 5
     reminders:
       first night: >
         Wake the Boffin and the Demon. Show the not-in-play good character
         token. Put the Boffin and the Demon to sleep.
-    source: carousel
+    edition: carousel
   boomdandy:
-    description: >
+    ability: >
       If you are executed, all but 3 players die. After a 10 to 1 countdown, the
       player with the most players pointing at them, dies.
-    source: carousel
+    edition: carousel
   cerenovus:
-    description: >
+    ability: >
       Each night, choose a player & a good character: they are "mad" they are
       this character tomorrow, or might be executed.
+    firstNight: 34
+    otherNight: 20
     reminders:
       first night: >
         The Cerenovus chooses a player & a character. Put the Cerenovus to
@@ -224,30 +253,35 @@ minions:
         The Cerenovus chooses a player & a character. Put the Cerenovus to
         sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token,
         the Cerenovus token, then the madness-character token.
-    source: sects and violets
+    edition: sects and violets
   devil's advocate:
-    description: >
+    ability: >
       Each night, choose a living player (different to last night): if executed
       tomorrow, they don't die.
+    firstNight: 31
+    otherNight: 18
     reminders:
       first night: >
         The Devil's Advocate chooses a living player.
       other nights: >
         The Devil's Advocate chooses a living player.
-    source: bad moon rising
+    edition: bad moon rising
   evil twin:
-    description: >
+    ability: >
       You & an opposing player know each other. If the good player is executed,
       evil wins. Good can't win if you both live.
+    firstNight: 32
     reminders:
       first night: >
         Wake both twins. Allow eye contact. Show the good twin's character token
         to the Evil Twin & vice versa.
-    source: sects and violets
+    edition: sects and violets
   fearmonger:
-    description: >
+    ability: >
       Each night, choose a player: if you nominate & execute them, their team
       loses. All players know if you choose a new player.
+    firstNight: 35
+    otherNight: 22
     reminders:
       first night: >
         The Fearmonger chooses a player. Declare that "the Fearmonger has chosen
@@ -256,26 +290,30 @@ minions:
         The Fearmonger chooses a player. If the player wasn't already marked
         with the {FEAR} reminder, declare that "the Fearmonger has chosen a
         player."
-    source: carousel
+    edition: carousel
   goblin:
-    description: >
+    ability: >
       If you publicly claim to be the Goblin when nominated & are executed that
       day, your team wins.
-    source: carousel
+    edition: carousel
   godfather:
-    description: >
+    ability: >
       You start knowing which Outsiders are in play. If 1 died today, choose a
       player tonight: they die. [-1 or +1 Outsider]
+    firstNight: 29
+    otherNight: 49
     reminders:
       first night: >
         Show the character tokens of all in-play Outsiders.
       other nights: >
         If an Outsider died today, the Godfather chooses a player.
-    source: bad moon rising
+    edition: bad moon rising
   harpy:
-    description: >
+    ability: >
       Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd
       is evil, or one or both might die.
+    firstNight: 36
+    otherNight: 23
     reminders:
       first night: >
         The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st
@@ -285,25 +323,28 @@ minions:
         The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st
         target. Show the {THIS CHARACTER SELECTED YOU} token, the Harpy token,
         then point to the 2nd target.
-    source: carousel
+    edition: carousel
   marionette:
-    description: >
+    ability: >
       You think you are a good character, but you are not. The Demon knows who
       you are. [You neighbor the Demon]
+    firstNight: 18
     reminders:
       first night: >
         Wake the Demon. Point to the player marked {IS THE MARIONETTE} and show
         the {THIS PLAYER IS} token and the Marionette character token.
-    source: carousel
+    edition: carousel
   mastermind:
-    description: >
+    ability: >
       If the Demon dies by execution (ending the game), play for 1 more day. If
       a player is then executed, their team loses.
-    source: bad moon rising
+    edition: bad moon rising
   mezepheles:
-    description: >
+    ability: >
       You start knowing a secret word. The 1st good player to say this word
       becomes evil that night.
+    firstNight: 37
+    otherNight: 24
     reminders:
       first night: >
         Show the written word.
@@ -311,11 +352,13 @@ minions:
         If a player is marked with the {TURNS EVIL} reminder, wake them. Show
         the {YOU ARE} info token and a thumbs down. The Mezepheles loses their
         ability.
-    source: carousel
+    edition: carousel
   organ grinder:
-    description: >
+    ability: >
       All players keep their eyes closed when voting and the vote tally is
       secret. Each night, choose if you are drunk until dusk.
+    firstNight: 30
+    otherNight: 17
     reminders:
       first night: >
         The Organ Grinder either nods their head yes to be drunk, or shakes
@@ -323,54 +366,62 @@ minions:
       other nights: >
         The Organ Grinder either nods their head yes to be drunk, or shakes
         their head no to be sober.
-    source: carousel
+    edition: carousel
   pit-hag:
-    description: >
+    ability: >
       Each night*, choose a player & a character they become (if not in play).
       If a Demon is made, deaths tonight are arbitrary.
+    otherNight: 21
     reminders:
       other nights: >
         The Pit-Hag chooses a player & a character. If they chose a character
         that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the
         {YOU ARE} token & their new character token.
-    source: sects and violets
+    edition: sects and violets
   poisoner:
-    description: >
+    ability: >
       Each night, choose a player: they are poisoned tonight and tomorrow day.
+    firstNight: 24
+    otherNight: 9
     reminders:
       first night: >
         The Poisoner chooses a player.
       other nights: >
         The Poisoner chooses a player.
-    source: trouble brewing
+    edition: trouble brewing
   psychopath:
-    description: >
+    ability: >
       Each day, before nominations, you may publicly choose a player: they die.
       If executed, you only die if you lose roshambo.
-    source: carousel
+    edition: carousel
   scarlet woman:
-    description: >
+    ability: >
       If there are 5 or more players alive & the Demon dies, you become the
       Demon. (Travellers don't count.)
+    otherNight: 25
     reminders:
       other nights: >
         If the Scarlet Woman became the Demon today, show them the {YOU ARE}
         token, then the Demon token.
-    source: trouble brewing
+    edition: trouble brewing
   spy:
-    description: >
+    ability: >
       Each night, you see the Grimoire. You might register as good & as a
       Townsfolk or Outsider, even if dead.
+    firstNight: 63
+    otherNight: 82
     reminders:
       first night: >
         Show the Grimoire for as long as the Spy needs.
       other nights: >
         Show the Grimoire for as long as the Spy needs.
-    source: trouble brewing
+    edition: trouble brewing
   summoner:
-    description: >
+    ability: >
       You get 3 bluffs. On the 3rd night, choose a player: they become an evil
       Demon of your choice. [No Demon]
+    firstNight: 14
+    otherNight: 26
     reminders:
       first night: >
         Show the {THESE CHARACTERS ARE NOT IN PLAY} token. Show 3 not-in-play
@@ -380,57 +431,67 @@ minions:
         3, the Summoner chooses a player and a Demon. Put the Summoner to sleep.
         Wake the chosen player. Show the {YOU ARE} token, a thumbs down and the
         chosen Demon token.
-    source: carousel
+    edition: carousel
   vizier:
-    description: >
+    ability: >
       All players know you are the Vizier. You cannot die during the day. If
       good voted, you may choose to execute immediately.
+    firstNight: 71
     reminders:
       first night: >
         Announce the Vizier player to the group.
-    source: carousel
+    edition: carousel
   widow:
-    description: >
+    ability: >
       On your 1st night, look at the Grimoire & choose a player: they are
       poisoned. 1 good player knows a Widow is in play.
+    firstNight: 25
     reminders:
       first night: >
         Show the Grimoire for as long as the Widow needs. The Widow chooses a
         player.
-    source: carousel
+    edition: carousel
   witch:
-    description: >
+    ability: >
       Each night, choose a player: if they nominate tomorrow, they die. If just
       3 players live, you lose this ability.
+    firstNight: 33
+    otherNight: 19
     reminders:
       first night: >
         The Witch chooses a player.
       other nights: >
         The Witch chooses a player.
-    source: sects and violets
+    edition: sects and violets
   wizard:
-    description: >
+    ability: >
       Once per game, choose to make a wish. If granted, it might have a price &
       leave a clue as to its nature.
+    firstNight: 27
+    otherNight: 12
     reminders:
       first night: >
         Run the Wizard's ability, if applicable.
       other nights: >
         Run the Wizard's ability, if applicable.
-    source: carousel
+    edition: carousel
   wraith:
-    description: >
+    ability: >
       You may choose to open your eyes at night. You wake when other evil
       players do.
+    firstNight: 2
+    otherNight: 2
     reminders:
       first night: >
         Wake the Wraith whenever other evil players wake.
       other nights: >
         Wake the Wraith whenever other evil players wake.
-    source: carousel
+    edition: carousel
   xaan:
-    description: >
+    ability: >
       On night X, all Townsfolk are poisoned until dusk. [X Outsiders]
+    firstNight: 23
+    otherNight: 8
     reminders:
       first night: >
         Mark the Xaan with the {NIGHT 1} reminder. If X is 1, mark the Xaan with
@@ -438,79 +499,86 @@ minions:
       other nights: >
         Change the Xaan reminder token to the relevant night. If it is night X,
         mark the Xaan with the {X} reminder token.
-    source: carousel
+    edition: carousel
 # == OUTSIDERS ==========================
 outsiders:
   barber:
-    description: >
+    ability: >
       If you died today or tonight, the Demon may choose 2 players (not another
       Demon) to swap characters.
+    otherNight: 52
     reminders:
       other nights: >
         If the Barber died today or tonight, show the Demon the {THIS CHARACTER
         SELECTED YOU} & Barber tokens. If the Demon chose 2 players, wake one at
         a time. Show the {YOU ARE} token & their new character token.
-    source: sects and violets
+    edition: sects and violets
   butler:
-    description: >
+    ability: >
       Each night, choose a player (not yourself): tomorrow, you may only vote if
       they are voting too.
+    firstNight: 49
+    otherNight: 81
     reminders:
       first night: >
         The Butler chooses a player.
       other nights: >
         The Butler chooses a player.
-    source: trouble brewing
+    edition: trouble brewing
   damsel:
-    description: >
+    ability: >
       All Minions know a Damsel is in play. If a Minion publicly guesses you
       (once), your team loses.
+    firstNight: 41
     reminders:
       first night: >
         If the Damsel was chosen by the Huntsman, show them the {YOU ARE} info
         token and their new character token.
-    source: carousel
+    edition: carousel
   drunk:
-    description: >
+    ability: >
       You do not know you are the Drunk. You think you are a Townsfolk
       character, but you are not.
-    source: trouble brewing
+    edition: trouble brewing
   golem:
-    description: >
+    ability: >
       You may only nominate once per game. When you do, if the nominee is not
       the Demon, they die.
-    source: carousel
+    edition: carousel
   goon:
-    description: >
+    ability: >
       Each night, the 1st player to choose you with their ability is drunk until
       dusk. You become their alignment.
-    source: bad moon rising
+    edition: bad moon rising
   hatter:
-    description: >
+    ability: >
       If you died today or tonight, the Minion & Demon players may choose new
       Minion & Demon characters to be.
+    otherNight: 51
     reminders:
       other nights: >
         If the Hatter died today or tonight, wake Minions and Demons, allow them
         to choose new characters.
-    source: carousel
+    edition: carousel
   heretic:
-    description: >
+    ability: >
       Whoever wins, loses & whoever loses, wins, even if you are dead.
-    source: carousel
+    edition: carousel
   hermit:
-    description: >
+    ability: >
       You have all Outsider abilities. [-0 or -1 Outsider]
-    source: carousel
+    edition: carousel
   klutz:
-    description: >
+    ability: >
       When you learn that you died, publicly choose 1 alive player: if they are
       evil, your team loses.
-    source: sects and violets
+    edition: sects and violets
   lunatic:
-    description: >
+    ability: >
       You think you are a Demon, but you are not. The Demon knows who you are &
       who you choose at night.
+    firstNight: 13
+    otherNight: 27
     reminders:
       first night: >
         If there are 7 or more players, wake the Lunatic: Show the {THESE ARE
@@ -523,203 +591,227 @@ outsiders:
         Do whatever needs to be done to simulate the Demon acting. Put the
         Lunatic to sleep. Wake the Demon. Show the Lunatic token & point to
         them, then their target(s).
-    source: bad moon rising
+    edition: bad moon rising
   moonchild:
-    description: >
+    ability: >
       When you learn that you died, publicly choose 1 alive player. Tonight, if
       it was a good player, they die.
+    otherNight: 63
     reminders:
       other nights: >
         If the Moonchild is due to kill a good player, they die.
-    source: bad moon rising
+    edition: bad moon rising
   mutant:
-    description: >
+    ability: >
       If you are "mad" about being an Outsider, you might be executed.
-    source: sects and violets
+    edition: sects and violets
   ogre:
-    description: >
+    ability: >
       On your 1st night, choose a player (not yourself): you become their
       alignment (you don't know which) even if drunk or poisoned.
+    firstNight: 64
     reminders:
       first night: >
         The Ogre points to a player.
-    source: carousel
+    edition: carousel
   plague doctor:
-    description: >
+    ability: >
       When you die, the Storyteller gains a Minion ability.
+    otherNight: 54
     reminders:
       other nights: >
         If the Plague Doctor died, the Storyteller gained a Minion ability. If
         you haven't done this yet, do so now.
-    source: carousel
+    edition: carousel
   politician:
-    description: >
+    ability: >
       If you were the player most responsible for your team losing, you change
       alignment & win.
-    source: carousel
+    edition: carousel
   puzzlemaster:
-    description: >
+    ability: >
       1 player is drunk, even if you die. If you guess (once) who it is, learn
       the Demon player, but guess wrong & get false info.
-    source: carousel
+    edition: carousel
   recluse:
-    description: >
+    ability: >
       You might register as evil & as a Minion or Demon, even if dead.
-    source: trouble brewing
+    edition: trouble brewing
   saint:
-    description: >
+    ability: >
       If you die by execution, your team loses.
-    source: trouble brewing
+    edition: trouble brewing
   snitch:
-    description: >
+    ability: >
       Each Minion gets 3 bluffs.
+    firstNight: 12
     reminders:
       first night: >
         Wake each Minion. Show the {THESE CHARACTERS ARE NOT IN PLAY} token and
         three not-in-play character tokens. Put each Minion to sleep.
-    source: carousel
+    edition: carousel
   sweetheart:
-    description: >
+    ability: >
       When you die, 1 player is drunk from now on.
+    otherNight: 53
     reminders:
       other nights: >
         If the Sweetheart died, a player became drunk immediately. If you
         haven't done this yet, do so now.
-    source: sects and violets
+    edition: sects and violets
   tinker:
-    description: >
+    ability: >
       You might die at any time.
+    otherNight: 62
     reminders:
       other nights: >
         The Tinker might die.
-    source: bad moon rising
+    edition: bad moon rising
   zealot:
-    description: >
+    ability: >
       If there are 5 or more players alive, you must vote for every nomination.
-    source: carousel
+    edition: carousel
 # == TOWNSFOLK ==========================
 townsfolk:
   acrobat:
-    description: >
+    ability: >
       Each night*, choose a player: if they are or become drunk or poisoned
       tonight, you die.
+    otherNight: 14
     reminders:
       other nights: >
         The Acrobat chooses a player.
-    source: carousel
+    edition: carousel
   alchemist:
-    description: >
+    ability: >
       You have a Minion ability. When using this, the Storyteller may prompt you
       to choose differently.
+    firstNight: 7
     reminders:
       first night: >
         Show the {YOU ARE} token and the character token of a Minion.
-    source: carousel
+    edition: carousel
   alsaahir:
-    description: >
+    ability: >
       Each day, if you publicly guess which players are Minion(s) and which are
       Demon(s), good wins.
-    source: carousel
+    edition: carousel
   amnesiac:
-    description: >
+    ability: >
       You do not know what your ability is. Each day, privately guess what it
       is: you learn how accurate you are.
+    firstNight: 42
+    otherNight: 60
     reminders:
       first night: >
         Run the Amnesiac's ability, if applicable.
       other nights: >
         Run the Amnesiac's ability, if applicable.
-    source: carousel
+    edition: carousel
   artist:
-    description: >
+    ability: >
       Once per game, during the day, ask the Storyteller any yes/no question.
-    source: sects and violets
+    edition: sects and violets
   atheist:
-    description: >
+    ability: >
       The Storyteller can break the game rules, and if executed, good wins, even
       if you are dead. [No evil characters]
-    source: carousel
+    edition: carousel
   balloonist:
-    description: >
+    ability: >
       Each night, you learn a player of a different character type than last
       night. [+0 or +1 Outsider]
+    firstNight: 57
+    otherNight: 75
     reminders:
       first night: >
         Show any player.
       other nights: >
         Show a player with a different character type to previously.
-    source: carousel
+    edition: carousel
   banshee:
-    description: >
+    ability: >
       If the Demon kills you, all players learn this. From now on, you may
       nominate twice per day and vote twice per nomination.
+    otherNight: 56
     reminders:
       other nights: >
         If the Banshee was killed by the Demon tonight, announce to all players
         that the Banshee has died.
-    source: carousel
+    edition: carousel
   bounty hunter:
-    description: >
+    ability: >
       You start knowing 1 evil player. If the player you know dies, you learn
       another evil player tonight. [1 Townsfolk is evil]
+    firstNight: 60
+    otherNight: 78
     reminders:
       first night: >
         Point to the {KNOWN} player.
       other nights: >
         If the {KNOWN} player died today or tonight, point to a new {KNOWN}
         player.
-    source: carousel
+    edition: carousel
   cannibal:
-    description: >
+    ability: >
       You have the ability of the recently killed executee. If they are evil,
       you are poisoned until a good player dies by execution.
-    source: carousel
+    edition: carousel
   chambermaid:
-    description: >
+    ability: >
       Each night, choose 2 alive players (not yourself): you learn how many
       woke tonight due to their ability.
+    firstNight: 67
+    otherNight: 85
     reminders:
       first night: >
         The Chambermaid chooses 2 living players. Give a finger signal.
       other nights: >
         The Chambermaid chooses 2 living players. Give a finger signal.
-    source: bad moon rising
+    edition: bad moon rising
   chef:
-    description: >
+    ability: >
       You start knowing how many pairs of evil players there are.
+    firstNight: 46
     reminders:
       first night: >
         Give a finger signal.
-    source: trouble brewing
+    edition: trouble brewing
   choirboy:
-    description: >
+    ability: >
       If the Demon kills the King, you learn which player is the Demon. [+the
       King]
+    otherNight: 58
     reminders:
       other nights: >
         If the Demon killed the King, point to the Demon player.
-    source: carousel
+    edition: carousel
   clockmaker:
-    description: >
+    ability: >
       You start knowing how many steps from the Demon to its nearest Minion.
+    firstNight: 51
     reminders:
       first night: >
         Give a finger signal.
-    source: sects and violets
+    edition: sects and violets
   courtier:
-    description: >
+    ability: >
       Once per game, at night, choose a character: they are drunk for 3 nights &
       3 days.
+    firstNight: 26
+    otherNight: 10
     reminders:
       first night: >
         The Courtier might choose a character.
       other nights: >
         The Courtier might choose a character.
-    source: bad moon rising
+    edition: bad moon rising
   cult leader:
-    description: >
+    ability: >
       Each night, you become the alignment of an alive neighbor. If all good
       players choose to join your cult, your team wins.
+    firstNight: 62
+    otherNight: 80
     reminders:
       first night: >
         The Cult Leader might change alignment. If so, show the {YOU ARE} info
@@ -727,11 +819,13 @@ townsfolk:
       other nights: >
         The Cult Leader might change alignment. If so, show the {YOU ARE} info
         token and a thumbs up or down for their new alignment.
-    source: carousel
+    edition: carousel
   dreamer:
-    description: >
+    ability: >
       Each night, choose a player (not yourself or Travellers): you learn 1 good
       & 1 evil character, 1 of which is correct.
+    firstNight: 52
+    otherNight: 69
     reminders:
       first night: >
         The Dreamer points to a player. Show 1 good & 1 evil character token, 1
@@ -739,19 +833,23 @@ townsfolk:
       other nights: >
         The Dreamer points to a player. Show 1 good & 1 evil character token, 1
         of which is their character.
-    source: sects and violets
+    edition: sects and violets
   empath:
-    description: >
+    ability: >
       Each night, you learn how many of your 2 alive neighbors are evil.
+    firstNight: 47
+    otherNight: 66
     reminders:
       first night: >
         Give a finger signal.
       other nights: >
         Give a finger signal.
-    source: trouble brewing
+    edition: trouble brewing
   engineer:
-    description: >
+    ability: >
       Once per game, at night, choose which Minions or which Demon is in play.
+    firstNight: 19
+    otherNight: 6
     reminders:
       first night: >
         The Engineer might choose Minions or Demons. If they do: Put the
@@ -763,46 +861,51 @@ townsfolk:
         to sleep. Wake a target, show them the {YOU ARE} token and their new
         character token, then put that target to sleep. Repeat for all players
         that changed characters.
-    source: carousel
+    edition: carousel
   exorcist:
-    description: >
+    ability: >
       Each night*, choose a player (different to last night): the Demon, if
       chosen, learns who you are then doesn't wake tonight.
+    otherNight: 28
     reminders:
       other nights: >
         The Exorcist chooses a player. Put the Exorcist to sleep. If the
         Exorcist chose the Demon: Wake the Demon. Show the {THIS CHARACTER
         SELECTED YOU} & Exorcist tokens. Point to the Exorcist.
-    source: bad moon rising
+    edition: bad moon rising
   farmer:
-    description: >
+    ability: >
       When you die at night, an alive good player becomes a Farmer.
+    otherNight: 61
     reminders:
       other nights: >
         If the Farmer died tonight, wake an alive good player. Show them the
         {YOU ARE} info token and a Farmer character token. Replace their
         previous token with the Farmer token.
-    source: carousel
+    edition: carousel
   fisherman:
-    description: >
+    ability: >
       Once per game, during the day, visit the Storyteller for some advice to
       help your team win.
-    source: carousel
+    edition: carousel
   flowergirl:
-    description: >
+    ability: >
       Each night*, you learn if a Demon voted today.
+    otherNight: 70
     reminders:
       other nights: >
         Either nod or shake your head.
-    source: sects and violets
+    edition: sects and violets
   fool:
-    description: >
+    ability: >
       The 1st time you die, you don't.
-    source: bad moon rising
+    edition: bad moon rising
   fortune teller:
-    description: >
+    ability: >
       Each night, choose 2 players: you learn if either is a Demon. There is a
       good player that registers as a Demon to you.
+    firstNight: 48
+    otherNight: 67
     reminders:
       first night: >
         The Fortune Teller chooses 2 players. Nod if either is the Demon (or the
@@ -810,57 +913,67 @@ townsfolk:
       other nights: >
         The Fortune Teller chooses 2 players. Nod if either is the Demon (or the
         {RED HERRING}).
-    source: trouble brewing
+    edition: trouble brewing
   gambler:
-    description: >
+    ability: >
       Each night*, choose a player & guess their character: if you guess wrong,
       you die.
+    otherNight: 13
     reminders:
       other nights: >
         The Gambler chooses a player & a character.
-    source: bad moon rising
+    edition: bad moon rising
   general:
-    description: >
+    ability: >
       Each night, you learn which alignment the Storyteller believes is winning:
       good, evil, or neither.
+    firstNight: 66
+    otherNight: 84
     reminders:
       first night: >
         Give a thumb signal.
       other nights: >
         Give a thumb signal.
-    source: carousel
+    edition: carousel
   gossip:
-    description: >
+    ability: >
       Each day, you may make a public statement. Tonight, if it was true, a
       player dies.
+    otherNight: 50
     reminders:
       other nights: >
         If the Gossip is due to kill a player, they die.
-    source: bad moon rising
+    edition: bad moon rising
   grandmother:
-    description: >
+    ability: >
       You start knowing a good player & their character. If the Demon kills
       them, you die too.
+    firstNight: 50
+    otherNight: 64
     reminders:
       first night: >
         Point to the grandchild player & show their character token.
       other nights: >
         If the grandchild was killed by the Demon, the Grandmother dies too.
-    source: bad moon rising
+    edition: bad moon rising
   high priestess:
-    description: >
+    ability: >
       Each night, learn which player the Storyteller believes you should talk to
       most.
+    firstNight: 65
+    otherNight: 83
     reminders:
       first night: >
         Point to a player.
       other nights: >
         Point to a player.
-    source: carousel
+    edition: carousel
   huntsman:
-    description: >
+    ability: >
       Once per game, at night, choose a living player: the Damsel, if chosen,
       becomes a not-in-play Townsfolk. [+the Damsel]
+    firstNight: 40
+    otherNight: 59
     reminders:
       first night: >
         The Huntsman might choose a player. If that player was the Damsel: Put
@@ -870,35 +983,40 @@ townsfolk:
         The Huntsman might choose a player. If that player was the Damsel: Put
         the Huntsman to sleep. Wake the Damsel and show them the {YOU ARE} info
         token and their new character token.
-    source: carousel
+    edition: carousel
   innkeeper:
-    description: >
+    ability: >
       Each night*, choose 2 players: they can't die tonight, but 1 is drunk
       until dusk.
+    otherNight: 11
     reminders:
       other nights: >
         The Innkeeper chooses 2 players.
-    source: bad moon rising
+    edition: bad moon rising
   investigator:
-    description: >
+    ability: >
       You start knowing that 1 of 2 players is a particular Minion.
+    firstNight: 45
     reminders:
       first night: >
         Show the Minion character token. Point to both the {MINION} and {WRONG}
         players.
-    source: trouble brewing
+    edition: trouble brewing
   juggler:
-    description: >
+    ability: >
       On your 1st day, publicly guess up to 5 players' characters. That night,
       you learn how many you got correct.
+    otherNight: 74
     reminders:
       other nights: >
         Give a finger signal.
-    source: sects and violets
+    edition: sects and violets
   king:
-    description: >
+    ability: >
       Each night, if the dead equal or outnumber the living, you learn 1 alive
       character. The Demon knows you are the King.
+    firstNight: 16
+    otherNight: 77
     reminders:
       first night: >
         Wake the Demon. Show the {THIS PLAYER IS} token and the King token, then
@@ -906,70 +1024,79 @@ townsfolk:
       other nights: >
         If the dead equal or outnumber the living, show the character token of
         an alive player.
-    source: carousel
+    edition: carousel
   knight:
-    description: >
+    ability: >
       You start knowing 2 players that are not the Demon.
+    firstNight: 55
     reminders:
       first night: >
         Point to the two non-Demon players marked {KNOW}.
-    source: carousel
+    edition: carousel
   librarian:
-    description: >
+    ability: >
       You start knowing that 1 of 2 players is a particular Outsider. (Or that
       zero are in play.)
+    firstNight: 44
     reminders:
       first night: >
         Show the Outsider character token. Point to both the {OUTSIDER} and
         {WRONG} players.
-    source: trouble brewing
+    edition: trouble brewing
   lycanthrope:
-    description: >
+    ability: >
       Each night*, choose an alive player. If good, they die & the Demon doesn't
       kill tonight. One good player registers as evil.
+    otherNight: 29
     reminders:
       other nights: >
         The Lycanthrope chooses a player.
-    source: carousel
+    edition: carousel
   magician:
-    description: >
+    ability: >
       The Demon thinks you are a Minion. Minions think you are a Demon.
+    firstNight: 10
     reminders:
       first night: >
         Include the Magician in the Minion and Demon Info steps.
-    source: carousel
+    edition: carousel
   mathematician:
-    description: >
+    ability: >
       Each night, you learn how many players' abilities worked abnormally (since
       dawn) due to another character's ability.
+    firstNight: 68
+    otherNight: 86
     reminders:
       first night: >
         Give a finger signal.
       other nights: >
         Give a finger signal.
-    source: sects and violets
+    edition: sects and violets
   mayor:
-    description: >
+    ability: >
       If only 3 players live & no execution occurs, your team wins. If you die
       at night, another player might die instead.
-    source: trouble brewing
+    edition: trouble brewing
   minstrel:
-    description: >
+    ability: >
       When a Minion dies by execution, all other players (except Travellers) are
       drunk until dusk tomorrow.
-    source: bad moon rising
+    edition: bad moon rising
   monk:
-    description: >
+    ability: >
       Each night*, choose a player (not yourself): they are safe from the Demon
       tonight.
+    otherNight: 16
     reminders:
       other nights: >
         The Monk chooses a player.
-    source: trouble brewing
+    edition: trouble brewing
   nightwatchman:
-    description: >
+    ability: >
       Once per game, at night, choose a player: they learn you are the
       Nightwatchman.
+    firstNight: 61
+    otherNight: 79
     reminders:
       first night: >
         The Nightwatchman might choose a player. Put the Nightwatchman to sleep.
@@ -979,29 +1106,33 @@ townsfolk:
         The Nightwatchman might choose a player. Put the Nightwatchman to sleep.
         Wake the target and show the {THIS PLAYER IS} and Nightwatchman tokens
         and point to the Nightwatchman.
-    source: carousel
+    edition: carousel
   noble:
-    description: >
+    ability: >
       You start knowing 3 players, 1 and only 1 of which is evil.
+    firstNight: 56
     reminders:
       first night: >
         Point to all three players marked {KNOW}.
-    source: carousel
+    edition: carousel
   oracle:
-    description: >
+    ability: >
       Each night*, you learn how many dead players are evil.
+    otherNight: 72
     reminders:
       other nights: >
         Give a finger signal.
-    source: sects and violets
+    edition: sects and violets
   pacifist:
-    description: >
+    ability: >
       Executed good players might not die.
-    source: bad moon rising
+    edition: bad moon rising
   philosopher:
-    description: >
+    ability: >
       Once per game, at night, choose a good character: gain that ability. If
       this character is in play, they are drunk.
+    firstNight: 6
+    otherNight: 3
     reminders:
       first night: >
         The Philosopher might choose a character. If necessary, swap their
@@ -1009,19 +1140,22 @@ townsfolk:
       other nights: >
         The Philosopher might choose a character. If necessary, swap their
         character token.
-    source: sects and violets
+    edition: sects and violets
   pixie:
-    description: >
+    ability: >
       You start knowing 1 in-play Townsfolk. If you were mad that you were this
       character, you gain their ability when they die.
+    firstNight: 39
     reminders:
       first night: >
         Show the Townsfolk character token marked MAD.
-    source: carousel
+    edition: carousel
   poppy grower:
-    description: >
+    ability: >
       Minions & Demons do not know each other. If you die, they learn who each
       other are that night.
+    firstNight: 8
+    otherNight: 4
     reminders:
       first night: >
         Do not do the Minion Info and Demon Info steps. Wake the Demon, show the
@@ -1032,11 +1166,13 @@ townsfolk:
         {THIS IS THE DEMON} info token and point to the Demon. Put them to
         sleep. Wake the Demon, show the {THESE ARE YOUR MINIONS} info token and
         point to the Minions. Put the Demon to sleep.
-    source: carousel
+    edition: carousel
   preacher:
-    description: >
+    ability: >
       Each night, choose a player: a Minion, if chosen, learns this. All chosen
       Minions have no ability.
+    firstNight: 20
+    otherNight: 7
     reminders:
       first night: >
         The Preacher chooses a player. If they chose a Minion: Put the Preacher
@@ -1046,83 +1182,94 @@ townsfolk:
         The Preacher chooses a player. If they chose a Minion: Put the Preacher
         to sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token
         and the Preacher token.
-    source: carousel
+    edition: carousel
   princess:
-    description: >
+    ability: >
       On your 1st day, if you nominated & executed a player, the Demon doesn't
       kill tonight.
+    otherNight: 30
     reminders:
       other nights: >
         If the Princess nominated the player who was executed today, the Demon
         wakes as normal, but no one dies to the Demon's ability.
-    source: carousel
+    edition: carousel
   professor:
-    description: >
+    ability: >
       Once per game, at night*, choose a dead player: if they are a Townsfolk,
       they are resurrected.
+    otherNight: 57
     reminders:
       other nights: >
         The Professor might choose a dead player.
-    source: bad moon rising
+    edition: bad moon rising
   ravenkeeper:
-    description: >
+    ability: >
       If you die at night, you are woken to choose a player: you learn their
       character.
+    otherNight: 65
     reminders:
       other nights: >
         If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show
         that player's character token.
-    source: trouble brewing
+    edition: trouble brewing
   sage:
-    description: >
+    ability: >
       If the Demon kills you, you learn that it is 1 of 2 players.
+    otherNight: 55
     reminders:
       other nights: >
         If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of
         which is the Demon.
-    source: sects and violets
+    edition: sects and violets
   sailor:
-    description: >
+    ability: >
       Each night, choose an alive player: either you or they are drunk until
       dusk. You can't die.
+    firstNight: 17
+    otherNight: 5
     reminders:
       first night: >
         The Sailor chooses a living player.
       other nights: >
         The Sailor chooses a living player.
-    source: bad moon rising
+    edition: bad moon rising
   savant:
-    description: >
+    ability: >
       Each day, you may visit the Storyteller to learn 2 things in private: 1 is
       true & 1 is false.
-    source: sects and violets
+    edition: sects and violets
   seamstress:
-    description: >
+    ability: >
       Once per game, at night, choose 2 players (not yourself): you learn if
       they are the same alignment.
+    firstNight: 53
+    otherNight: 73
     reminders:
       first night: >
         The Seamstress might choose 2 players. Nod or shake your head.
       other nights: >
         The Seamstress might choose 2 players. Nod or shake your head.
-    source: sects and violets
+    edition: sects and violets
   shugenja:
-    description: >
+    ability: >
       You start knowing if your closest evil player is clockwise or
       anti-clockwise. If equidistant, this info is arbitrary.
+    firstNight: 58
     reminders:
       first night: >
         Point clockwise or anticlockwise around the circle.
-    source: carousel
+    edition: carousel
   slayer:
-    description: >
+    ability: >
       Once per game, during the day, publicly choose a player: if they are the
       Demon, they die.
-    source: trouble brewing
+    edition: trouble brewing
   snake charmer:
-    description: >
+    ability: >
       Each night, choose an alive player: a chosen Demon swaps characters &
       alignments with you & is then poisoned.
+    firstNight: 28
+    otherNight: 15
     reminders:
       first night: >
         The Snake Charmer chooses a player. If they chose the Demon: Show the
@@ -1134,40 +1281,45 @@ townsfolk:
         {YOU ARE} & Demon tokens. Give a thumbs down. Swap the Snake Charmer &
         Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon.
         Show the {YOU ARE} and Snake Charmer tokens & give a thumbs up.
-    source: sects and violets
+    edition: sects and violets
   soldier:
-    description: >
+    ability: >
       You are safe from the Demon.
-    source: trouble brewing
+    edition: trouble brewing
   steward:
-    description: >
+    ability: >
       You start knowing 1 good player.
+    firstNight: 54
     reminders:
       first night: >
         Point to the good player marked {KNOW}.
-    source: carousel
+    edition: carousel
   tea lady:
-    description: >
+    ability: >
       If both your alive neighbors are good, they can't die.
-    source: bad moon rising
+    edition: bad moon rising
   town crier:
-    description: >
+    ability: >
       Each night*, you learn if a Minion nominated today.
+    otherNight: 71
     reminders:
       other nights: >
         Either nod or shake your head.
-    source: sects and violets
+    edition: sects and violets
   undertaker:
-    description: >
+    ability: >
       Each night*, you learn which character died by execution today.
+    otherNight: 68
     reminders:
       other nights: >
         If a player was executed today, show their character token.
-    source: trouble brewing
+    edition: trouble brewing
   village idiot:
-    description: >
+    ability: >
       Each night, choose a player: you learn their alignment. [+0 to +2 Village
       Idiots. 1 of the extras is drunk]
+    firstNight: 59
+    otherNight: 76
     reminders:
       first night: >
         Choose a Village Idiot to be drunk. Wake the Village Idiots one at a
@@ -1176,17 +1328,18 @@ townsfolk:
       other nights: >
         Wake the Village Idiots one at a time, they choose a player, show either
         good or evil thumbs according to the alignment of that player.
-    source: carousel
+    edition: carousel
   virgin:
-    description: >
+    ability: >
       The 1st time you are nominated, if the nominator is a Townsfolk, they are
       executed immediately.
-    source: trouble brewing
+    edition: trouble brewing
   washerwoman:
-    description: >
+    ability: >
       You start knowing that 1 of 2 players is a particular Townsfolk.
+    firstNight: 43
     reminders:
       first night: >
         Show the Townsfolk character token. Point to both the {TOWNSFOLK} and
         {WRONG} players.
-    source: trouble brewing
+    edition: trouble brewing

@@ -51,9 +51,9 @@ def test_characters():
     expected = {
         "townsfolk": {
             "acrobat": {
-                "description": "Each night*, choose a player: if they are or become drunk or " +
+                "ability": "Each night*, choose a player: if they are or become drunk or " +
                                "poisoned tonight, you die.\n",
-                "source": "carousel",
+                "edition": "carousel",
             },
         },
     }
