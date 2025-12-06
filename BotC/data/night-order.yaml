@@ -1,4 +1,4 @@
-first night:
+firstNight:
 - dusk: >
     Start the Night Phase.
 - wraith: >
@@ -190,7 +190,7 @@ first night:
     reminder.
 - vizier: >
     Announce the Vizier player to the group.
-other nights:
+otherNight:
 - dusk: >
     Start the Night Phase.
 - wraith: >

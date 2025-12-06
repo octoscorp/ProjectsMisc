@@ -32,7 +32,7 @@ TB_CHARS = [
 ]
 
 TB_DEFAULT_ORDER = {
-    "first night": [
+    "firstNight": [
         "dusk",
         "minion info",
         "demon info",
@@ -47,7 +47,7 @@ TB_DEFAULT_ORDER = {
         "spy",
         "dawn",
     ],
-    "other nights": [
+    "otherNight": [
         "dusk",
         "poisoner",
         "monk",
@@ -69,11 +69,11 @@ def _assert_matching_order(given_order, expected_order):
     Compares the content-rich given order with the test list format
     @param given_order output of an ordering - dict of format:
     {
-        "first night": [
+        "firstNight": [
             {<name>: <first_night_reminder>},
             ...
         ],
-        "other nights": [
+        "otherNight": [
             {<name>: <other nights_reminder>},
             ...
         ]

@@ -52,7 +52,7 @@ def test_characters():
         "townsfolk": {
             "acrobat": {
                 "ability": "Each night*, choose a player: if they are or become drunk or " +
-                               "poisoned tonight, you die.\n",
+                           "poisoned tonight, you die.\n",
                 "edition": "carousel",
             },
         },

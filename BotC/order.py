@@ -31,20 +31,18 @@ def generate_order(char_set, filename=None):
     @param char_set dict of characters in the following format:
     {
         <name>: {
-            ["reminders": {
-                ["first night": <first night reminder>,]
-                ["other nights": <other nights reminder>]
-            }]
+            ["firstNight": <first night reminder>,]
+            ["otherNight": <other nights reminder>]
         }, ...
     }
     @param filename the file to write results to when done. Will silently overwrite if this exists!
     @return order dict of night order in the below format. This includes dusk and dawn
     {
-        "first night": [
+        "firstNight": [
             {<name>: <first night reminder>},
             ...
         ],
-        "other nights": [
+        "otherNight": [
             {<name>: <other nights reminder>},
             ...
         ]
@@ -63,18 +61,15 @@ def generate_order(char_set, filename=None):
                              "CHARACTERS ARE NOT IN PLAY} token. Show 3 not-in-play good " +
                              "character tokens.")
     order = {
-        "first night": [_DAWN, _MINION_INFO, _DEMON_INFO],
-        "other nights": [_DAWN],
+        "firstNight": [_DAWN, _MINION_INFO, _DEMON_INFO],
+        "otherNight": [_DAWN],
     }
 
     for char_name in char_set.keys():
         # Determine whether character wakes at night
-        if "reminders" not in char_set[char_name].keys():
-            continue
-        reminders = char_set[char_name]["reminders"]
         for night in order.keys():
-            if night in reminders.keys():
-                orderable = _Orderable(char_name, reminders[night])
+            if night in char_set[char_name].keys() and char_set[char_name][night] != 0:
+                orderable = _Orderable(char_name, char_set[char_name][night])
                 order[night].append(orderable)
 
     # Sort into correct order (where each comparison asks the user)
