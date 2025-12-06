@@ -38,9 +38,9 @@ def test_characters():
     # Check all characters have loaded
     expected = {
         "townsfolk": 69,
-        "outsiders": 23,
-        "minions": 27,
-        "demons": 19,
+        "outsider": 23,
+        "minion": 27,
+        "demon": 19,
     }
 
     for category in expected.keys():

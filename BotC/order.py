@@ -125,6 +125,6 @@ def pick_from_order(character_names, filename=_DEFAULT_NIGHT_ORDER_FILE):
 # If run directly, generate ./data/night-order.yaml
 if __name__ == '__main__':
     # Load all characters
-    all_chars = characters["townsfolk"] | characters["outsiders"] | \
-                characters["minions"] | characters["demons"]
+    all_chars = characters["townsfolk"] | characters["outsider"] | \
+                characters["minion"] | characters["demon"]
     generate_order(all_chars, _DEFAULT_NIGHT_ORDER_FILE)

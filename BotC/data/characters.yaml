@@ -1,7 +1,7 @@
 # Character data
 # Last updated 19 Nov 2025
 # == DEMONS =============================
-demons:
+demon:
   alhadikhia:
     ability: >
       Each night*, you may choose 3 players (all players learn who): each
@@ -209,8 +209,107 @@ demons:
     otherNight: 33
     otherNightReminder: >
       If no one died today, the Zombuul chooses a player.
+
+# == FABLED =============================
+fabled:
+  angel:
+    ability: >
+      Something bad might happen to whoever is most responsible for the death of
+      a new player.
+    name: Angel
+  buddhist:
+    ability: >
+      For the first 2 minutes of each day, veteran players may not talk.
+    name: Buddhist
+  deusexfiasco:
+    ability: >
+      At least once per game, the Storyteller will make a mistake, correct it,
+      and publicly admit to it.
+    name: Deus ex Fiasco
+  djinn:
+    ability: >
+      Use the Djinn's special rule. All players know what it is.
+    name: Djinn
+  doomsayer:
+    ability: >
+      If 4 or more players live, each living player may publicly choose (once
+      per game) that a player of their own alignment dies.
+    name: Doomsayer
+  duchess:
+    ability: >
+      Each day, 3 players may choose to visit you. At night*, each visitor
+      learns how many visitors are evil, but 1 gets false info.
+    name: Duchess
+  ferryman:
+    ability: >
+      On the final day, all dead players regain their vote token.
+    name: Ferryman
+  fibbin:
+    ability: >
+      Once per game, 1 good player might get incorrect information.
+    name: Fibbin
+  fiddler:
+    ability: >
+      Once per game, the Demon secretly chooses an opposing player: all players
+      choose which of these 2 players win.
+    name: Fiddler
+  hellslibrarian:
+    ability: >
+      Something bad might happen to whoever talks when the Storyteller has asked
+      for silence.
+    name: Hell's Librarian
+  revolutionary:
+    ability: >
+      2 neighboring players are known to be the same alignment. Once per game, 1
+      of them registers falsely.
+    name: Revolutionary
+  sentinel:
+    ability: >
+      There might be 1 extra or 1 fewer Outsider in play.
+    name: Sentinel
+  spiritofivory:
+    ability: >
+      There can't be more than 1 extra evil player.
+    name: Spirit of Ivory
+  toymaker:
+    ability: >
+      The Demon may choose not to attack & must do this at least once per game.
+      Evil players get normal starting info.
+    name: Toymaker
+
+# == LORIC ==============================
+loric:
+  bigwig:
+    ability: >
+      Each nominee chooses a player: until voting, only they may speak & they
+      are mad the nominee is good or they might die.
+    name: Big Wig
+  bootlegger:
+    ability: >
+      This script has homebrew characters or rules.
+    name: Bootlegger
+  gardener:
+    ability: >
+      The Storyteller assigns 1 or more players' characters.
+    name: Gardener
+  stormcatcher:
+    ability: >
+      Name a good character. If in play, they can only die by execution, but
+      evil players learn which player it is.
+    name: Storm Catcher
+  tor:
+    ability: >
+      Players don't know their character or alignment. They learn them when they
+      die.
+    name: Tor
+  zenomancer:
+    ability: >
+      One or more players each have a goal. When achieved, that player learns a
+      piece of true info.
+    name: Zenomancer
+
 # == MINIONS ============================
-minions:
+minion:
   assassin:
     ability: >
       Once per game, at night*, choose a player: they die, even if for some
@@ -506,8 +605,9 @@ minions:
     otherNightReminder: >
       Change the Xaan reminder token to the relevant night. If it is night X,
       mark the Xaan with the {X} reminder token.
+
 # == OUTSIDERS ==========================
-outsiders:
+outsider:
   barber:
     ability: >
       If you died today or tonight, the Demon may choose 2 players (not another
@@ -689,6 +789,7 @@ outsiders:
       If there are 5 or more players alive, you must vote for every nomination.
     edition: carousel
     name: Zealot
+
 # == TOWNSFOLK ==========================
 townsfolk:
   acrobat:
@@ -1345,7 +1446,7 @@ townsfolk:
     otherNight: 68
     otherNightReminder: >
       If a player was executed today, show their character token.
-  village idiot:
+  villageidiot:
     ability: >
       Each night, choose a player: you learn their alignment. [+0 to +2 Village
       Idiots. 1 of the extras is drunk]

@@ -11,9 +11,9 @@ from itertools import combinations
 
 TOWN_DISTRIBUTION = {
     "townsfolk": 13,
-    "outsiders": 4,
-    "minions": 4,
-    "demons": 4,
+    "outsider": 4,
+    "minion": 4,
+    "demon": 4,
 }
 
 
@@ -200,9 +200,9 @@ class Search:
         """Remove non-jinxed characters"""
         return {
             "townsfolk": [c for c in characters["townsfolk"].keys() if graph.is_jinxed_char(c)],
-            "outsiders": [c for c in characters["outsiders"].keys() if graph.is_jinxed_char(c)],
-            "minions": [c for c in characters["minions"].keys() if graph.is_jinxed_char(c)],
-            "demons": [c for c in characters["demons"].keys() if graph.is_jinxed_char(c)],
+            "outsider": [c for c in characters["outsider"].keys() if graph.is_jinxed_char(c)],
+            "minion": [c for c in characters["minion"].keys() if graph.is_jinxed_char(c)],
+            "demon": [c for c in characters["demon"].keys() if graph.is_jinxed_char(c)],
         }
 
     def _get_reduced_counts(self, counts, char_name):
@@ -229,12 +229,12 @@ class Search:
         # Try every combination!
         for townsfolk in combinations(search_space["townsfolk"].keys(),
                                         TOWN_DISTRIBUTION["townsfolk"]):
-            for outsiders in combinations(search_space["outsiders"].keys(),
-                                            TOWN_DISTRIBUTION["outsiders"]):
-                for minions in combinations(search_space["minions"].keys(),
-                                                TOWN_DISTRIBUTION["minions"]):
-                    for demons in combinations(search_space["demons"].keys(),
-                                                    TOWN_DISTRIBUTION["demons"]):
+            for outsiders in combinations(search_space["outsider"].keys(),
+                                            TOWN_DISTRIBUTION["outsider"]):
+                for minions in combinations(search_space["minion"].keys(),
+                                                TOWN_DISTRIBUTION["minion"]):
+                    for demons in combinations(search_space["demon"].keys(),
+                                                    TOWN_DISTRIBUTION["demon"]):
                         chars = list(townsfolk + outsiders + minions + demons)
                         # The magic check
                         num_jinxes = graph.get_num_jinxes(chars)
@@ -266,9 +266,9 @@ class Search:
 
         # Try every remaining combination
         for townsfolk in combinations(space["townsfolk"], TOWN_DISTRIBUTION["townsfolk"]):
-            for outsiders in combinations(space["outsiders"], TOWN_DISTRIBUTION["outsiders"]):
-                for minions in combinations(space["minions"], TOWN_DISTRIBUTION["minions"]):
-                    for demons in combinations(space["demons"], TOWN_DISTRIBUTION["demons"]):
+            for outsiders in combinations(space["outsider"], TOWN_DISTRIBUTION["outsider"]):
+                for minions in combinations(space["minion"], TOWN_DISTRIBUTION["minion"]):
+                    for demons in combinations(space["demon"], TOWN_DISTRIBUTION["demon"]):
                         chars = list(townsfolk + outsiders + minions + demons)
                         # The magic check
                         num_jinxes = graph.get_num_jinxes(chars)
