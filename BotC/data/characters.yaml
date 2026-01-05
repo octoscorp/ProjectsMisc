@@ -7,6 +7,9 @@ demon:
       Each night*, you may choose 3 players (all players learn who): each
       silently chooses to live or die, but if all live, all die.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/alhadikhia_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/alhadikhia_g.webp
     name: Al-Hadikhia
     otherNight: 43
     otherNightReminder: >
@@ -20,6 +23,9 @@ demon:
       Each night*, choose a player: they die. The 1st Outsider this kills
       becomes an evil Fang Gu & you die instead. [+1 Outsider]
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/fanggu_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/fanggu_g.webp
     name: Fang Gu
     otherNight: 37
     otherNightReminder: >
@@ -32,6 +38,9 @@ demon:
       Each night*, choose a player: they die. If you kill yourself this way, a
       Minion becomes the Imp.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/imp_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/imp_g.webp
     name: Imp
     otherNight: 32
     otherNightReminder: >
@@ -46,6 +55,9 @@ demon:
     firstNight: 4
     firstNightReminder: >
       Wake the Kazali, allow them to choose Minions.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/kazali_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/kazali_g.webp
     name: Kazali
     otherNight: 47
     otherNightReminder: >
@@ -55,6 +67,9 @@ demon:
       Each night*, a player might die. Executions fail if only evil voted. You
       register as a Minion too. [Most players are Legion]
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/legion_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/legion_g.webp
     name: Legion
     otherNight: 31
     otherNightReminder: >
@@ -68,6 +83,9 @@ demon:
     firstNightReminder: >
       Declare that "The Leviathan is in play." Mark the Leviathan with the
       {DAY 1} reminder.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/leviathan_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/leviathan_g.webp
     name: Leviathan
     otherNight: 88
     otherNightReminder: >
@@ -81,6 +99,9 @@ demon:
     firstNight: 21
     firstNightReminder: >
       Wake all Minions, allow them to choose a babysitter.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/lilmonsta_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/lilmonsta_g.webp
     name: Lil' Monsta
     otherNight: 45
     otherNightReminder: >
@@ -93,6 +114,9 @@ demon:
     firstNight: 22
     firstNightReminder: >
       The Lleech chooses a player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/lleech_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/lleech_g.webp
     name: Lleech
     otherNight: 44
     otherNightReminder: >
@@ -106,6 +130,9 @@ demon:
     firstNightReminder: >
       Replace neighbors of the Lord of Typhon with Minions, wake them, tell
       them their new alignment and character, then do minion info.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/lordoftyphon_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/lordoftyphon_g.webp
     name: Lord of Typhon
     otherNight: 40
     otherNightReminder: >
@@ -115,6 +142,9 @@ demon:
       Each night*, choose a player: they die. Your 2 Townsfolk neighbors are
       poisoned.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/nodashii_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/nodashii_g.webp
     name: No Dashii
     otherNight: 38
     otherNightReminder: >
@@ -124,6 +154,9 @@ demon:
       Each night*, choose a character: they die. If they are not in play, the
       Storyteller chooses who dies.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/ojo_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/ojo_g.webp
     name: Ojo
     otherNight: 42
     otherNightReminder: >
@@ -133,6 +166,9 @@ demon:
       Each night*, you may choose a player: they die. If your last choice was
       no-one, choose 3 players tonight.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/po_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/po_g.webp
     name: Po
     otherNight: 36
     otherNightReminder: >
@@ -146,6 +182,9 @@ demon:
     firstNight: 38
     firstNightReminder: >
       The Pukka chooses a player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/pukka_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/pukka_g.webp
     name: Pukka
     otherNight: 34
     otherNightReminder: >
@@ -156,12 +195,18 @@ demon:
       On day 3, Minions become Riot & nominees die but nominate an alive player
       immediately. This must happen.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/riot_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/riot_g.webp
     name: Riot
   shabaloth:
     ability: >
       Each night*, choose 2 players: they die. A dead player you chose last
       night might be regurgitated.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/shabaloth_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/shabaloth_g.webp
     name: Shabaloth
     otherNight: 35
     otherNightReminder: >
@@ -172,6 +217,9 @@ demon:
       Each night*, choose a player: they die. Minions you kill keep their
       ability & poison 1 Townsfolk neighbor. [-1 Outsider]
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/vigormortis_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/vigormortis_g.webp
     name: Vigormortis
     otherNight: 41
     otherNightReminder: >
@@ -182,6 +230,9 @@ demon:
       Each night*, choose a player: they die. Townsfolk abilities yield false
       info. Each day, if no-one is executed, evil wins.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/vortox_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/vortox_g.webp
     name: Vortox
     otherNight: 39
     otherNightReminder: >
@@ -195,6 +246,9 @@ demon:
     firstNightReminder: >
       Choose a secret phrase. Wake the Yaggababble and let them know their
       secret phrase.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/yaggababble_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/yaggababble_g.webp
     name: Yaggababble
     otherNight: 46
     otherNightReminder: >
@@ -205,6 +259,9 @@ demon:
       Each night*, if no-one died today, choose a player: they die. The 1st time
       you die, you live but register as dead.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/zombuul_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/zombuul_g.webp
     name: Zombuul
     otherNight: 33
     otherNightReminder: >
@@ -216,65 +273,93 @@ fabled:
     ability: >
       Something bad might happen to whoever is most responsible for the death of
       a new player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/angel.webp
     name: Angel
   buddhist:
     ability: >
       For the first 2 minutes of each day, veteran players may not talk.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/buddhist.webp
     name: Buddhist
   deusexfiasco:
     ability: >
       At least once per game, the Storyteller will make a mistake, correct it,
       and publicly admit to it.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/deusexfiasco.webp
     name: Deus ex Fiasco
   djinn:
     ability: >
       Use the Djinn's special rule. All players know what it is.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/djinn.webp
     name: Djinn
   doomsayer:
     ability: >
       If 4 or more players live, each living player may publicly choose (once
       per game) that a player of their own alignment dies.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/doomsayer.webp
     name: Doomsayer
   duchess:
     ability: >
       Each day, 3 players may choose to visit you. At night*, each visitor
       learns how many visitors are evil, but 1 gets false info.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/duchess.webp
     name: Duchess
   ferryman:
     ability: >
       On the final day, all dead players regain their vote token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/ferryman.webp
     name: Ferryman
   fibbin:
     ability: >
       Once per game, 1 good player might get incorrect information.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/fibbin.webp
     name: Fibbin
   fiddler:
     ability: >
       Once per game, the Demon secretly chooses an opposing player: all players
       choose which of these 2 players win.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/fiddler.webp
     name: Fiddler
   hellslibrarian:
     ability: >
       Something bad might happen to whoever talks when the Storyteller has asked
       for silence.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/hellslibrarian.webp
     name: Hell's Librarian
   revolutionary:
     ability: >
       2 neighboring players are known to be the same alignment. Once per game, 1
       of them registers falsely.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/revolutionary.webp
     name: Revolutionary
   sentinel:
     ability: >
       There might be 1 extra or 1 fewer Outsider in play.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/sentinel.webp
     name: Sentinel
   spiritofivory:
     ability: >
       There can't be more than 1 extra evil player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/spiritofivory.webp
     name: Spirit of Ivory
   toymaker:
     ability: >
       The Demon may choose not to attack & must do this at least once per game.
       Evil players get normal starting info.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/fabled/toymaker.webp
     name: Toymaker
 
 # == LORIC ==============================
@@ -283,29 +368,48 @@ loric:
     ability: >
       Each nominee chooses a player: until voting, only they may speak & they
       are mad the nominee is good or they might die.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/bigwig.webp
     name: Big Wig
   bootlegger:
     ability: >
       This script has homebrew characters or rules.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/bootlegger.webp
     name: Bootlegger
   gardener:
     ability: >
       The Storyteller assigns 1 or more players' characters.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/gardener.webp
     name: Gardener
+  hindu:
+    ability: >
+      The first 4 players to die are immediately reincarnated as Travellers of
+      the same alignment.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/hindu.webp
+    name: Hindu
   stormcatcher:
     ability: >
       Name a good character. If in play, they can only die by execution, but
       evil players learn which player it is.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/stormcatcher.webp
     name: Storm Catcher
   tor:
     ability: >
       Players don't know their character or alignment. They learn them when they
       die.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/tor.webp
     name: Tor
   zenomancer:
     ability: >
       One or more players each have a goal. When achieved, that player learns a
       piece of true info.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/zenomancer.webp
     name: Zenomancer
 
 # == MINIONS ============================
@@ -315,6 +419,9 @@ minion:
       Once per game, at night*, choose a player: they die, even if for some
       reason they could not.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/assassin_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/assassin_g.webp
     name: Assassin
     otherNight: 48
     otherNightReminder: >
@@ -323,6 +430,9 @@ minion:
     ability: >
       There are extra Outsiders in play. [+2 Outsiders]
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/baron_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/baron_g.webp
     name: Baron
   boffin:
     ability: >
@@ -333,12 +443,18 @@ minion:
     firstNightReminder: >
       Wake the Boffin and the Demon. Show the not-in-play good character
       token. Put the Boffin and the Demon to sleep.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/boffin_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/boffin_g.webp
     name: Boffin
   boomdandy:
     ability: >
       If you are executed, all but 3 players die. After a 10 to 1 countdown, the
       player with the most players pointing at them, dies.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/boomdandy_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/boomdandy_g.webp
     name: Boomdandy
   cerenovus:
     ability: >
@@ -350,6 +466,9 @@ minion:
       The Cerenovus chooses a player & a character. Put the Cerenovus to
       sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token,
       the Cerenovus token, then the madness-character token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/cerenovus_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/cerenovus_g.webp
     name: Cerenovus
     otherNight: 20
     otherNightReminder: >
@@ -364,6 +483,9 @@ minion:
     firstNight: 31
     firstNightReminder: >
       The Devil's Advocate chooses a living player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/devilsadvocate_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/devilsadvocate_g.webp
     name: Devil's Advocate
     otherNight: 18
     otherNightReminder: >
@@ -377,6 +499,9 @@ minion:
     firstNightReminder: >
       Wake both twins. Allow eye contact. Show the good twin's character token
       to the Evil Twin & vice versa.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/eviltwin_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/eviltwin_g.webp
     name: Evil Twin
   fearmonger:
     ability: >
@@ -387,6 +512,9 @@ minion:
     firstNightReminder: >
       The Fearmonger chooses a player. Declare that "the Fearmonger has chosen
       a player."
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/fearmonger_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/fearmonger_g.webp
     name: Fearmonger
     otherNight: 22
     otherNightReminder: >
@@ -398,6 +526,9 @@ minion:
       If you publicly claim to be the Goblin when nominated & are executed that
       day, your team wins.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/goblin_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/goblin_g.webp
     name: Goblin
   godfather:
     ability: >
@@ -407,6 +538,9 @@ minion:
     firstNight: 29
     firstNightReminder: >
       Show the character tokens of all in-play Outsiders.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/godfather_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/godfather_g.webp
     name: Godfather
     otherNight: 49
     otherNightReminder: >
@@ -421,6 +555,9 @@ minion:
       The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st
       target. Show the {THIS CHARACTER SELECTED YOU} token, the Harpy token,
       then point to the 2nd target.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/harpy_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/harpy_g.webp
     name: Harpy
     otherNight: 23
     otherNightReminder: >
@@ -436,12 +573,18 @@ minion:
     firstNightReminder: >
       Wake the Demon. Point to the player marked {IS THE MARIONETTE} and show
       the {THIS PLAYER IS} token and the Marionette character token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/marionette_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/marionette_g.webp
     name: Marionette
   mastermind:
     ability: >
       If the Demon dies by execution (ending the game), play for 1 more day. If
       a player is then executed, their team loses.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/mastermind_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/mastermind_g.webp
     name: Mastermind
   mezepheles:
     ability: >
@@ -451,6 +594,9 @@ minion:
     firstNight: 37
     firstNightReminder: >
       Show the written word.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/mezepheles_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/mezepheles_g.webp
     name: Mezepheles
     otherNight: 24
     otherNightReminder: >
@@ -466,6 +612,9 @@ minion:
     firstNightReminder: >
       The Organ Grinder either nods their head yes to be drunk, or shakes
       their head no to be sober.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/organgrinder_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/organgrinder_g.webp
     name: Organ Grinder
     otherNight: 17
     otherNightReminder: >
@@ -476,6 +625,9 @@ minion:
       Each night*, choose a player & a character they become (if not in play).
       If a Demon is made, deaths tonight are arbitrary.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/pithag_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/pithag_g.webp
     name: Pit-Hag
     otherNight: 21
     otherNightReminder: >
@@ -489,6 +641,9 @@ minion:
     firstNight: 24
     firstNightReminder: >
       The Poisoner chooses a player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/poisoner_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/poisoner_g.webp
     name: Poisoner
     otherNight: 9
     otherNightReminder: >
@@ -498,12 +653,18 @@ minion:
       Each day, before nominations, you may publicly choose a player: they die.
       If executed, you only die if you lose roshambo.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/psychopath_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/psychopath_g.webp
     name: Psychopath
   scarletwoman:
     ability: >
       If there are 5 or more players alive & the Demon dies, you become the
       Demon. (Travellers don't count.)
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/scarletwoman_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/scarletwoman_g.webp
     name: Scarlet Woman
     otherNight: 25
     otherNightReminder: >
@@ -517,6 +678,9 @@ minion:
     firstNight: 63
     firstNightReminder: >
       Show the Grimoire for as long as the Spy needs.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/spy_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/spy_g.webp
     name: Spy
     otherNight: 82
     otherNightReminder: >
@@ -530,6 +694,9 @@ minion:
     firstNightReminder: >
       Show the {THESE CHARACTERS ARE NOT IN PLAY} token. Show 3 not-in-play
       good character tokens.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/summoner_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/summoner_g.webp
     name: Summoner
     otherNight: 26
     otherNightReminder: >
@@ -545,6 +712,9 @@ minion:
     firstNight: 71
     firstNightReminder: >
       Announce the Vizier player to the group.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/vizier_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/vizier_g.webp
     name: Vizier
   widow:
     ability: >
@@ -555,6 +725,9 @@ minion:
     firstNightReminder: >
       Show the Grimoire for as long as the Widow needs. The Widow chooses a
       player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/widow_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/widow_g.webp
     name: Widow
   witch:
     ability: >
@@ -564,6 +737,9 @@ minion:
     firstNight: 33
     firstNightReminder: >
       The Witch chooses a player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/witch_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/witch_g.webp
     name: Witch
     otherNight: 19
     otherNightReminder: >
@@ -576,6 +752,9 @@ minion:
     firstNight: 27
     firstNightReminder: >
       Run the Wizard's ability, if applicable.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/wizard_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/wizard_g.webp
     name: Wizard
     otherNight: 12
     otherNightReminder: >
@@ -588,6 +767,9 @@ minion:
     firstNight: 2
     firstNightReminder: >
       Wake the Wraith whenever other evil players wake.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/wraith_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/wraith_g.webp
     name: Wraith
     otherNight: 2
     otherNightReminder: >
@@ -600,6 +782,9 @@ minion:
     firstNightReminder: >
       Mark the Xaan with the {NIGHT 1} reminder. If X is 1, mark the Xaan with
       the {X} reminder token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/xaan_e.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/xaan_g.webp
     name: Xaan
     otherNight: 8
     otherNightReminder: >
@@ -613,6 +798,9 @@ outsider:
       If you died today or tonight, the Demon may choose 2 players (not another
       Demon) to swap characters.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/barber_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/barber_e.webp
     name: Barber
     otherNight: 52
     otherNightReminder: >
@@ -627,6 +815,9 @@ outsider:
     firstNight: 49
     firstNightReminder: >
       The Butler chooses a player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/butler_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/butler_e.webp
     name: Butler
     otherNight: 81
     otherNightReminder: >
@@ -640,30 +831,45 @@ outsider:
     firstNightReminder: >
       If the Damsel was chosen by the Huntsman, show them the {YOU ARE} info
       token and their new character token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/damsel_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/damsel_e.webp
     name: Damsel
   drunk:
     ability: >
       You do not know you are the Drunk. You think you are a Townsfolk
       character, but you are not.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/drunk_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/drunk_e.webp
     name: Drunk
   golem:
     ability: >
       You may only nominate once per game. When you do, if the nominee is not
       the Demon, they die.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/golem_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/golem_e.webp
     name: Golem
   goon:
     ability: >
       Each night, the 1st player to choose you with their ability is drunk until
       dusk. You become their alignment.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/goon_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/goon_e.webp
     name: Goon
   hatter:
     ability: >
       If you died today or tonight, the Minion & Demon players may choose new
       Minion & Demon characters to be.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/hatter_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/hatter_e.webp
     name: Hatter
     otherNight: 51
     otherNightReminder: >
@@ -673,17 +879,26 @@ outsider:
     ability: >
       Whoever wins, loses & whoever loses, wins, even if you are dead.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/heretic_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/heretic_e.webp
     name: Heretic
   hermit:
     ability: >
       You have all Outsider abilities. [-0 or -1 Outsider]
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/hermit_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/hermit_e.webp
     name: Hermit
   klutz:
     ability: >
       When you learn that you died, publicly choose 1 alive player: if they are
       evil, your team loses.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/klutz_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/klutz_e.webp
     name: Klutz
   lunatic:
     ability: >
@@ -698,6 +913,9 @@ outsider:
       sleep. Wake the Demon. Show the {YOU ARE} info token and the Demon
       token. Show the {THIS PLAYER IS} info token and the Lunatic token, then
       point to the Lunatic.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/lunatic_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/lunatic_e.webp
     name: Lunatic
     otherNight: 27
     otherNightReminder: >
@@ -709,6 +927,9 @@ outsider:
       When you learn that you died, publicly choose 1 alive player. Tonight, if
       it was a good player, they die.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/moonchild_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/moonchild_e.webp
     name: Moonchild
     otherNight: 63
     otherNightReminder: >
@@ -717,6 +938,9 @@ outsider:
     ability: >
       If you are "mad" about being an Outsider, you might be executed.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/mutant_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/mutant_e.webp
     name: Mutant
   ogre:
     ability: >
@@ -726,11 +950,17 @@ outsider:
     firstNight: 64
     firstNightReminder: >
       The Ogre points to a player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/ogre_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/ogre_e.webp
     name: Ogre
   plaguedoctor:
     ability: >
       When you die, the Storyteller gains a Minion ability.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/plaguedoctor_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/plaguedoctor_e.webp
     name: Plague Doctor
     otherNight: 54
     otherNightReminder: >
@@ -741,22 +971,34 @@ outsider:
       If you were the player most responsible for your team losing, you change
       alignment & win.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/politician_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/politician_e.webp
     name: Politician
   puzzlemaster:
     ability: >
       1 player is drunk, even if you die. If you guess (once) who it is, learn
       the Demon player, but guess wrong & get false info.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/puzzlemaster_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/puzzlemaster_e.webp
     name: Puzzlemaster
   recluse:
     ability: >
       You might register as evil & as a Minion or Demon, even if dead.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/recluse_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/recluse_e.webp
     name: Recluse
   saint:
     ability: >
       If you die by execution, your team loses.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/saint_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/saint_e.webp
     name: Saint
   snitch:
     ability: >
@@ -766,11 +1008,17 @@ outsider:
     firstNightReminder: >
       Wake each Minion. Show the {THESE CHARACTERS ARE NOT IN PLAY} token and
       three not-in-play character tokens. Put each Minion to sleep.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/snitch_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/snitch_e.webp
     name: Snitch
   sweetheart:
     ability: >
       When you die, 1 player is drunk from now on.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/sweetheart_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/sweetheart_e.webp
     name: Sweetheart
     otherNight: 53
     otherNightReminder: >
@@ -780,6 +1028,9 @@ outsider:
     ability: >
       You might die at any time.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/tinker_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/tinker_e.webp
     name: Tinker
     otherNight: 62
     otherNightReminder: >
@@ -788,6 +1039,9 @@ outsider:
     ability: >
       If there are 5 or more players alive, you must vote for every nomination.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/zealot_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/zealot_e.webp
     name: Zealot
 
 # == TOWNSFOLK ==========================
@@ -797,6 +1051,9 @@ townsfolk:
       Each night*, choose a player: if they are or become drunk or poisoned
       tonight, you die.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/acrobat_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/acrobat_e.webp
     name: Acrobat
     otherNight: 14
     otherNightReminder: >
@@ -809,12 +1066,18 @@ townsfolk:
     firstNight: 7
     firstNightReminder: >
       Show the {YOU ARE} token and the character token of a Minion.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/alchemist_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/alchemist_e.webp
     name: Alchemist
   alsaahir:
     ability: >
       Each day, if you publicly guess which players are Minion(s) and which are
       Demon(s), good wins.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/alsaahir_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/alsaahir_e.webp
     name: Alsaahir
   amnesiac:
     ability: >
@@ -824,6 +1087,9 @@ townsfolk:
     firstNight: 42
     firstNightReminder: >
       Run the Amnesiac's ability, if applicable.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/amnesiac_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/amnesiac_e.webp
     name: Amnesiac
     otherNight: 60
     otherNightReminder: >
@@ -832,12 +1098,18 @@ townsfolk:
     ability: >
       Once per game, during the day, ask the Storyteller any yes/no question.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/artist_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/artist_e.webp
     name: Artist
   atheist:
     ability: >
       The Storyteller can break the game rules, and if executed, good wins, even
       if you are dead. [No evil characters]
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/atheist_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/atheist_e.webp
     name: Atheist
   balloonist:
     ability: >
@@ -847,6 +1119,9 @@ townsfolk:
     firstNight: 57
     firstNightReminder: >
       Show any player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/balloonist_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/balloonist_e.webp
     name: Balloonist
     otherNight: 75
     otherNightReminder: >
@@ -856,6 +1131,9 @@ townsfolk:
       If the Demon kills you, all players learn this. From now on, you may
       nominate twice per day and vote twice per nomination.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/banshee_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/banshee_e.webp
     name: Banshee
     otherNight: 56
     otherNightReminder: >
@@ -869,6 +1147,9 @@ townsfolk:
     firstNight: 60
     firstNightReminder: >
       Point to the {KNOWN} player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/bountyhunter_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/bountyhunter_e.webp
     name: Bounty Hunter
     otherNight: 78
     otherNightReminder: >
@@ -879,6 +1160,9 @@ townsfolk:
       You have the ability of the recently killed executee. If they are evil,
       you are poisoned until a good player dies by execution.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/cannibal_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/cannibal_e.webp
     name: Cannibal
   chambermaid:
     ability: >
@@ -888,6 +1172,9 @@ townsfolk:
     firstNight: 67
     firstNightReminder: >
       The Chambermaid chooses 2 living players. Give a finger signal.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/chambermaid_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/chambermaid_e.webp
     name: Chambermaid
     otherNight: 85
     otherNightReminder: >
@@ -899,12 +1186,18 @@ townsfolk:
     firstNight: 46
     firstNightReminder: >
       Give a finger signal.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/chef_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/chef_e.webp
     name: Chef
   choirboy:
     ability: >
       If the Demon kills the King, you learn which player is the Demon. [+the
       King]
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/choirboy_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/choirboy_e.webp
     name: Choirboy
     otherNight: 58
     otherNightReminder: >
@@ -916,6 +1209,9 @@ townsfolk:
     firstNight: 51
     firstNightReminder: >
       Give a finger signal.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/clockmaker_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/clockmaker_e.webp
     name: Clockmaker
   courtier:
     ability: >
@@ -925,6 +1221,9 @@ townsfolk:
     firstNight: 26
     firstNightReminder: >
       The Courtier might choose a character.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/courtier_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/courtier_e.webp
     name: Courtier
     otherNight: 10
     otherNightReminder: >
@@ -938,6 +1237,9 @@ townsfolk:
     firstNightReminder: >
       The Cult Leader might change alignment. If so, show the {YOU ARE} info
       token and a thumbs up or down for their new alignment.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/cultleader_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/cultleader_e.webp
     name: Cult Leader
     otherNight: 80
     otherNightReminder: >
@@ -952,6 +1254,9 @@ townsfolk:
     firstNightReminder: >
       The Dreamer points to a player. Show 1 good & 1 evil character token, 1
       of which is their character.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/dreamer_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/dreamer_e.webp
     name: Dreamer
     otherNight: 69
     otherNightReminder: >
@@ -964,6 +1269,9 @@ townsfolk:
     firstNight: 47
     firstNightReminder: >
       Give a finger signal.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/empath_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/empath_e.webp
     name: Empath
     otherNight: 66
     otherNightReminder: >
@@ -978,6 +1286,9 @@ townsfolk:
       Engineer to sleep. Wake a target, show them the {YOU ARE} token and
       their new character token, then put that target to sleep. Repeat for all
       players that changed characters.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/engineer_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/engineer_e.webp
     name: Engineer
     otherNight: 6
     otherNightReminder: >
@@ -990,6 +1301,9 @@ townsfolk:
       Each night*, choose a player (different to last night): the Demon, if
       chosen, learns who you are then doesn't wake tonight.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/exorcist_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/exorcist_e.webp
     name: Exorcist
     otherNight: 28
     otherNightReminder: >
@@ -1000,6 +1314,9 @@ townsfolk:
     ability: >
       When you die at night, an alive good player becomes a Farmer.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/farmer_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/farmer_e.webp
     name: Farmer
     otherNight: 61
     otherNightReminder: >
@@ -1011,11 +1328,17 @@ townsfolk:
       Once per game, during the day, visit the Storyteller for some advice to
       help your team win.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/fisherman_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/fisherman_e.webp
     name: Fisherman
   flowergirl:
     ability: >
       Each night*, you learn if a Demon voted today.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/flowergirl_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/flowergirl_e.webp
     name: Flowergirl
     otherNight: 70
     otherNightReminder: >
@@ -1024,6 +1347,9 @@ townsfolk:
     ability: >
       The 1st time you die, you don't.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/fool_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/fool_e.webp
     name: Fool
   fortuneteller:
     ability: >
@@ -1034,6 +1360,9 @@ townsfolk:
     firstNightReminder: >
       The Fortune Teller chooses 2 players. Nod if either is the Demon (or the
       {RED HERRING}).
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/fortuneteller_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/fortuneteller_e.webp
     name: Fortune Teller
     otherNight: 67
     otherNightReminder: >
@@ -1044,6 +1373,9 @@ townsfolk:
       Each night*, choose a player & guess their character: if you guess wrong,
       you die.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/gambler_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/gambler_e.webp
     name: Gambler
     otherNight: 13
     otherNightReminder: >
@@ -1056,6 +1388,9 @@ townsfolk:
     firstNight: 66
     firstNightReminder: >
       Give a thumb signal.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/general_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/general_e.webp
     name: General
     otherNight: 84
     otherNightReminder: >
@@ -1065,6 +1400,9 @@ townsfolk:
       Each day, you may make a public statement. Tonight, if it was true, a
       player dies.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/gossip_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/gossip_e.webp
     name: Gossip
     otherNight: 50
     otherNightReminder: >
@@ -1077,6 +1415,9 @@ townsfolk:
     firstNight: 50
     firstNightReminder: >
       Point to the grandchild player & show their character token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/grandmother_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/grandmother_e.webp
     name: Grandmother
     otherNight: 64
     otherNightReminder: >
@@ -1089,6 +1430,9 @@ townsfolk:
     firstNight: 65
     firstNightReminder: >
       Point to a player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/highpriestess_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/highpriestess_e.webp
     name: High Priestess
     otherNight: 83
     otherNightReminder: >
@@ -1103,6 +1447,9 @@ townsfolk:
       The Huntsman might choose a player. If that player was the Damsel: Put
       the Huntsman to sleep. Wake the Damsel and show them the {YOU ARE} info
       token and their new character token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/huntsman_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/huntsman_e.webp
     name: Huntsman
     otherNight: 59
     otherNightReminder: >
@@ -1114,6 +1461,9 @@ townsfolk:
       Each night*, choose 2 players: they can't die tonight, but 1 is drunk
       until dusk.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/innkeeper_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/innkeeper_e.webp
     name: Innkeeper
     otherNight: 11
     otherNightReminder: >
@@ -1126,12 +1476,18 @@ townsfolk:
     firstNightReminder: >
       Show the Minion character token. Point to both the {MINION} and {WRONG}
       players.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/investigator_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/investigator_e.webp
     name: Investigator
   juggler:
     ability: >
       On your 1st day, publicly guess up to 5 players' characters. That night,
       you learn how many you got correct.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/juggler_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/juggler_e.webp
     name: Juggler
     otherNight: 74
     otherNightReminder: >
@@ -1145,6 +1501,9 @@ townsfolk:
     firstNightReminder: >
       Wake the Demon. Show the {THIS PLAYER IS} token and the King token, then
       point to the King.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/king_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/king_e.webp
     name: King
     otherNight: 77
     otherNightReminder: >
@@ -1157,6 +1516,9 @@ townsfolk:
     firstNight: 55
     firstNightReminder: >
       Point to the two non-Demon players marked {KNOW}.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/knight_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/knight_e.webp
     name: Knight
   librarian:
     ability: >
@@ -1167,12 +1529,18 @@ townsfolk:
     firstNightReminder: >
       Show the Outsider character token. Point to both the {OUTSIDER} and
       {WRONG} players.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/librarian_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/librarian_e.webp
     name: Librarian
   lycanthrope:
     ability: >
       Each night*, choose an alive player. If good, they die & the Demon doesn't
       kill tonight. One good player registers as evil.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/lycanthrope_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/lycanthrope_e.webp
     name: Lycanthrope
     otherNight: 29
     otherNightReminder: >
@@ -1184,6 +1552,9 @@ townsfolk:
     firstNight: 10
     firstNightReminder: >
       Include the Magician in the Minion and Demon Info steps.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/magician_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/magician_e.webp
     name: Magician
   mathematician:
     ability: >
@@ -1193,6 +1564,9 @@ townsfolk:
     firstNight: 68
     firstNightReminder: >
       Give a finger signal.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/mathematician_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/mathematician_e.webp
     name: Mathematician
     otherNight: 86
     otherNightReminder: >
@@ -1202,18 +1576,27 @@ townsfolk:
       If only 3 players live & no execution occurs, your team wins. If you die
       at night, another player might die instead.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/mayor_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/mayor_e.webp
     name: Mayor
   minstrel:
     ability: >
       When a Minion dies by execution, all other players (except Travellers) are
       drunk until dusk tomorrow.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/minstrel_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/minstrel_e.webp
     name: Minstrel
   monk:
     ability: >
       Each night*, choose a player (not yourself): they are safe from the Demon
       tonight.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/monk_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/monk_e.webp
     name: Monk
     otherNight: 16
     otherNightReminder: >
@@ -1228,6 +1611,9 @@ townsfolk:
       The Nightwatchman might choose a player. Put the Nightwatchman to sleep.
       Wake the target and show the {THIS PLAYER IS} and Nightwatchman tokens
       and point to the Nightwatchman.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/nightwatchman_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/nightwatchman_e.webp
     name: Nightwatchman
     otherNight: 79
     otherNightReminder: >
@@ -1241,11 +1627,17 @@ townsfolk:
     firstNight: 56
     firstNightReminder: >
       Point to all three players marked {KNOW}.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/noble_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/noble_e.webp
     name: Noble
   oracle:
     ability: >
       Each night*, you learn how many dead players are evil.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/oracle_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/oracle_e.webp
     name: Oracle
     otherNight: 72
     otherNightReminder: >
@@ -1254,6 +1646,9 @@ townsfolk:
     ability: >
       Executed good players might not die.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/pacifist_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/pacifist_e.webp
     name: Pacifist
   philosopher:
     ability: >
@@ -1264,6 +1659,9 @@ townsfolk:
     firstNightReminder: >
       The Philosopher might choose a character. If necessary, swap their
       character token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/philosopher_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/philosopher_e.webp
     name: Philosopher
     otherNight: 3
     otherNightReminder: >
@@ -1277,6 +1675,9 @@ townsfolk:
     firstNight: 39
     firstNightReminder: >
       Show the Townsfolk character token marked MAD.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/pixie_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/pixie_e.webp
     name: Pixie
   poppygrower:
     ability: >
@@ -1288,6 +1689,9 @@ townsfolk:
       Do not do the Minion Info and Demon Info steps. Wake the Demon, show the
       {THESE CHARACTERS ARE NOT IN PLAY} info token and any three good
       character tokens that are not in play.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/poppygrower_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/poppygrower_e.webp
     name: Poppy Grower
     otherNight: 4
     otherNightReminder: >
@@ -1305,6 +1709,9 @@ townsfolk:
       The Preacher chooses a player. If they chose a Minion: Put the Preacher
       to sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token
       and the Preacher token.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/preacher_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/preacher_e.webp
     name: Preacher
     otherNight: 7
     otherNightReminder: >
@@ -1316,6 +1723,9 @@ townsfolk:
       On your 1st day, if you nominated & executed a player, the Demon doesn't
       kill tonight.
     edition: carousel
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/princess_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/princess_e.webp
     name: Princess
     otherNight: 30
     otherNightReminder: >
@@ -1326,6 +1736,9 @@ townsfolk:
       Once per game, at night*, choose a dead player: if they are a Townsfolk,
       they are resurrected.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/professor_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/professor_e.webp
     name: Professor
     otherNight: 57
     otherNightReminder: >
@@ -1335,6 +1748,9 @@ townsfolk:
       If you die at night, you are woken to choose a player: you learn their
       character.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/ravenkeeper_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/ravenkeeper_e.webp
     name: Ravenkeeper
     otherNight: 65
     otherNightReminder: >
@@ -1344,6 +1760,9 @@ townsfolk:
     ability: >
       If the Demon kills you, you learn that it is 1 of 2 players.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/sage_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/sage_e.webp
     name: Sage
     otherNight: 55
     otherNightReminder: >
@@ -1357,6 +1776,9 @@ townsfolk:
     firstNight: 17
     firstNightReminder: >
       The Sailor chooses a living player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/sailor_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/sailor_e.webp
     name: Sailor
     otherNight: 5
     otherNightReminder: >
@@ -1366,6 +1788,9 @@ townsfolk:
       Each day, you may visit the Storyteller to learn 2 things in private: 1 is
       true & 1 is false.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/savant_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/savant_e.webp
     name: Savant
   seamstress:
     ability: >
@@ -1375,6 +1800,9 @@ townsfolk:
     firstNight: 53
     firstNightReminder: >
       The Seamstress might choose 2 players. Nod or shake your head.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/seamstress_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/seamstress_e.webp
     name: Seamstress
     otherNight: 73
     otherNightReminder: >
@@ -1387,12 +1815,18 @@ townsfolk:
     firstNight: 58
     firstNightReminder: >
       Point clockwise or anticlockwise around the circle.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/shugenja_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/shugenja_e.webp
     name: Shugenja
   slayer:
     ability: >
       Once per game, during the day, publicly choose a player: if they are the
       Demon, they die.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/slayer_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/slayer_e.webp
     name: Slayer
   snakecharmer:
     ability: >
@@ -1405,6 +1839,9 @@ townsfolk:
       {YOU ARE} & Demon tokens. Give a thumbs down. Swap the Snake Charmer &
       Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon.
       Show the {YOU ARE} and Snake Charmer tokens & give a thumbs up.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/snakecharmer_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/snakecharmer_e.webp
     name: Snake Charmer
     otherNight: 15
     otherNightReminder: >
@@ -1416,6 +1853,9 @@ townsfolk:
     ability: >
       You are safe from the Demon.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/soldier_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/soldier_e.webp
     name: Soldier
   steward:
     ability: >
@@ -1424,16 +1864,25 @@ townsfolk:
     firstNight: 54
     firstNightReminder: >
       Point to the good player marked {KNOW}.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/steward_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/steward_e.webp
     name: Steward
   tealady:
     ability: >
       If both your alive neighbors are good, they can't die.
     edition: bad moon rising
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/tealady_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/bmr/tealady_e.webp
     name: Tea Lady
   towncrier:
     ability: >
       Each night*, you learn if a Minion nominated today.
     edition: sects and violets
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/towncrier_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/snv/towncrier_e.webp
     name: Town Crier
     otherNight: 71
     otherNightReminder: >
@@ -1442,6 +1891,9 @@ townsfolk:
     ability: >
       Each night*, you learn which character died by execution today.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/undertaker_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/undertaker_e.webp
     name: Undertaker
     otherNight: 68
     otherNightReminder: >
@@ -1456,6 +1908,9 @@ townsfolk:
       Choose a Village Idiot to be drunk. Wake the Village Idiots one at a
       time, they choose a player, show either good or evil thumbs according to
       the alignment of that player.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/villageidiot_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/carousel/villageidiot_e.webp
     name: Village Idiot
     otherNight: 76
     otherNightReminder: >
@@ -1466,6 +1921,9 @@ townsfolk:
       The 1st time you are nominated, if the nominator is a Townsfolk, they are
       executed immediately.
     edition: trouble brewing
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/virgin_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/virgin_e.webp
     name: Virgin
   washerwoman:
     ability: >
@@ -1475,4 +1933,7 @@ townsfolk:
     firstNightReminder: >
       Show the Townsfolk character token. Point to both the {TOWNSFOLK} and
       {WRONG} players.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/washerwoman_g.webp
+    - https://script.bloodontheclocktower.com/src/assets/icons/tb/washerwoman_e.webp
     name: Washerwoman

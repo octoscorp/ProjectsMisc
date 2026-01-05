@@ -3,7 +3,7 @@ firstNight:
     Start the Night Phase.
 - wraith: >
     Wake the Wraith whenever other evil players wake.
-- lord of typhon: >
+- lordoftyphon: >
     Replace neighbors of the Lord of Typhon with Minions, wake them, tell them
     their new alignment and character, then do minion info.
 - kazali: >
@@ -16,7 +16,7 @@ firstNight:
     token.
 - alchemist: >
     'Show the {YOU ARE} token and the character token of a Minion.
-- poppy grower: >
+- poppygrower: >
     Do not do the Minion Info and Demon Info steps. Wake the Demon, show the
     {THESE CHARACTERS ARE NOT IN PLAY} info token and any three good character
     tokens that are not in play.
@@ -25,7 +25,7 @@ firstNight:
     phrase.
 - magician: >
     Include the Magician in the Minion and Demon Info steps.
-- minion info: >
+- minioninfo: >
     If there are 7 or more players, wake all Minions: Show the {THIS IS THE
     DEMON} token. Point to the Demon. Show the {THESE ARE YOUR MINIONS} token.
     Point to the other Minions.
@@ -41,7 +41,7 @@ firstNight:
 - summoner: >
     Show the {THESE CHARACTERS ARE NOT IN PLAY} token. Show 3 not-in-play good
     character tokens.
-- demon info: >
+- demoninfo: >
     If there are 7 or more players, wake the Demon: Show the {THESE ARE YOUR
     MINIONS} token. Point to all Minions. Show the {THESE CHARACTERS ARE NOT IN
     PLAY} token. Show 3 not-in-play good character tokens.
@@ -62,7 +62,7 @@ firstNight:
     The Preacher chooses a player. If they chose a Minion: Put the Preacher to
     sleep. Wake the target. Show the {THIS CHARACTER SELECTED YOU} token and the
     Preacher token.
-- lil' monsta: >
+- lilmonsta: >
     Wake all Minions, allow them to choose a babysitter.
 - lleech: >
     The Lleech chooses a player.
@@ -78,19 +78,19 @@ firstNight:
     The Courtier might choose a character.
 - wizard: >
     Run the Wizard's ability, if applicable.
-- snake charmer: >
+- snakecharmer: >
     The Snake Charmer chooses a player. If they chose the Demon: Show the {YOU
     ARE} & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon
     tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the
     {YOU ARE} and Snake Charmer tokens & give a thumbs up.
 - godfather: >
     Show the character tokens of all in-play Outsiders.
-- organ grinder: >
+- organgrinder: >
     The Organ Grinder either nods their head yes to be drunk, or shakes their
     head no to be sober.
-- devil's advocate: >
+- devilsadvocate: >
     The Devil's Advocate chooses a living player.
-- evil twin: >
+- eviltwin: >
     Wake both twins. Allow eye contact. Show the good twin's character token to
     the Evil Twin & vice versa.
 - witch: >
@@ -134,7 +134,7 @@ firstNight:
     Give a finger signal.
 - empath: >
     Give a finger signal.
-- fortune teller: >
+- fortuneteller: >
     The Fortune Teller chooses 2 players. Nod if either is the Demon (or the
     {RED HERRING}).
 - butler: >
@@ -158,24 +158,24 @@ firstNight:
     Show any player.
 - shugenja: >
     Point clockwise or anticlockwise around the circle.
-- village idiot: >
+- villageidiot: >
     Choose a Village Idiot to be drunk. Wake the Village Idiots one at a time,
     they choose a player, show either good or evil thumbs according to the
     alignment of that player.
-- bounty hunter: >
+- bountyhunter: >
     Point to the {KNOWN} player.
 - nightwatchman: >
     The Nightwatchman might choose a player. Put the Nightwatchman to sleep.
     Wake the target and show the {THIS PLAYER IS} and Nightwatchman tokens and
     point to the Nightwatchman.
-- cult leader: >
+- cultleader: >
     The Cult Leader might change alignment. If so, show the {YOU ARE} info token
     and a thumbs up or down for their new alignment.
 - spy: >
     Show the Grimoire for as long as the Spy needs.
 - ogre: >
     The Ogre points to a player.
-- high priestess: >
+- highpriestess: >
     Point to a player.
 - general: >
     Give a thumb signal.
@@ -198,7 +198,7 @@ otherNight:
 - philosopher: >
     The Philosopher might choose a character. If necessary, swap their character
     token.
-- poppy grower: >
+- poppygrower: >
     If the Poppy Grower died today or tonight, wake the Minions, show the {THIS
     IS THE DEMON} info token and point to the Demon. Put them to sleep. Wake the
     Demon, show the {THESE ARE YOUR MINIONS} info token and point to the
@@ -229,17 +229,17 @@ otherNight:
     The Gambler chooses a player & a character.
 - acrobat: >
     The Acrobat chooses a player.
-- snake charmer: >
+- snakecharmer: >
     The Snake Charmer chooses a player. If they chose the Demon: Show the {YOU
     ARE} & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon
     tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the
     {YOU ARE} and Snake Charmer tokens & give a thumbs up.
 - monk: >
     The Monk chooses a player.
-- organ grinder: >
+- organgrinder: >
     The Organ Grinder either nods their head yes to be drunk, or shakes their
     head no to be sober.
-- devil's advocate: >
+- devilsadvocate: >
     The Devil's Advocate chooses a living player.
 - witch: >
     The Witch chooses a player.
@@ -247,7 +247,7 @@ otherNight:
     The Cerenovus chooses a player & a character. Put the Cerenovus to sleep.
     Wake the target. Show the {THIS CHARACTER SELECTED YOU} token, the Cerenovus
     token, then the madness-character token.
-- pit-hag: >
+- pithag: >
     The Pit-Hag chooses a player & a character. If they chose a character that
     is not in play: Put the Pit-Hag to sleep. Wake the target. Show the {YOU
     ARE} token & their new character token.
@@ -261,7 +261,7 @@ otherNight:
 - mezepheles: >
     If a player is marked with the {TURNS EVIL} reminder, wake them. Show the
     {YOU ARE} info token and a thumbs down. The Mezepheles loses their ability.
-- scarlet woman: >
+- scarletwoman: >
     If the Scarlet Woman became the Demon today, show them the {YOU ARE} token,
     then the Demon token.
 - summoner: >
@@ -299,22 +299,22 @@ otherNight:
 - po: >
     The Po may choose a player OR chooses 3 players if they chose no-one last
     night.
-- fang gu: >
+- fanggu: >
     The Fang Gu chooses a player. If they chose an Outsider (once only): Replace
     the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep.
     Wake the target. Show the {YOU ARE} and Fang Gu tokens & give a thumbs-down.
-- no dashii: >
+- nodashii: >
     The No Dashii chooses a player.
 - vortox: >
     The Vortox chooses a player.
-- lord of typhon: >
+- lordoftyphon: >
     The Lord of Typhon chooses a player.
 - vigormortis: >
     The Vigormortis chooses a player. If that player is a Minion, poison a
     neighboring Townsfolk.
 - ojo: >
     The Ojo chooses a character.
-- al-hadikhia: >
+- alhadikhia: >
     The Al-Hadikhia chooses three players. Wake the player marked {1} and say
     "the Al-Hadikhia has chosen" then the player's name, then "Do you choose to
     live?" They either nod or shake their head. Put them to sleep and add or
@@ -322,7 +322,7 @@ otherNight:
     three players are now alive, add a shroud to all three.
 - lleech: >
     The Lleech chooses a player.
-- lil' monsta: >
+- lilmonsta: >
     Wake all Minions, allow them to choose a babysitter. A player might die.
 - yaggababble: >
     For each time the Yaggababble said the phrase today, you may choose a
@@ -345,7 +345,7 @@ otherNight:
 - sweetheart: >
     If the Sweetheart died, a player became drunk immediately. If you haven't
     done this yet, do so now.
-- plague doctor: >
+- plaguedoctor: >
     If the Plague Doctor died, the Storyteller gained a Minion ability. If you
     haven't done this yet, do so now.
 - sage: >
@@ -379,7 +379,7 @@ otherNight:
     player's character token.
 - empath: >
     Give a finger signal.
-- fortune teller: >
+- fortuneteller: >
     The Fortune Teller chooses 2 players. Nod if either is the Demon (or the
     {RED HERRING}).
 - undertaker: >
@@ -389,7 +389,7 @@ otherNight:
     which is their character.
 - flowergirl: >
     Either nod or shake your head.
-- town crier: >
+- towncrier: >
     Either nod or shake your head.
 - oracle: >
     Give a finger signal.
@@ -399,26 +399,26 @@ otherNight:
     Give a finger signal.
 - balloonist: >
     Show a player with a different character type to previously.
-- village idiot: >
+- villageidiot: >
     Wake the Village Idiots one at a time, they choose a player, show either
     good or evil thumbs according to the alignment of that player.
 - king: >
     If the dead equal or outnumber the living, show the character token of an
     alive player.
-- bounty hunter: >
+- bountyhunter: >
     If the {KNOWN} player died today or tonight, point to a new {KNOWN} player.
 - nightwatchman: >
     The Nightwatchman might choose a player. Put the Nightwatchman to sleep.
     Wake the target and show the {THIS PLAYER IS} and Nightwatchman tokens and
     point to the Nightwatchman.
-- cult leader: >
+- cultleader: >
     The Cult Leader might change alignment. If so, show the {YOU ARE} info token
     and a thumbs up or down for their new alignment.
 - butler: >
     The Butler chooses a player.
 - spy: >
     Show the Grimoire for as long as the Spy needs.
-- high priestess: >
+- highpriestess: >
     Point to a player.
 - general: >
     Give a thumb signal.

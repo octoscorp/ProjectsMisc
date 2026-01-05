@@ -85,10 +85,11 @@ def generate_order(char_set, filename=None):
     return order
 
 
-def pick_from_order(character_names, filename=_DEFAULT_NIGHT_ORDER_FILE):
+def pick_from_order(character_names, include_defaults=True, filename=_DEFAULT_NIGHT_ORDER_FILE):
     """
     Assign characters a night order from the specified file.
     @param character_names list of character names to include in the order
+    @param include_defaults bool of whether to include dusk/dawn/minioninfo/demoninfo
     @param filename save file to source order from (defaults to ./data/night-order.yaml)
     @return order dict of night order in the below format. This includes dusk and dawn
     {
@@ -104,7 +105,9 @@ def pick_from_order(character_names, filename=_DEFAULT_NIGHT_ORDER_FILE):
     """
     order = load_yaml(filename)
 
-    names_to_keep = character_names + ["dusk", "dawn", "minion info", "demon info"]
+    names_to_keep = character_names
+    if include_defaults:
+        names_to_keep += ["dusk", "dawn", "minioninfo", "demoninfo"]
 
     try:
         for night in order.keys():
