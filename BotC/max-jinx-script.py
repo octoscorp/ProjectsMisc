@@ -7,6 +7,7 @@ from data import characters, jinxes
 
 from datetime import datetime
 from itertools import combinations
+from copy import deepcopy
 
 
 TOWN_DISTRIBUTION = {
@@ -151,9 +152,12 @@ class _JinxGraph():
 
 
 class Search:
+    MANUAL = 0
     EXHAUSTION = 1
     EXHAUSTION_REDUCED = 2
     PEELING_GREEDY = 3
+    CONSTRUCTION_GREEDY = 4
+    CONSTRUCTION_GREEDY_ALL_STARTS = 5
 
     def __init__(self, search_type=EXHAUSTION):
         """Search type: One of Search.* enum, or a callable search func"""
@@ -164,11 +168,20 @@ class Search:
             for char_name in characters[category].keys():
                 self.types[char_name] = category
 
-    def output_scripts(self, solutions):
+    def output_scripts(self, solutions, graph, skip_input=False):
         """
         TODO: Write to script file
         """
-        print(solutions)
+        solutions[0].sort()
+        print(solutions[0])
+        print(f"This has {graph.get_num_jinxes(solutions[0])} jinxes.")
+        print()
+        if not skip_input and ("y" == input(f"See all {len(solutions)} solutions? [y/N] ")):
+            for i in range(1, len(solutions)):
+                print(f"===== {graph.get_num_jinxes(solutions[i])} jinxes ====")
+                solutions([i]).sort()
+                print(solutions[i])
+                print()
 
     def run(self):
         global start_time
@@ -180,12 +193,18 @@ class Search:
         # Determine which search to run
         search_func = None
         match self.search_type:
+            case Search.CONSTRUCTION_GREEDY_ALL_STARTS:
+                search_func = self._greedy_construction_all_starts
+            case Search.CONSTRUCTION_GREEDY:
+                search_func = self._greedy_construction
             case Search.PEELING_GREEDY:
                 search_func = self._greedy_peeling
             case Search.EXHAUSTION_REDUCED:
                 search_func = self._reduced_space_exhaustion_search
             case Search.EXHAUSTION:
                 search_func = self._exhaustion_search
+            case Search.MANUAL:
+                search_func = self._manual_answer
             case _:
                 search_func = self.search_type
 
@@ -194,7 +213,7 @@ class Search:
         elapsed_time = datetime.now() - start_time
         print(f"Took {elapsed_time} seconds to complete")
 
-        self.output_scripts(solutions)
+        self.output_scripts(solutions, graph)
 
     def _get_reduced_search_space(self, graph):
         """Remove non-jinxed characters"""
@@ -213,6 +232,38 @@ class Search:
         if output[self.types[char_name]] < TOWN_DISTRIBUTION[self.types[char_name]]:
             problem = True
         return output, problem
+
+    def _manual_answer(self, graph):
+        """
+        Return my manually-curated answer
+        """
+        return [[
+            "mathematician",
+            "king",
+            "innkeeper",
+            "monk",
+            "exorcist",
+            "soldier",
+            "alchemist",
+            "ravenkeeper",
+            "sage",
+            "banshee",
+            "mayor",
+            "magician",
+            "poppygrower",
+            "lunatic",
+            "hatter",
+            "plaguedoctor",
+            "zealot",
+            "spy",
+            "marionette",
+            "wraith",
+            "summoner",
+            "lilmonsta",
+            "legion",
+            "riot",
+            "leviathan",
+        ]]
 
     def _exhaustion_search(self, graph):
         """
@@ -338,9 +389,125 @@ class Search:
 
         return optimal_solutions
 
+    def _get_most_jinxes(self, graph, space, counts, current_chars):
+        # Char(s) adding the most jinxes to the script
+        most_added = 0
+        best_chars = []
+        for char in space:
+            char_type = self.types[char]
+            if counts[char_type] >= TOWN_DISTRIBUTION[char_type]:
+                continue
+            num = graph.get_num_jinxes(current_chars + [char])
+            if num > most_added:
+                most_added = num
+                best_chars = []
+            if num == most_added:
+                best_chars.append(char)
+        return best_chars
+
+    def _get_most_potential_jinxes(self, graph, chars):
+        # Char(s) with most potential jinxes
+        most = 0
+        best_chars = []
+        for char in chars:
+            deg = graph.get_degree(char)
+            if deg > most:
+                best_chars = []
+                most = deg
+            if deg == most:
+                best_chars.append(char)
+        return best_chars
+
+    def _greedy_construction_recursive(self, graph, space, counts, current_chars, depth):
+        global checked_solns, last_soln
+        if depth > 100:
+            print("Depth limit exceeded")
+            return [current_chars]
+
+        candidates = self._get_most_jinxes(graph, space, counts, current_chars)
+        candidates = self._get_most_potential_jinxes(graph, candidates)
+        if len(candidates) == 0:
+            # This is also the base case
+            last_soln = current_chars
+            checked_solns += 1
+            return [current_chars]
+
+        best_val = 0
+        solutions = []
+        for cand in candidates:
+            new_space = space[:]
+            new_space.remove(cand)
+            new_counts = deepcopy(counts)
+            new_counts[self.types[cand]] += 1
+            new_chars = current_chars[:]
+            new_chars.append(cand)
+
+            subsolutions = self._greedy_construction_recursive(graph, new_space, new_counts,
+                                                               new_chars, depth + 1)
+
+            for soln in subsolutions:
+                found_jinxes = graph.get_num_jinxes(soln)
+                if found_jinxes > best_val:
+                    solutions = []
+                    best_val = found_jinxes
+                if found_jinxes == best_val:
+                    solutions.append(soln)
+
+        return solutions
+
+    def _greedy_construction(self, graph):
+        """
+        Attempts to construct an optimal solution by adding the character which adds most jinxes.
+        Ties are resolved by adding character with most potential jinxes. If there's still a tie,
+        splits into sub-searches.
+        """
+        # Remove non-jinxed characters
+        space = self._get_reduced_search_space(graph)
+        counts = {key: 0 for key in TOWN_DISTRIBUTION.keys()}
+        # Collapse to list
+        space = concat_lists(space)
+
+        current_chars = []
+        return self._greedy_construction_recursive(graph, space, counts, current_chars, 0)
+
+    def _greedy_construction_all_starts(self, graph):
+        """
+        Attempt to dodge local optima by starting at any given character
+        """
+        # Remove non-jinxed characters
+        space = self._get_reduced_search_space(graph)
+        counts = {key: 0 for key in TOWN_DISTRIBUTION.keys()}
+        # Collapse to list
+        space = concat_lists(space)
+
+        max_jinxes = 0
+        optimal = []
+
+        for char in space:
+            # Seed start point
+            current_chars = [char]
+            given_space = space[:]
+            given_space.remove(char)
+            given_counts = deepcopy(counts)
+            given_counts[self.types[char]] += 1
+
+            char_solns = self._greedy_construction_recursive(graph, given_space, given_counts,
+                                                             current_chars, 0)
+
+            # Num jinxes is same for all returned
+            char_max = graph.get_num_jinxes(char_solns[0])
+            if char_max > max_jinxes:
+                max_jinxes = char_max
+                optimal = []
+            if char_max == max_jinxes:
+                optimal += char_solns
+                self.output_scripts(optimal, graph, True)
+
+        return optimal
+
 
 def main():
-    search = Search(Search.PEELING_GREEDY)
+    search = Search(Search.CONSTRUCTION_GREEDY_ALL_STARTS)
     search.run()
 
 
