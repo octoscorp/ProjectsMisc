@@ -390,6 +390,12 @@ loric:
     image:
     - https://script.bloodontheclocktower.com/src/assets/icons/loric/hindu.webp
     name: Hindu
+  pope:
+    ability: >
+      There are duplicate good characters in play. They might also be bluffs.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/pope.webp
+    name: Pope
   stormcatcher:
     ability: >
       Name a good character. If in play, they can only die by execution, but
@@ -404,6 +410,13 @@ loric:
     image:
     - https://script.bloodontheclocktower.com/src/assets/icons/loric/tor.webp
     name: Tor
+  ventriloquist:
+    ability: >
+      If a player is mad as a fresh character during their nomination, they
+      might not die if executed today.
+    image:
+    - https://script.bloodontheclocktower.com/src/assets/icons/loric/ventriloquist.webp
+    name: Ventriloquist
   zenomancer:
     ability: >
       One or more players each have a goal. When achieved, that player learns a
