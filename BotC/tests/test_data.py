@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 EXPECTED_COUNTS = {
     "demon": 19,
     "fabled": 14,
-    "loric": 7,
+    "loric": 9,
     "minion": 27,
     "outsider": 23,
     "townsfolk": 69,
