@@ -1,10 +1,10 @@
 # Jinx data
 # Jinxes are listed by the first character (alphabetically) in the jinx
-# Last updated 19 Nov 2025
+# Last updated 10 Mar 2026
 alchemist:
   boffin: >
-    If the Alchemist has the Boffin ability, the Alchemist does not learn
-    what ability the Demon has.
+    If the Alchemist has the Boffin ability, the Alchemist does not learn what
+    ability the Demon has.
   marionette: >
     An Alchemist-Marionette has no Marionette ability & the Marionette is in
     play.
@@ -13,44 +13,44 @@ alchemist:
     not-in-play.
   organgrinder: >
     If the Alchemist has the Organ Grinder ability, the Organ Grinder is in
-    play & if both the Alchemist and Organ Grinder are sober, both are drunk.
+    play. If both are sober, both are drunk.
   spy: >
-    If the Alchemist has the Spy ability, they do not, and a Spy is in play.
-    Each day, after the execution phase, the living Alchemist may publicly
-    guess a living player as the Spy. If correct, the Demon must choose the
-    Spy tonight.
+    An Alchemist-Spy has no Spy ability & a Spy is in play. After each
+    execution, a living Alchemist-Spy may publicly guess a living player as the
+    Spy. If correct, the Demon must choose the Spy tonight.
   summoner: >
-    The Alchemist-Summoner does not get bluffs, and chooses which Demon but
-    not which player. If they die before this happens, evil wins. [No Demon]
+    The Alchemist-Summoner does not get bluffs, and chooses which Demon but not
+    which player. If they die before this happens, evil wins. [No Demon]
   widow: >
-    If the Alchemist has the Widow ability, they do not, and a Widow is in
-    play. Each day, after the execution phase, the living Alchemist may
-    publicly guess a living player as the Widow. If correct, the Demon must
-    choose the Widow tonight.
+    An Alchemist-Widow has no Widow ability & a Widow is in play. After each
+    execution, a living Alchemist-Widow may publicly guess a living player as
+    the Widow. If correct, the Demon must choose the Widow tonight.
   wraith: >
-    If the Alchemist has the Wraith ability, they do not, and a Wraith is in
-    play. Each day, after the execution phase, the living Alchemist may
-    publicly guess a living player as the Wraith: if correct, the Demon must
-    choose the Wraith tonight.
+    An Alchemist-Wraith has no Wraith ability & a Wraith is in play. After each
+    execution, a living Alchemist-Wraith may publicly guess a living player as
+    the Wraith. If correct, the Demon must choose the Wraith tonight.
 alhadikhia:
   mastermind: >
     If the Al-Hadikhia dies by execution, and the Mastermind is alive, the
     Al-Hadikhia chooses 3 good players tonight: if all 3 choose to live, evil
     wins. Otherwise, good wins.
   princess: >
-    If the Princess nominated & executed a player on their 1st day, no one
-    dies to the Al-Hadikhia ability tonight.
+    If the Princess nominated & executed a player on their 1st day, no one dies
+    to the Al-Hadikhia tonight.
   scarletwoman: >
-    If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia
-    becomes the Scarlet Woman again.
+    If there would be two Demons, one of which was the Scarlet Woman, the
+    Scarlet Woman becomes the Scarlet Woman again.
 alsaahir:
   vizier: >
-    If the Vizier is in play, the Alsaahir must also guess which Demon(s) are
-    in play.
+    The Storyteller doesn't declare the Vizier is in play.
+atheist:
+  riot: >
+    During a riot, if the Storyteller is nominated, players vote. If they are
+    "about to die", the game ends. If not, they nominate again.
 balloonist:
   marionette: >
-    If the Marionette thinks that they are the Balloonist, +1 Outsider might
-    have been added.
+    If the Marionette thinks that they are the Balloonist, an Outsider might
+    have been added during setup.
 banshee:
   leviathan: >
     Each night*, the Leviathan chooses an alive good player (different to
@@ -59,24 +59,22 @@ banshee:
     Each night*, Riot chooses an alive good player (different to previous
     nights): a chosen Banshee dies & gains their ability.
   vortox: >
-    If the Vortox is in play and the Demon kills the Banshee, the players
-    still learn that the Banshee has died.
+    If the Vortox kills the Banshee, all players learn that the Banshee has
+    died.
 baron:
   heretic: >
-    The Baron might only add 1 Outsider, not 2.
+    Only 1 jinxed character can be in play.
   plaguedoctor: >
-    If the Storyteller gains the Baron ability, up to two players become
-    not-in-play Outsiders.
+    If the Storyteller would gain the Baron ability, up to two players become
+    Outsiders.
 boffin:
   cultleader: >
-    If the Demon has the Cult Leader ability, they can't turn good due to
-    this ability.
-  drunk: >
-    If the Demon would have the Drunk ability, the Boffin chooses a Townsfolk
-    player to have this ability instead.
-  goon: >
-    If the Demon has the Goon ability, they can't turn good due to this
+    If the Demon has the Cult Leader ability, they can't turn good due to this
     ability.
+  drunk: >
+    The Demon cannot have the Drunk ability.
+  goon: >
+    If the Demon has the Goon ability, they can't turn good due to this ability.
   heretic: >
     The Demon cannot have the Heretic ability.
   ogre: >
@@ -84,16 +82,16 @@ boffin:
   politician: >
     The Demon cannot have the Politician ability.
   villageidiot: >
-    If there is a spare token, the Boffin can give the Demon the Village
-    Idiot ability.
+    If there is a spare token, the Boffin can give the Demon the Village Idiot
+    ability.
 boomdandy:
   plaguedoctor: >
-    If the Plague Doctor is executed and the Storyteller would gain the
-    Boomdandy ability, the Boomdandy ability triggers immediately.
+    If the Storyteller would gain the Boomdandy ability, a player becomes the
+    Boomdandy.
 bountyhunter:
   kazali: >
-    An evil Townsfolk is only created if the Bounty Hunter is still in play
-    after the Kazali acts.
+    If the Kazali turns the Bounty Hunter into a Minion, an evil Townsfolk is
+    not created.
   philosopher: >
     If the Philosopher gains the Bounty Hunter ability, a Townsfolk might turn
     evil.
@@ -102,18 +100,14 @@ butler:
     If the Cannibal gains the Butler ability, the Cannibal learns this.
   organgrinder: >
     If the Organ Grinder is causing eyes closed voting, the Butler may raise
-    their hand to vote but their vote is only counted if their master voted
-    too.
+    their hand to vote but their vote is only counted if their master voted too.
 cannibal:
   juggler: >
-    If the Juggler guesses on their first day and dies by execution, tonight
-    the living Cannibal learns how many guesses the Juggler got correct.
-  poppygrower: >
-    If the Cannibal eats the Poppy Grower, then dies or loses the Poppy
-    Grower ability, the Demon and Minions learn each other that night.
+    If the Juggler guesses on their first day and dies by execution, tonight the
+    living Cannibal learns how many guesses the Juggler got correct.
   princess: >
-    If the Cannibal nominated, executed, & killed the Princess today, the
-    Demon doesn't kill tonight.
+    If the Cannibal nominated, executed, & killed the Princess today, the Demon
+    doesn't kill tonight.
   zealot: >
     If the Cannibal gains the Zealot ability, the Cannibal learns this.
 cerenovus:
@@ -121,63 +115,56 @@ cerenovus:
     The Cerenovus may choose to make a player mad that they are the Goblin.
 chambermaid:
   mathematician: >
-    The Chambermaid learns if the Mathematician wakes tonight or not, even
-    though the Chambermaid wakes first.
-choirboy:
-  kazali: >
-    The Kazali can not choose the King to become a Minion if a Choirboy is in
-    play.
+    The Chambermaid can detect if the Mathematician will wake tonight.
 clockmaker:
   summoner: >
-    If the Summoner is in play, the Clockmaker does not receive their
-    information until a Demon is created.
+    The Summoner registers as the Demon to the Clockmaker.
 courtier:
   summoner: >
-    If the Summoner is drunk on the 3rd night, the Summoner chooses which
-    Demon, but the Storyteller chooses which player.
+    If the living Summoner has no ability, the Storyteller has the Summoner
+    ability.
   vizier: >
-    If the Vizier loses their ability, they learn this. If the Vizier is
-    executed while they have their ability, their team wins.
+    If the Vizier loses their ability, they learn this, and cannot die during
+    the day.
 cultleader:
   pithag: >
     If the Pit-Hag turns an evil player into the Cult Leader, they can't turn
     good due to their own ability.
 damsel:
-  marionette: >
-    The Marionette does not learn that a Damsel is in play.
   pithag: >
-    If a Pit-Hag creates a Damsel, the Storyteller chooses which player it
-    is.
+    If a Pit-Hag creates a Damsel, the Storyteller chooses which player it is.
   spy: >
     If the Spy is (or has been) in play, the Damsel is poisoned.
   widow: >
     If the Widow is (or has been) in play, the Damsel is poisoned.
+drunk:
+  mathematician: >
+    The Mathematician might learn if the Drunk's ability yielded false info or
+    failed to work properly.
 engineer:
   legion: >
-    Legion and the Engineer can not both be in play at the start of the game.
-    If the Engineer creates Legion, most players (including all evil players)
-    become evil Legion.
+    If Legion is created, all evil players become Legion. If Legion is in play,
+    the Engineer starts knowing this but has no ability.
   summoner: >
-    If the Engineer removes a Summoner from play before that Summoner uses
-    their ability, the Summoner uses their ability immediately.
+    If the living Summoner is removed from play, the Storyteller has the
+    Summoner ability.
 eviltwin:
   plaguedoctor: >
-    The Storyteller cannot gain the Evil Twin ability if the Plague Doctor
-    dies.
+    If the Storyteller would gain the Evil Twin ability, a player becomes the
+    Evil Twin.
 exorcist:
   leviathan: >
-    Evil does not win when more than 1 good player has been executed, if the
-    Exorcist is alive and has ever successfully chosen the Leviathan.
+    If the Leviathan nominates and executes the Exorcist-chosen player, good
+    wins.
   riot: >
-    If the Exorcist chooses Riot on the 3rd night, Minions do not become
-    Riot.
+    If Riot nominates and executes the Exorcist-chosen player, good wins.
   yaggababble: >
-    If the Exorcist chooses the Yaggababble, the Yaggababble ability does not
-    kill tonight.
+    If the Exorcist chooses the Yaggababble, the Yaggababble does not kill
+    tonight.
 fanggu:
   scarletwoman: >
-    If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not
-    become the Fang Gu.
+    If there would be two Demons, one of which was the Scarlet Woman, the
+    Scarlet Woman remains the Scarlet Woman.
 farmer:
   leviathan: >
     Each night*, the Leviathan chooses an alive good player (different to
@@ -187,108 +174,98 @@ farmer:
     nights): a chosen Farmer uses their ability but does not die.
 fearmonger:
   plaguedoctor: >
-    If the Plague Doctor dies, a living Minion gains the Fearmonger ability
-    in addition to their own ability, and learns this.
+    If the Storyteller would gain the Fearmonger ability, a Minion gains it, and
+    learns this.
   vizier: >
     The Vizier wakes with the Fearmonger, learns who they choose and cannot
     choose to immediately execute that player.
 goblin:
   plaguedoctor: >
-    If the Plague Doctor dies, a living Minion gains the Goblin ability in
-    addition to their own ability, and learns this.
+    If the Storyteller would gain the Goblin ability, a Minion gains it, and
+    learns this.
 godfather:
   heretic: >
     Only 1 jinxed character can be in play.
 goon:
-  kazali: >
-    The Kazali can choose that the Goon player is one of their evil Minions.
   pithag: >
-    If the Pit-Hag turns an evil player into the Goon, they can't turn good
-    due to their own ability.
+    If the Pit-Hag turns an evil player into the Goon, they can't turn good due
+    to their own ability.
 grandmother:
   leviathan: >
-    If Leviathan is in play and the Grandchild dies by execution, evil wins.
+    If the Leviathan is in play and the Grandchild dies by execution, evil wins.
   riot: >
-    If Riot is in play and the Grandchild dies during the day, the
-    Grandmother dies too.
+    If Riot is in play and the Grandchild dies by execution, evil wins.
 hatter:
   legion: >
-    If the Hatter dies and Legion is in play, nothing happens. If the Hatter
-    dies and an evil player chooses Legion, all current evil players become
-    Legion.
+    If Legion is created, all evil players become Legion. If Legion is in play,
+    the Hatter has no ability.
   leviathan: >
-    If the Hatter dies on or after day 5, the Demon cannot choose Leviathan.
+    The Leviathan cannot enter play after day 5.
   lilmonsta: >
-    If a Demon chooses Lil' Monsta, they also choose a Minion to become and
-    babysit Lil' Monsta tonight.
+    If the Hatter dies & the Demon chooses Lil' Monsta, they also choose a
+    Minion to become.
   summoner: >
-    The Summoner cannot create an in-play Demon. If the Summoner creates a
-    not-in-play Demon, deaths tonight are arbitrary.
+    If the Summoner creates a second living Demon, deaths tonight are arbitrary.
 heretic:
   lleech: >
-    If the Lleech has poisoned the Heretic then the Lleech dies, the Heretic
-    remains poisoned.
+    Only 1 jinxed character can be in play.
   pithag: >
-    A Pit-Hag can not create a Heretic.
+    Only 1 jinxed character can be in play.
   spy: >
     Only 1 jinxed character can be in play.
   widow: >
     Only 1 jinxed character can be in play.
 huntsman:
-  kazali: >
-    If the Kazali chooses the Damsel to become a Minion, and a Huntsman is in
-    play, a good player becomes the Damsel.
   marionette: >
-    If the Marionette thinks that they are the Huntsman, the Damsel was
-    added.
+    If the Marionette thinks that they are the Huntsman, the Damsel was added
+    during setup.
 innkeeper:
   leviathan: >
-    If the Leviathan is in play, the Innkeeper-protected-players are safe
-    from all evil abilities.
+    If the Leviathan nominates and executes an Innkeeper-protected player, good
+    wins.
   riot: >
-    If Riot is in play, the Innkeeper-protected player is safe from all evil
-    abilities.
+    If Riot nominates and executes an Innkeeper-protected player, good wins.
 investigator:
   vizier: >
-    If the Investigator learns that the Vizier is in play, the existence of
-    the Vizier is not announced by the Storyteller.
+    The Storyteller doesn't declare the Vizier is in play.
 kazali:
   marionette: >
-    If the Kazali chooses to create a Marionette, they must choose one of
-    their neighbors.
-  soldier: >
-    The Kazali can choose that the Soldier player is one of their evil
-    Minions.
+    If there would be a Marionette in play, they enter play after the Demon &
+    must start as their neighbor.
   summoner: >
-    The Summoner cannot create an in-play Demon. If the Summoner creates a
-    not-in-play Demon, deaths tonight are arbitrary.
+    If the Summoner creates a second living Demon, deaths tonight are arbitrary.
 king:
   leviathan: >
-    If the Leviathan is in play, and at least 1 player is dead, the King
-    learns an alive character each night.
+    If the Leviathan is in play, and at least 1 player is dead, the King learns
+    an alive character each night.
   riot: >
-    If Riot is in play, and at least 1 player is dead, the King learns an
-    alive character each night.
+    If Riot is in play, and at least 1 player is dead, the King learns an alive
+    character each night.
 legion:
+  magician: >
+    The Magician wakes with Legion and might register as evil. Legion knows if a
+    Magician is in play, but not which player it is.
   minstrel: >
     If Legion died by execution today, Legion keeps their ability, but the
     Minstrel might learn they are Legion.
+  politician: >
+    The Politician might register as evil to Legion.
   preacher: >
-    If the Preacher chooses Legion, Legion keeps their ability, but the
-    Preacher might learn they are Legion.
+    If the Preacher chooses Legion, Legion keeps their ability, but the Preacher
+    might learn they are Legion.
   summoner: >
-    If the Summoner creates Legion, most players (including all evil players)
-    become evil legion.
+    If Legion is summoned, all evil players become Legion.
   zealot: >
-    The Zealot might register as evil to Legion's ability.
+    The Zealot might register as evil to Legion.
 leviathan:
   mayor: >
-    If the Leviathan is in play & no execution occurs on day 5, good wins.
+    If the Leviathan and the Mayor are alive on day 5 & no execution occurs,
+    good wins.
   monk: >
-    If the Leviathan is in play, the Monk-protected-player is safe from all
-    evil abilities.
+    If the Leviathan nominates and executes the Monk-protected player, good
+    wins.
   pithag: >
-    After day 5, the Pit-Hag cannot choose Leviathan.
+    The Leviathan cannot enter play after day 5.
   ravenkeeper: >
     Each night*, the Leviathan chooses an alive player (different to previous
     nights): a chosen Ravenkeeper uses their ability but does not die.
@@ -296,84 +273,81 @@ leviathan:
     Each night*, the Leviathan chooses an alive good player (different to
     previous nights): a chosen Sage uses their ability but does not die.
   soldier: >
-    If the Leviathan is in play, the Soldier is safe from all evil abilities.
+    If the Leviathan nominates and executes the Soldier, good wins.
 lilmonsta:
   magician: >
-    Each night, the Magician chooses a Minion: if that Minion & Lil' Monsta
-    are alive, that Minion babysits Lil' Monsta.
+    If the Magician is alive, the Storyteller chooses which Minion babysits Lil'
+    Monsta.
   marionette: >
-    The Marionette neighbors a Minion, not the Demon. The Marionette is not
-    woken to choose who takes the Lil' Monsta token, and does not learn they
-    are the Marionette if they have the Lil' Monsta token.
+    If there would be a Marionette in play, they enter play after the Demon &
+    must start as their neighbor.
   poppygrower: >
-    If the Poppy Grower is in play, Minions don't wake together. They are
-    woken one by one, until one of them chooses to take the Lil' Monsta
-    token.
+    If Lil' Monsta & the Poppy Grower are alive, Minions wake one by one, until
+    one of them chooses to take the Lil' Monsta token.
+  psychopath: >
+    If the Psychopath is babysitting Lil' Monsta, they die when executed.
   scarletwoman: >
-    If there are 5 or more players alive and the player holding the Lil'
-    Monsta token dies, the Scarlet Woman is given the Lil' Monsta token
-    tonight.
+    If Lil' Monsta dies with 5 or more players alive, the Scarlet Woman babysits
+    Lil' Monsta for the rest of the game.
   vizier: >
-    The Vizier can die by execution if they are babysitting Lil' Monsta.
+    If the Vizier is babysitting Lil' Monsta, they die when executed.
 lleech:
   mastermind: >
-    If the Mastermind is alive and the Lleech's host dies by execution, the
-    Lleech lives but loses their ability.
+    If the Mastermind is alive and the Lleech host dies by execution, the Lleech
+    lives but loses their ability.
   slayer: >
-    If the Slayer slays the Lleech's host, the host dies.
+    If the Slayer slays the Lleech host, the host dies.
 lordoftyphon:
   summoner: >
-    If the Summoner creates a Lord of Typhon, the Lord of Typhon must
-    neighbor a Minion. The other neighbor becomes a not-in-play evil Minion.
+    If a Lord of Typhon is summoned, they must neighbor a Minion & their other
+    neighbor becomes an evil Minion.
 lunatic:
   mathematician: >
-    The Mathematician learns if the Lunatic attacks a different player(s)
-    than the real Demon attacked.
+    The Mathematician might learn if the Lunatic attacks a different player than
+    the real Demon attacked.
 magician:
+  marionette: >
+    If the Magician is alive, the Demon doesn't know which neighbor is the
+    Marionette.
   spy: >
     When the Spy sees the Grimoire, the Demon and Magician's character tokens
     are removed.
   vizier: >
-    If the Vizier and Magician are both in play, the Demon does not learn the
-    Minions.
+    If the Vizier is in play, the Magician has no ability but is immune to the
+    Vizier's ability.
   widow: >
-    When the Widow sees the Grimoire, the Demon and Magician's character
-    tokens are removed.
+    When the Widow sees the Grimoire, the Demon and Magician's character tokens
+    are removed.
   wraith: >
-    Each day, after the execution phase, the living Magician may publicly
-    guess a living player as the Wraith: if correct, the Demon must choose
-    the Wraith tonight.
+    After each execution, the living Magician may publicly guess a living player
+    as the Wraith. If correct, the Demon must choose the Wraith tonight.
 marionette:
+  mathematician: >
+    The Mathematician might learn if the Marionette's ability yielded false info
+    or failed to work properly.
   plaguedoctor: >
-    If the Demon has a neighbor who is alive and a Townsfolk or Outsider when
-    the Plague Doctor dies, that player becomes an evil Marionette. If there
-    is already an extra evil player, this does not happen.
-  poppygrower: >
-    When the Poppy Grower dies, the Demon learns the Marionette but the
-    Marionette learns nothing.
-  snitch: >
-    The Marionette does not learn 3 not in-play characters. The Demon learns
-    an extra 3 instead.
+    If the Storyteller would gain the Marionette ability, one of the Demon's
+    good neighbors becomes the Marionette.
   summoner: >
-    The Marionette neighbors the Summoner. The Summoner knows who the
-    Marionette is.
-  wraith: >
-    The Wraith does not wake with the Marionette.
+    If there would be a Marionette in play, they enter play after the Demon &
+    must start as their neighbor.
+mastermind:
+  vigormortis: >
+    A Mastermind that has their ability keeps it if the Vigormortis dies.
 mayor:
   riot: >
-    The Mayor may choose to stop nominations. If they do so when only 1 Riot
-    is alive, good wins. Otherwise, evil wins.
+    The Mayor may choose to stop the riot. If they do so when only 1 Riot is
+    alive, good wins. Otherwise, evil wins.
 monk:
   riot: >
-    If Riot is in play, the Monk-protected player is safe from all evil
-    abilities.
+    If Riot nominates and executes the Monk-protected player, good wins.
 ogre:
   pithag: >
-    If the Pit-Hag turns an evil player into the Ogre, they can't turn good
-    due to their own ability.
+    If the Pit-Hag turns an evil player into the Ogre, they can't turn good due
+    to their own ability.
   recluse: >
-    If the Recluse registers as evil to the Ogre, the Ogre learns that they
-    are evil.
+    If the Recluse registers as evil to the Ogre, the Ogre learns that they are
+    evil.
   spy: >
     The Spy registers as evil to the Ogre.
 pithag:
@@ -381,58 +355,58 @@ pithag:
     If the Pit-Hag turns an evil player into the Politician, they can't turn
     good due to their own ability.
   summoner: >
-    The Summoner cannot create an in-play Demon. If the Summoner creates a
-    not-in-play Demon, deaths tonight are arbitrary.
+    If the Summoner creates a second living Demon, deaths tonight are arbitrary.
   villageidiot: >
-    If there is a spare token, the Pit-Hag can create an extra Village Idiot.
-    If so, the drunk Village Idiot might change.
+    If there is a spare token, the Pit-Hag can create an extra Village Idiot. If
+    so, the drunk Village Idiot might change.
 plaguedoctor:
   scarletwoman: >
-    If the Plague Doctor dies, a living Minion gains the Scarlet Woman
-    ability in addition to their own ability, and learns this.
+    If the Storyteller would gain the Scarlet Woman ability, a Minion gains it,
+    and learns this.
   spy: >
-    If the Plague Doctor dies, a living Minion gains the Spy ability in
-    addition to their own ability, and learns this.
+    If the Storyteller would gain the Spy ability, a Minion gains it, and learns
+    this.
   wraith: >
-    If the Plague Doctor dies, a living Minion gains the Wraith ability in
-    addition to their own ability, and learns this.
+    If the Storyteller would gain the Wraith ability, a Minion gains it, and
+    learns this.
 politician:
   vizier: >
     The Politician might register as evil to the Vizier.
 poppygrower:
   spy: >
-    If the Poppy Grower is in play, the Spy does not see the Grimoire until
-    the Poppy Grower dies.
+    If the Poppy Grower has their ability, the Spy does not see the Grimoire.
   summoner: >
-    If the Poppy Grower is alive when the Summoner acts, the Summoner chooses
-    which Demon, but the Storyteller chooses which player.
+    If the Poppy Grower is alive on the 3rd night, the Summoner chooses which
+    Demon but not which player.
   widow: >
-    If the Poppy Grower is in play, the Widow does not see the Grimoire until
-    the Poppy Grower dies.
+    If the Poppy Grower has their ability, the Widow does not see the Grimoire.
 preacher:
   summoner: >
-    If the Preacher chose the Summoner on or before the 3rd night, the
-    Summoner chooses which Demon, but the Storyteller chooses which player.
+    If the living Summoner has no ability, the Storyteller has the Summoner
+    ability.
   vizier: >
-    If the Vizier loses their ability, they learn this. If the Vizier is
-    executed while they have their ability, their team wins.
+    If the Vizier loses their ability, they learn this, and cannot die during
+    the day.
 pukka:
   summoner: >
-    The Summoner may choose a player to become the Pukka on the 2nd night.
+    The Summoner may summon a Pukka on the 2nd night instead of the 3rd.
 ravenkeeper:
   riot: >
-    Each night*, the Riot chooses an alive good player (different to previous
+    Each night*, Riot chooses an alive good player (different to previous
     nights): a chosen Ravenkeeper uses their ability but does not die.
+recluse:
+  sage: >
+    The Recluse might register as the Demon to the Sage.
 riot:
   sage: >
     Each night*, Riot chooses an alive good player (different to previous
     nights): a chosen Sage uses their ability but does not die.
   soldier: >
-    If Riot is in play, the Soldier is safe from all evil abilities.
+    If Riot nominates and executes the Soldier, good wins.
 summoner:
   zombuul: >
-    If the Summoner turns a dead player into the Zombuul, the Storyteller
-    treats that player as a Zombuul that has died once.
+    If the Summoner summons a dead player into the Zombuul, the Zombuul has
+    already "died once".
 vizier:
   zealot: >
     The Zealot might register as evil to the Vizier.

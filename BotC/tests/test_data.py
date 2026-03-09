@@ -146,7 +146,7 @@ EXPECTED_CHARACTERS = {
     }
 }
 
-EXPECTED_NUM_JINXES = 56
+EXPECTED_NUM_JINXES = 59
 
 # Some sample jinxes
 EXPECTED_JINXES = {
@@ -155,9 +155,9 @@ EXPECTED_JINXES = {
                       'Al-Hadikhia chooses 3 good players tonight: if all 3 choose to live, evil ' +
                       'wins. Otherwise, good wins.\n',
         'princess': 'If the Princess nominated & executed a player on their 1st day, no one dies ' +
-                    'to the Al-Hadikhia ability tonight.\n',
-        'scarletwoman': 'If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia ' +
-                        'becomes the Scarlet Woman again.\n',
+                    'to the Al-Hadikhia tonight.\n',
+        'scarletwoman': 'If there would be two Demons, one of which was the Scarlet Woman, the ' +
+                        'Scarlet Woman becomes the Scarlet Woman again.\n',
     },
 }
 
