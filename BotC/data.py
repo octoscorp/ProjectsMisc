@@ -26,6 +26,13 @@ def write_yaml(filename, contents):
         yaml.dump(contents, file, default_flow_style=False)
 
 
+def get_team_of_character(char_name):
+    for team_name in characters.keys():
+        for char_id in characters[team_name].keys():
+            if char_id == char_name:
+                return team_name
+    return None
+
 # === Exports ===
 characters = load_yaml('./data/characters.yaml')
 jinxes = load_yaml('./data/jinxes.yaml')

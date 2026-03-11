@@ -3,7 +3,7 @@
 import os
 import pytest
 
-from data import characters, jinxes, load_yaml, write_yaml
+from data import characters, jinxes, load_yaml, write_yaml, get_team_of_character
 from urllib.parse import urlparse
 
 
@@ -146,8 +146,6 @@ EXPECTED_CHARACTERS = {
     }
 }
 
-EXPECTED_NUM_JINXES = 59
-
 # Some sample jinxes
 EXPECTED_JINXES = {
     'alhadikhia': {
@@ -158,6 +156,50 @@ EXPECTED_JINXES = {
                     'to the Al-Hadikhia tonight.\n',
         'scarletwoman': 'If there would be two Demons, one of which was the Scarlet Woman, the ' +
                         'Scarlet Woman becomes the Scarlet Woman again.\n',
+    },
+}
+
+EXPECTED_NUM_JINXES = 131
+
+EXPECTED_JINX_DISTRIBUTION = {
+    'demon': {
+        'demon': 0,
+        'minion': 16,
+        'outsider': 6,
+        'townsfolk': 34,
+    },
+    'minion': {
+        'minion': 4,
+        'outsider': 30,
+        'townsfolk': 31,
+    },
+    'outsider': {
+        'outsider': 1,
+        'townsfolk': 5,
+    },
+    'townsfolk': {
+        'townsfolk': 4,
+    },
+}
+
+ZERO_JINX_DISTRIBUTION = {
+    'demon': {
+        'demon': 0,
+        'minion': 0,
+        'outsider': 0,
+        'townsfolk': 0,
+    },
+    'minion': {
+        'minion': 0,
+        'outsider': 0,
+        'townsfolk': 0,
+    },
+    'outsider': {
+        'outsider': 0,
+        'townsfolk': 0,
+    },
+    'townsfolk': {
+        'townsfolk': 0,
     },
 }
 
@@ -263,9 +305,6 @@ class TestDataIntegrity():
         assert jinxes is not None
         assert isinstance(jinxes, dict)
 
-        # Check all jinxes have loaded
-        assert len(jinxes) == EXPECTED_NUM_JINXES
-
         for char1, value in jinxes.items():
             _validate_as_char_ID(char1)
             assert isinstance(value, dict)
@@ -280,6 +319,26 @@ class TestDataIntegrity():
         for char2, jinx in jinx_set.items():
             assert char2 in jinxes[char].keys()
             assert jinx == jinxes[char][char2]
+
+    def test_jinx_distribution(self):
+        found_count = 0
+        found_dist = ZERO_JINX_DISTRIBUTION
+
+        for char_1, jinx in jinxes.items():
+            for char_2, _ in jinx.items():
+                teams = sorted([get_team_of_character(char_1), get_team_of_character(char_2)])
+                found_dist[teams[0]][teams[1]] += 1
+                found_count += 1
+
+        assert EXPECTED_NUM_JINXES == found_count
+
+        for team_1, assoc in found_dist.items():
+            for team_2 in assoc.keys():
+                assert found_dist[team_1][team_2] == EXPECTED_JINX_DISTRIBUTION[team_1][team_2], \
+                       f"{team_1}-{team_2} distribution should be " + \
+                       f"{EXPECTED_JINX_DISTRIBUTION[team_1][team_2]}, got " + \
+                       f"{found_dist[team_1][team_2]}"
+                print(f"{team_1}-{team_2}: {found_dist[team_1][team_2]}")
 
     def test_order_structure(self):
         NIGHTS = ["firstNight", "otherNight"]
