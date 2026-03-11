@@ -85,10 +85,6 @@ class _JinxGraph():
 
         self.total_nodes = len(list(self.adj_list.keys()))
 
-    def is_jinxed_char(self, char_name):
-        """Return bool of whether a jinx exists for char_name"""
-        return self.adj_list.get(char_name) is not None
-
     def get_total_num_jinxes(self):
         return self._total_edges
 
@@ -104,6 +100,8 @@ class _JinxGraph():
         return best
 
     def get_degree(self, char_name):
+        if self.adj_list.get(char_name) is None:
+            return 0
         return len(self.adj_list[char_name])
 
     def get_num_jinxes(self, char_list):
@@ -217,11 +215,16 @@ class Search:
 
     def _get_reduced_search_space(self, graph):
         """Remove non-jinxed characters"""
+        THRESHOLD = 0
         return {
-            "townsfolk": [c for c in characters["townsfolk"].keys() if graph.is_jinxed_char(c)],
-            "outsider": [c for c in characters["outsider"].keys() if graph.is_jinxed_char(c)],
-            "minion": [c for c in characters["minion"].keys() if graph.is_jinxed_char(c)],
-            "demon": [c for c in characters["demon"].keys() if graph.is_jinxed_char(c)],
+            "townsfolk": [c for c in characters["townsfolk"].keys()
+                          if graph.get_degree(c) >= THRESHOLD],
+            "outsider": [c for c in characters["outsider"].keys()
+                         if graph.get_degree(c) >= THRESHOLD],
+            "minion": [c for c in characters["minion"].keys()
+                       if graph.get_degree(c) >= THRESHOLD],
+            "demon": [c for c in characters["demon"].keys()
+                      if graph.get_degree(c) >= THRESHOLD],
         }
 
     def _get_reduced_counts(self, counts, char_name):
